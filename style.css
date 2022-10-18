@@ -1,12 +1,12 @@
 
 body {
-    position: absolute;
+position: absolute;
 width: 1439px;
 height: 816px;
 left: 1px;
 top: 940px;
 
-background-image: url(Image\imgaccueil.jpg);
+background: url("image/imgaccueil.jpg");
 transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
