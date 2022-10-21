@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 126px;
+    margin: 0;
+    background: #40599A;
+}
+
+#titre1 {
+    /*espace entre lettre */
+    letter-spacing: 2px;
+    /*taille texte */
+    font-size: 6rem;
+    color: white;
+    margin-top: 13px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+
+}
+
+#img2 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+#rectangle {
+    height: 100%;
+    width: 800px; /*ou 25% du parent par ex*/
+    position: absolute; /*evolue librement dans son parent*/
+    left: 50%; /*centre le bord gauche de la boite*/
+    transform: translateX(-50%); /*revient de 50% sur ca taille*/
+    /*transform: translate(-50%, -50%)*/ /*sur l axe X puis Y*/
+    z-index: -1;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+
+#img3 {
+    position: absolute;
+    opacity: 25%;
+}
+
+footer {
+    height: 84px;
+    width: 100%;
+    background: #40599A;
+    position: absolute;
+    bottom: 0px;
+}
+
