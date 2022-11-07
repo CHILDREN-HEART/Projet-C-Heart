@@ -77,7 +77,6 @@ input {
     font-size: 100%;
     writing-mode: horizontal-tb !important;
     text-rendering: auto;
-    color: fieldtext;
     letter-spacing: normal;
     word-spacing: normal;
     line-height: normal;
@@ -89,12 +88,11 @@ input {
     appearance: auto;
     -webkit-rtl-ordering: logical;
     cursor: text;
-    background-color: field;
     margin-bottom: 1.5rem;
     padding: 1px 2px;
     border-width: 2px;
     border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-color: rgb(118, 118, 118);
     border-image: initial;
 }
 

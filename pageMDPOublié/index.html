@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Connectez-vous</title>
+    <title>Mot de passe oublié</title>
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,23 +18,22 @@
 </header>
 <main>
     <div class="grid">
-
         <div id="rectangle">
-            <h2>Connectez-vous</h2>
+            <h2>Réinitialiser mon mot de passe </h2>
+            <div id="aide1">1 - Entrez l’adresse e-mail associée à votre compte ci-dessous.</div>
+            <div id="aide2">2 - Vous allez recevoir un email, cliquez sur le lien pour choisir un nouveau mot de
+                passe.
+            </div>
+            <div id="aide3">3 - Après la validation de votre nouveau mot de passe, vous êtes connecté(e) à votre compte
+                !
+            </div>
             <div class="grid-container">
-                <form action="connexion.php" method="post">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" id="login" name="login" placeholder="Adresse mail"/>
-                    <span class="icon">&#9812</span>
-                    <input type="password" id="password" name="password" placeholder="Mot de passe"/>
-                    <div class="Valider_Retour">
-                        <input type="submit" value="Se Connecter"/>
-                        <input type="submit" value="Retour"/>
-                        <div><a href="https://htmlcheatsheet.com/" target="_blank">Mot de passe oublié ?</a></div>
-                        <div>ou</div>
-                        <div><a href="../pageInscription/index.html" target="_blank">S'inscrire</a></div>
-                    </div>
-                </form>
+
+                <input type="text" id="login" name="login" placeholder="Adresse mail"/>
+                <div class="Valider_Retour">
+                    <input type="submit" value="Réinitialiser votre mot de passe"/>
+                    <input type="submit" value="Retour"/>
+                </div>
             </div>
         </div>
     </div>

@@ -142,6 +142,7 @@ input[type='submit'] {
 }
 
 .Valider_Retour {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,3 +160,19 @@ a, a:visited {
     min-width: 50px;
     text-align: center;
 }
+
+#aide1 {
+    text-align: center;
+}
+
+#aide2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#aide3 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
