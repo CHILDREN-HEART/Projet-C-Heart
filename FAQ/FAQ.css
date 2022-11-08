@@ -1,6 +1,27 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  height: 126px;
+  margin: 0;
+  background: #40599a;
+}
+
+#titre1 {
+  /*espace entre lettre */
+  letter-spacing: 2px;
+  /*taille texte */
+  font-size: 6rem;
+  color: white;
+  margin-top: 13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 body {
   font-size: 14px;
 }
