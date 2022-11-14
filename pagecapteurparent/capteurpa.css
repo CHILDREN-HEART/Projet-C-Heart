@@ -1,0 +1,13 @@
+header {
+    height: 126px;
+    margin: 0;
+    background: #40599A;
+}
+
+footer {
+    height: 84px;
+    width: 100%;
+    background: #40599A;
+    position: absolute;
+    bottom: 0px;
+}
