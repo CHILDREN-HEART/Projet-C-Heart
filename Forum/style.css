@@ -1,0 +1,128 @@
+html,body {margin:0;padding:0}
+#header {
+    background-color:rgba(50, 77, 146, 1) ;
+    margin: 0px;
+    padding: 10px;
+    height: 105px;
+}
+.child-heart {
+    position: absolute;
+    left: 10px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+.forum {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    left: 700px;
+}
+.img {
+    float: right;
+}
+.username {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    right: 100px;
+    position: absolute;
+    top: 30px;
+}
+#center {
+    background-color: rgb(223, 223, 223);
+    height: 160px;
+    margin: 20px 0px 20px 25px;
+    width: 97.5%;
+}
+.note-sujet {
+    position: absolute;
+    font-size: 25px;
+    left: 150px;
+}
+.note-date {
+    position: relative;
+    font-size: 25px;
+    left: 1200px;
+}
+.note-profil {
+    position: relative;
+    font-size: 25px;
+    left: 1300px;
+}
+#mid {
+    overflow: hidden;
+    width: 100%;
+}
+#left {
+    background-color: rgb(223, 223, 223);
+    height: 550px;
+    width: 250px;
+    margin: 30px 25px;
+    float: left;
+    text-align: center;
+}
+#right {
+    background-color: rgb(223, 223, 223);
+    margin-left: 300px;
+    margin-top: 30px;
+    height: 550px;
+    width: 84%;
+}
+.sujet {
+    position: relative;
+    left: 150px;
+    top: 10px;
+    font-size: 25px;
+}
+.sujet2 {
+    position: relative;
+    left: 100px;
+    top: 40px;
+    font-size: 25px;
+}
+.date {
+    position: relative;
+    left: 680px;
+    top: 10px;
+    font-size: 25px;
+}
+.date2 {
+    position: relative;
+    left: 900px;
+    font-size: 25px;
+}
+.profil {
+    position: relative;
+    left: 780px;
+    top: 10px;
+    font-size: 25px;
+}
+.profil2 {
+    position: relative;
+    left: 1070px;
+    top: -40px;
+    font-size: 25px;
+}
+#footer  {
+    margin-top: 20px;
+    height: 78px;    
+}
+.btn-group .button {
+    background-color: rgba(50, 77, 146, 1);
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    padding: 25px 138px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  .btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  .btn-group .button:hover {
+    background-color: rgb(98, 117, 166);
+  }
