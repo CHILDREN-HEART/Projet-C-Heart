@@ -1,7 +1,14 @@
-html,
-body {
+::before,
+::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+html,
+body {
+  background: white;
+  display: flex;
+  flex-direction: column;
 }
 :root {
   --blue1: #40599a;
@@ -46,14 +53,14 @@ header {
   color: black;
   margin: 1rem 100;
   border-radius: 0.6rem;
+  text-align: center;
 }
 
 .menu-item-header {
   padding: 0.5rem 3rem 0.5rem 1rem;
   min-height: 3rem;
-  line-height: 1rem;
+  line-height: 4rem;
   font-weight: bold;
-  display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
@@ -85,6 +92,68 @@ header {
   background-color: var(--blue1);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.btn-group {
+  height: 84px;
+  width: 100%;
+  background: #40599a;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.button1 {
+  background-color: #40599a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 60px;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #40599a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 60px;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: #40599a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 60px;
+  cursor: pointer;
+}
+
+.button4 {
+  background-color: #40599a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 60px;
+  cursor: pointer;
 }
 
 footer {
