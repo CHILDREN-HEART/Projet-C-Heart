@@ -1,21 +1,22 @@
 html,body {margin:0;padding:0}
-#header {
-    background-color:rgba(50, 77, 146, 1) ;
-    width:100%;
-    margin: 0px;
-    height: 105px;
+header {
+  height: 126px;
+  margin: 0;
+  background: #40599a;
 }
-.title {
-    position: absolute;
-    left: 10px;
-    font-size: 60px;
-    color: rgb(255, 255, 255);
+
+#title {
+  /*espace entre lettre */
+  letter-spacing: 2px;
+  /*taille texte */
+  font-size: 6rem;
+  color: white;
+  margin-top: 13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.img{
-    left: 1400px;
-    position: relative;
-    top: -50px;
-}
+
 .username {
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -47,63 +48,7 @@ html,body {margin:0;padding:0}
   opacity: 1;
   text-align: center;
 }
-#footer  {
-    margin-top: 20px;
-    height: 78px;
-}
-.Contacter {
-  width: 360px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  left: 1080px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 25px;
-  opacity: 1;
-  text-align: center;
-  height: 84px;
-  background-color: #324D92;
-}
-.Ticket {
-  width: 360px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  left: 720px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: center;
-  height: 84px;
-  background-color: #324D92;
 
-}
-.Forum {
-  width: 360px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  left: 360px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: center;
-  height: 84px;
-  background-color: #324D92;
-}
-.FAQ {
-  width: 360px;
-  height: 84px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  left: 0px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: center;
-  background-color: #324D92;
-}
 .example{
 
   position: absolute;
@@ -148,3 +93,74 @@ form.example input[type=text] {
     width: 80%;
     background: #f1f1f1;
   }
+
+  .btn-group {
+    height: 84px;
+    width: 100%;
+    background: #40599a;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .button1 {
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
+  }
+  
+  .button2 {
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
+  }
+  
+  .button3 {
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
+  }
+  
+  .button4 {
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
+  }
+  
+  footer {
+    height: 84px;
+    width: 100%;
+    background: #40599a;
+    position: absolute;
+    bottom: 0px;
+  }
+  

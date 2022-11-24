@@ -28,18 +28,25 @@
     <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <div id="header">
-      <span class="title">Bienvenue Professeur</span>
-      <span class="username">Prénom Nom</span>
-      <div class="img">
-        <img
-          src="./assets/Logo.png"
-          alt="Accéder à mon compte"
-          width="90"
-          height="90"
-        />
-      </div>
-    </div>
+    <header>
+      <span id="title">Bienvenue Professeur</span>
+      <span id="img"
+        ><img src="../assets/Logo.png" height="126" width="126" alt="Logo"
+      /></span>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+      />
+    </header>
+
     <div id="center">
       <span class="Saisie">Saisie du nom :</span>
       <button class="Favori">Favori</button>
@@ -48,11 +55,15 @@
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
-    <div id="footer">
-      <button class="Contacter">Contacter un admin</button>
-      <button class="Ticket">Ticket</button>
-      <button class="Forum">Forum</button>
-      <button class="FAQ">FAQ</button>
+    
+    <footer>
+      <div class="btn-group">
+        <button class="button1">FAQ</button>
+        <button class="button2">Forum</button>
+        <button class="button3">Ticket</button>
+        <button class="button4">Contacter un admin</button>
+      </div>
     </div>
+    </footer>
   </body>
 </html>
