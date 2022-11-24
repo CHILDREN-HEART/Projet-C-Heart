@@ -1,0 +1,150 @@
+html,body {margin:0;padding:0}
+#header {
+    background-color:rgba(50, 77, 146, 1) ;
+    width:100%;
+    margin: 0px;
+    height: 105px;
+}
+.title {
+    position: absolute;
+    left: 10px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+.img{
+    left: 1400px;
+    position: relative;
+    top: -50px;
+}
+.username {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    left: 1100px;
+    position: relative;
+    top: 30px;
+}
+#center {
+    background-color: rgb(223, 223, 223);
+    height: 600px;
+    margin: 20px 0px 20px 25px;
+    width: 97.5%;
+}
+.Saisie{
+    position:absolute;
+    font-size:20px;
+    top:275px;
+    left:400px;
+}
+.Favori {
+  width: 208px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 350px;
+  left: 600px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+}
+#footer  {
+    margin-top: 20px;
+    height: 78px;
+}
+.Contacter {
+  width: 360px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  left: 1080px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 25px;
+  opacity: 1;
+  text-align: center;
+  height: 84px;
+  background-color: #324D92;
+}
+.Ticket {
+  width: 360px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  left: 720px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  height: 84px;
+  background-color: #324D92;
+
+}
+.Forum {
+  width: 360px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  left: 360px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  height: 84px;
+  background-color: #324D92;
+}
+.FAQ {
+  width: 360px;
+  height: 84px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  background-color: #324D92;
+}
+.example{
+
+  position: absolute;
+  top: 270px;
+  left: 550px;
+  z-index: 999;
+
+}
+form.example button{
+  font-size: 10px;
+  height: 38px;
+  top: -53px;;
+  left: 225px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}.example{
+
+    position: absolute;
+    top: 270px;
+    left: 550px;
+    z-index: 999;
+
+  }
+  form.example button{
+
+    font-size: 10px;
+    height: 38px;
+    top: -53px;;
+    left: 225px;
+  }
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }

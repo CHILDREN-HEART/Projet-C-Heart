@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+  height: 126px;
+  width: 100%;
+  background: #40599a;
+  letter-spacing: 2px;
+  font-size: 6rem;
+  color: white;
+  display: flex;
+  z-index: 1;
+}
+.c {
+  position: absolute;
+  top: 4%;
+  left: 1%;
+}
+.inscription {
+  position: absolute;
+  top: 4%;
+}
+
+p {
+  font-size: 60px;
+  position: absolute;
+}
+
+@media (min-width: 220%) .container {
+  width: 3333px;
+  height: 800px;
+}
+
+.text1 {
+  top: -800%;
+}
+
+.text2 {
+  top: -900%;
+}
+
+.text3 {
+  top: -820%;
+}
+
+.line {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  height: 100px;
+}
+
+.img1 {
+  height: 126px;
+  position: absolute;
+  left: 45%;
+  top: 0px;
+}
+
+.inscription {
+  position: absolute;
+  right: 140px;
+  text-align: center;
+}
+
+.entete a {
+  color: white;
+  text-decoration: none;
+}
+
+.entete {
+  text-decoration: none;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.wesh a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 48%;
+  bottom: 5%s;
+}
+
+footer {
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: #40599a;
+  letter-spacing: 2px;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  height: 84px;
+  width: 100%;
+}
