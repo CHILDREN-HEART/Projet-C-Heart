@@ -1,0 +1,14 @@
+{
+    "tabWidth": 4,
+    "useTabs": false,
+    "printWidth": 3000,
+    "singleAttributePerLine": true,
+    "overrides": [
+        {
+            "files": "src/**/*.html",
+            "options": {
+                "printWidth": 3000
+            }
+        }
+    ]
+}

@@ -81,13 +81,12 @@ p {
 .wesh a {
   color: white;
   text-decoration: none;
-  position: absolute;
-  left: 48%;
-  bottom: 5%s;
 }
 
 footer {
   align-items: center;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-family: "Roboto", sans-serif;
   background: #40599a;

@@ -1,246 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vite App</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
-    <script src="https://unpkg.com/p5ble@0.0.5/dist/p5.ble.js"></script>
-</head>
-<body>
-<div class="container my-5">
-
-
-    <div class="values-container">
-        <h2 class="mb-3">Valeurs temps réel</h2>
-        <div class="row">
-
-
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    Température
-                                </div>
-                                <div class="h5 mb-2 font-weight-bold text-gray-800">
-                                    capteur 1 : <span id="captor-1-temp">----</span>
-                                </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    capteur 2 : <span id="captor-2-temp">----</span>
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="favicon.svg"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Vite App</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+        <script src="https://unpkg.com/p5ble@0.0.5/dist/p5.ble.js"></script>
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="values-container">
+                <h2 class="mb-3">Valeurs temps réel</h2>
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Température</div>
+                                        <div class="h5 mb-2 font-weight-bold text-gray-800">capteur 1 : <span id="captor-1-temp">----</span></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">capteur 2 : <span id="captor-2-temp">----</span></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">humidité</div>
+                                        <div class="h5 mb-2 font-weight-bold text-gray-800">capteur 1 : <span id="captor-1-hum">----</span></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">capteur 2 : <span id="captor-2-hum">----</span></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pm 2.5</div>
+                                        <div class="h5 mb-2 font-weight-bold text-gray-800">capteur 1 : <span id="captor-1-pm">----</span></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">capteur 2 : <span id="captor-2-pm">----</span></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pm 10</div>
+                                        <div class="h5 mb-2 font-weight-bold text-gray-800">capteur 1 : <span id="captor-1-temp-pm-10">----</span></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">capteur 2 : <span id="captor-2-temp-pm-10">----</span></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">CO2</div>
+                                        <div class="h5 mb-2 font-weight-bold text-gray-800">capteur 1 : <span id="captor-1-co2">----</span></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">capteur 2 : <span id="captor-2-co2">----</span></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                    humidité
-                                </div>
-                                <div class="h5 mb-2 font-weight-bold text-gray-800">
-                                    capteur 1 : <span id="captor-1-hum">----</span>
-                                </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    capteur 2 : <span id="captor-2-hum">----</span>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                    </div>
+            <div class="graphic-values">
+                <h2>Graphiques</h2>
+                <div class="">
+                    <h3>capteur 1</h3>
+                    <canvas
+                        id="captor_1_canvas"
+                        style=""
+                    ></canvas>
+                    <h3>capteur 2</h3>
+                    <canvas
+                        id="captor_2_canvas"
+                        style=""
+                    ></canvas>
                 </div>
             </div>
 
-
-
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                    Pm 2.5
-                                </div>
-                                <div class="h5 mb-2 font-weight-bold text-gray-800">
-                                    capteur 1 : <span id="captor-1-pm">----</span>
-                                </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    capteur 2 : <span id="captor-2-pm">----</span>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-comments fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                    Pm 10
-                                </div>
-                                <div class="h5 mb-2 font-weight-bold text-gray-800">
-                                    capteur 1 : <span id="captor-1-temp-pm-10">----</span>
-                                </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    capteur 2 : <span id="captor-2-temp-pm-10">----</span>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-comments fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-info shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">CO2
-                                </div>
-                                <div class="h5 mb-2 font-weight-bold text-gray-800">
-                                    capteur 1 : <span id="captor-1-co2">----</span>
-                                </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    capteur 2 : <span id="captor-2-co2">----</span>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <button
+                style="border: 0px; color: dodgerblue; color: #fff; margin: 20px"
+                id="connect"
+            >
+                Connecter
+            </button>
         </div>
-    </div>
+        <script
+            type="module"
+            src="/src/main.ts"
+        ></script>
+        <script
+            type="module"
+            src="/src/heat-chart.ts"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
 
-    <div class="graphic-values">
-        <h2>Graphiques</h2>
-        <div class="">
-            <h3>capteur 1</h3>
-            <canvas id="captor_1_canvas" style=""></canvas>
-            <h3>capteur 2</h3>
-            <canvas id="captor_2_canvas" style=""></canvas>
-        </div>
-    </div>
+        <script>
+            const serviceUuid = "19b10000-e8f2-537e-4f6c-d104768a1214";
+            //const serviceUuid = "180f0000-0000-0000-0000-000000000000";
+            let myCharacteristic;
+            let myValue = 0;
+            let myBLE;
+            let data = [];
+            let g;
+            let dataPoints = 100;
+            let data_capteur_1 = [[], [], [], [], []];
+            let data_capteur_2 = [[], [], [], [], []];
 
-    <button style="border: 0px; color: dodgerblue; color: #FFF; margin: 20px;" id="connect">Connecter</button>
+            function setup() {
+                // Create a p5ble class
+                myBLE = new p5ble();
 
-</div>
-<script type="module" src="/src/main.ts"></script>
-<script type="module" src="/src/heat-chart.ts"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-<script>
-
-    const serviceUuid = "19b10000-e8f2-537e-4f6c-d104768a1214";
-    //const serviceUuid = "180f0000-0000-0000-0000-000000000000";
-    let myCharacteristic;
-    let myValue = 0;
-    let myBLE;
-    let data = [];
-    let g;
-    let dataPoints = 100;
-    let data_capteur_1 = [[], [], [], [], []]
-    let data_capteur_2 = [[], [], [], [], []]
-
-    function setup() {
-        // Create a p5ble class
-        myBLE = new p5ble();
-
-        // Create a 'Connect' button
-        const connectButton = document.getElementById("connect")
-        connectButton.addEventListener("click", connectToBle);
-    }
-
-    function connectToBle() {
-        // Connect to a device by passing the service UUID
-        myBLE.connect(serviceUuid, gotCharacteristics);
-    }
-
-    // A function that will be called once got characteristics
-    function gotCharacteristics(error, characteristics) {
-        if (error) console.log('error: ', error);
-        console.log('characteristics: ', characteristics);
-        myCharacteristic = characteristics[0];
-        // Read the value of the first characteristic
-        myBLE.read(myCharacteristic, 'string', gotValue);
-    }
-
-
-    // A function that will be called once got values
-    function gotValue(error, value) {
-        if (error) console.log('error: ', error);
-       // console.log('value: ', value);
-        myValue = value;
-        //console.log(myValue)
-        let acceleration = myValue.split('|');
-        //console.log('Acceleration: ', acceleration);
-
-        const capteur_1 = [
-            document.getElementById("captor-1-temp"),
-            document.getElementById("captor-1-hum"),
-            document.getElementById("captor-1-pm"),
-            document.getElementById("captor-1-temp-pm-10"),
-            document.getElementById("captor-1-co2"),
-        ]
-
-        const capteur_2 = [
-            document.getElementById("captor-2-temp"),
-            document.getElementById("captor-2-hum"),
-            document.getElementById("captor-2-pm"),
-            document.getElementById("captor-2-temp-pm-10"),
-            document.getElementById("captor-2-co2"),
-        ]
-
-
-        if (parseInt(acceleration[0], 10) === 1) {
-            for (let i = 0; i < acceleration.length - 1; i++) {
-                capteur_1[i].innerText = acceleration[i + 1]
-                data_capteur_1[i].push(parseInt(acceleration[i + 1], 10))
+                // Create a 'Connect' button
+                const connectButton = document.getElementById("connect");
+                connectButton.addEventListener("click", connectToBle);
             }
-        } else if (parseInt(acceleration[0], 10) === 2) {
-            for (let i = 0; i < acceleration.length - 1; i++) {
-                capteur_2[i].innerText = acceleration[i + 1]
-                data_capteur_2[i].push(parseInt(acceleration[i + 1], 10))
+
+            function connectToBle() {
+                // Connect to a device by passing the service UUID
+                myBLE.connect(serviceUuid, gotCharacteristics);
             }
-        }
 
+            // A function that will be called once got characteristics
+            function gotCharacteristics(error, characteristics) {
+                if (error) console.log("error: ", error);
+                console.log("characteristics: ", characteristics);
+                myCharacteristic = characteristics[0];
+                // Read the value of the first characteristic
+                myBLE.read(myCharacteristic, "string", gotValue);
+            }
 
-        myBLE.read(myCharacteristic, 'string', gotValue);
-    }
+            // A function that will be called once got values
+            function gotValue(error, value) {
+                if (error) console.log("error: ", error);
+                // console.log('value: ', value);
+                myValue = value;
+                //console.log(myValue)
+                let acceleration = myValue.split("|");
+                //console.log('Acceleration: ', acceleration);
 
-    setInterval(() => {
-        localStorage.setItem("captor1", JSON.stringify(data_capteur_1))
-        localStorage.setItem("captor2", JSON.stringify(data_capteur_1))
-    }, 2000)
-    setup()
+                const capteur_1 = [
+                    document.getElementById("captor-1-temp"),
+                    document.getElementById("captor-1-hum"),
+                    document.getElementById("captor-1-pm"),
+                    document.getElementById("captor-1-temp-pm-10"),
+                    document.getElementById("captor-1-co2"),
+                ];
 
+                const capteur_2 = [
+                    document.getElementById("captor-2-temp"),
+                    document.getElementById("captor-2-hum"),
+                    document.getElementById("captor-2-pm"),
+                    document.getElementById("captor-2-temp-pm-10"),
+                    document.getElementById("captor-2-co2"),
+                ];
 
-</script>
-</body>
+                if (parseInt(acceleration[0], 10) === 1) {
+                    for (let i = 0; i < acceleration.length - 1; i++) {
+                        capteur_1[i].innerText = acceleration[i + 1];
+                        data_capteur_1[i].push(parseInt(acceleration[i + 1], 10));
+                    }
+                } else if (parseInt(acceleration[0], 10) === 2) {
+                    for (let i = 0; i < acceleration.length - 1; i++) {
+                        capteur_2[i].innerText = acceleration[i + 1];
+                        data_capteur_2[i].push(parseInt(acceleration[i + 1], 10));
+                    }
+                }
+
+                myBLE.read(myCharacteristic, "string", gotValue);
+            }
+
+            setInterval(() => {
+                localStorage.setItem("captor1", JSON.stringify(data_capteur_1));
+                localStorage.setItem("captor2", JSON.stringify(data_capteur_1));
+            }, 2000);
+            setup();
+        </script>
+    </body>
 </html>
