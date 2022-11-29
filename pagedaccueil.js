@@ -1,8 +1,6 @@
 + function($) {
     'use strict';
   
-    // CAROUSEL CLASS DEFINITION
-    // =========================
   
     var Carousel = function(element, options) {
       this.$element = $(element)
@@ -115,7 +113,7 @@
   
       if ($.support.transition && this.$element.hasClass('slide')) {
         $next.addClass(type)
-        $next[0].offsetWidth // force reflow
+        $next[0].offsetWidth 
         $active.addClass(direction)
         $next.addClass(direction)
         $active
@@ -140,9 +138,6 @@
       return this
     }
   
-    // CAROUSEL PLUGIN DEFINITION
-    // ==========================
-  
     var old = $.fn.carousel
   
     $.fn.carousel = function(option) {
@@ -161,21 +156,18 @@
   
     $.fn.carousel.Constructor = Carousel
   
-    // CAROUSEL NO CONFLICT
-    // ====================
+   
   
     $.fn.carousel.noConflict = function() {
       $.fn.carousel = old
       return this
     }
   
-    // CAROUSEL DATA-API
-    // =================
   
     $(document).on('click.bs.carousel.data-api', '[data-slide], [data-slide-to]', function(e) {
       var $this = $(this),
         href
-      var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
+      var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) 
       var options = $.extend({}, $target.data(), $this.data())
       var slideIndex = $this.attr('data-slide-to')
       if (slideIndex) options.interval = false
@@ -206,12 +198,6 @@
     function transitionEnd() {
       var el = document.createElement('bootstrap')
   
-      var transEndEventNames = {
-        'WebkitTransition': 'webkitTransitionEnd',
-        'MozTransition': 'transitionend',
-        'OTransition': 'oTransitionEnd otransitionend',
-        'transition': 'transitionend'
-      }
   
       for (var name in transEndEventNames) {
         if (el.style[name] !== undefined) {
@@ -221,10 +207,10 @@
         }
       }
   
-      return false // explicit for ie8 (  ._.)
+      return false 
     }
   
-    // http://blog.alexmaccaw.com/css-transitions
+   
     $.fn.emulateTransitionEnd = function(duration) {
       var called = false,
         $el = this
@@ -244,9 +230,9 @@
   
   }(jQuery);
   
-  // When the DOM is ready, run this function
+  
   $(document).ready(function() {
-    //Set the carousel options
+    
     $('#quote-carousel').carousel({
       pause: true,
       interval: 9000,

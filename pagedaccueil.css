@@ -1,99 +1,132 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.carroussel {
+    width: 100%;
+    height: 100%;
+    background: url("https://www.lesitedesarts.com/wp-content/uploads/2019/03/Carroussel-1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
 }
 
 header {
-  font-family: "Roboto", sans-serif;
-  height: 126px;
-  width: 100%;
-  background: #40599a;
-  letter-spacing: 2px;
-  font-size: 6rem;
-  color: white;
-  display: flex;
-  z-index: 1;
+    font-family: "Roboto", sans-serif;
+    height: 126px;
+    width: 100%;
+    background: #40599a;
+    letter-spacing: 2px;
+    font-size: 6rem;
+    color: white;
+    display: flex;
+    z-index: 1;
 }
 .c {
-  position: absolute;
-  top: 4%;
-  left: 1%;
+    position: absolute;
+    left: 40%;
+    top: 4%;
 }
 .inscription {
-  position: absolute;
-  top: 4%;
+    position: absolute;
+    top: 4%;
 }
 
 p {
-  font-size: 60px;
-  position: absolute;
+    font-size: 60px;
+    position: absolute;
 }
 
 @media (min-width: 220%) .container {
-  width: 3333px;
-  height: 800px;
+    width: 3333px;
+    height: 800px;
 }
 
 .text1 {
-  top: -800%;
+    top: -800%;
 }
 
 .text2 {
-  top: -900%;
+    top: -900%;
 }
 
 .text3 {
-  top: -820%;
+    top: -820%;
 }
 
 .line {
-  position: absolute;
-  right: 20px;
-  top: 13px;
-  height: 100px;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    height: 100px;
 }
 
 .img1 {
-  height: 126px;
-  position: absolute;
-  left: 45%;
-  top: 0px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 126px;
 }
 
 .inscription {
-  position: absolute;
-  right: 140px;
-  text-align: center;
+    position: absolute;
+    right: 140px;
+    text-align: center;
 }
 
 .entete a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .entete {
-  text-decoration: none;
-  font-size: 40px;
-  display: flex;
-  align-items: center;
-}
-
-.wesh a {
-  color: white;
-  text-decoration: none;
+    text-decoration: none;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
 }
 
 footer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  background: #40599a;
-  letter-spacing: 2px;
-  font-size: 40px;
-  position: absolute;
-  bottom: 0;
-  height: 84px;
-  width: 100%;
+    height: 84px;
+    width: 100%;
+    background: #40599a;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    bottom: 0px;
+}
+
+.btn-group {
+    height: 84px;
+    width: 100%;
+    background: #40599a;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.button1 {
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
 }
