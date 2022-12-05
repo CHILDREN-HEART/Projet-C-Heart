@@ -25,11 +25,12 @@ header {
 .c {
     position: absolute;
     left: 40%;
-    top: 4%;
+    top: 20%;
 }
 .inscription {
     position: absolute;
-    top: 4%;
+    top: 20%;
+    font-size: 1.2em;
 }
 
 p {
@@ -77,6 +78,7 @@ p {
 .entete a {
     color: white;
     text-decoration: none;
+    font-size: 0.5em;
 }
 
 .entete {
