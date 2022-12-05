@@ -4,9 +4,8 @@
 }
 
 .carroussel {
-    width: 100%;
+    width: 125%;
     height: 100%;
-    background: url("https://www.lesitedesarts.com/wp-content/uploads/2019/03/Carroussel-1.jpg") no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
@@ -21,6 +20,7 @@ header {
     color: white;
     display: flex;
     z-index: 1;
+    position: fixed;
 }
 .c {
     position: absolute;
@@ -37,9 +37,9 @@ p {
     position: absolute;
 }
 
-@media (min-width: 220%) .container {
-    width: 3333px;
-    height: 800px;
+@media (min-width: 300%) .container {
+    width: 100%;
+    height: 100%;
 }
 
 .text1 {
@@ -87,7 +87,7 @@ p {
 }
 
 footer {
-    height: 84px;
+    height: 100px;
     width: 100%;
     background: #40599a;
     font-family: "Roboto", sans-serif;
@@ -129,4 +129,26 @@ footer {
     font-size: 16px;
     margin: 15px 60px;
     cursor: pointer;
+}
+
+.carousel-inner > .item > img,
+.img-responsive {
+    display: block;
+    max-width: 141%;
+    height: auto;
+}
+
+.carousel-inner > .item > a > img,
+.img-responsive {
+    display: block;
+    max-width: 221%;
+    height: auto;
+}
+
+.img-responsive,
+.thumbnail a > img,
+.thumbnail > img {
+    display: block;
+    max-width: 500%;
+    height: auto;
 }

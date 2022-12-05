@@ -1,172 +1,179 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 header {
-  height: 126px;
-  margin: 0;
-  background: #40599a;
+    height: 126px;
+    margin: 0;
+    background: #40599a;
 }
 
 #title {
-  /*espace entre lettre */
-  letter-spacing: 2px;
-  /*taille texte */
-  font-size: 6rem;
-  color: white;
-  margin-top: 13px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    /*espace entre lettre */
+    letter-spacing: 2px;
+    /*taille texte */
+    font-size: 6rem;
+    color: white;
+    margin-top: 13px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .username {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  left: 1100px;
-  position: relative;
-  top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    left: 1100px;
+    position: relative;
+    top: 30px;
 }
 #center {
-  background-color: rgb(223, 223, 223);
-  height: 600px;
-  margin: 20px 0px 20px 25px;
-  width: 97.5%;
+    background-color: rgb(223, 223, 223);
+    height: 600px;
+    margin: 20px 0px 20px 25px;
+    width: 97.5%;
 }
 .Saisie {
-  position: absolute;
-  font-size: 20px;
-  top: 275px;
-  left: 400px;
+    position: absolute;
+    font-size: 20px;
+    top: 275px;
+    left: 400px;
 }
 .Favori {
-  width: 208px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 350px;
-  left: 600px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 13px;
-  opacity: 1;
-  text-align: center;
+    width: 11%;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 13px;
+    opacity: 1;
+    text-align: center;
 }
 
 .example {
-  position: absolute;
-  top: 270px;
-  left: 550px;
-  z-index: 999;
+    position: absolute;
+    top: 270px;
+    left: 550px;
+    z-index: 999;
 }
 form.example button {
-  font-size: 10px;
-  height: 38px;
-  top: -53px;
-  left: 225px;
+    font-size: 10px;
+    height: 38px;
+    top: -53px;
+    left: 225px;
 }
 form.example input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
 }
 .example {
-  position: absolute;
-  top: 270px;
-  left: 550px;
-  z-index: 999;
+    position: absolute;
+    top: 270px;
+    left: 550px;
+    z-index: 999;
 }
 form.example button {
-  font-size: 10px;
-  height: 38px;
-  top: -53px;
-  left: 225px;
+    font-size: 15px;
+    height: 40px;
+    top: 2%;
+    left: 150%;
+}
+
+form.example input[type="text"] {
+    font-size: 15px;
+    height: 40px;
+    top: 20%;
+    left: 90%;
 }
 form.example input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 150%;
+    background: #f1f1f1;
 }
 
 .btn1 {
-  position: absolute;
-  top: 270px;
-  left: 550px;
-  z-index: 999;
+    position: absolute;
+    top: 270px;
+    left: 550px;
+    z-index: 999;
 }
 
 .btn-group {
-  height: 84px;
-  width: 100%;
-  background: #40599a;
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  font-size: 50px;
+    height: 84px;
+    width: 100%;
+    background: #40599a;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .button1 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
 }
 
 .button2 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
 }
 
 .button3 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
 }
 
 .button4 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
+    background-color: #40599a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 60px;
+    cursor: pointer;
 }
 
 footer {
-  height: 84px;
-  width: 100%;
-  background: #40599a;
-  position: absolute;
-  bottom: 0px;
+    height: 84px;
+    width: 100%;
+    background: #40599a;
+    position: absolute;
+    bottom: 0px;
 }
