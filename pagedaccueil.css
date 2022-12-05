@@ -58,9 +58,10 @@ p {
 
 .line {
     position: absolute;
-    left: 90%;
+    left: 92%;
     top: 26%;
     height: 50%;
+    color: white;
 }
 
 .img1 {
@@ -70,7 +71,7 @@ p {
     height: 126px;
 }
 
-img {
+.img3 {
     position: absolute;
     top: 500%;
     left: 0%;
