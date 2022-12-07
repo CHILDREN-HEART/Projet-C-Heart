@@ -1,0 +1,297 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+}
+#conteneur {
+  width: 100%;
+  overflow: hidden;
+}
+#header {
+  background-color: rgba(50, 77, 146, 1);
+  width: 100%;
+  height: 105px;
+}
+#center {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(223, 223, 223);
+  height: 160px;
+  margin: 20px 0px 20px 20px;
+  width: 97.5%;
+}
+#mid {
+  overflow: hidden;
+  width: auto;
+}
+#left {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(223, 223, 223);
+  height: 450px;
+  width: 250px;
+  margin: 20px 25px;
+  float: left;
+  text-align: center;
+}
+#right {
+  background-color: rgb(223, 223, 223);
+  margin-left: 300px;
+  margin-top: 20px;
+  margin-right: 15px;
+  height: 450px;
+  width: auto;
+}
+#footer {
+  margin-top: 20px;
+  height: 78px;
+  width: 100%;
+}
+.ligne1 {
+  position: relative;
+  top: -0px;
+}
+.ligne2 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.ligne4 {
+  position: relative;
+  top: -5px;
+}
+.ligne5 {
+  position: relative;
+  top: 85px;
+}
+.ligne6 {
+  position: relative;
+  top: 135px;
+}
+.ligne7 {
+  position: relative;
+  top: 185px;
+}
+.ligne8 {
+  position: relative;
+  top: 235px;
+}
+.ligne9 {
+  position: relative;
+  top: 285px;
+}
+.ligne10 {
+  position: relative;
+  top: 335px;
+}
+.ligne11 {
+  position: relative;
+  top: 385px;
+}
+.ligne12 {
+  position: relative;
+  top: 20px;
+}
+.ligne13 {
+  position: relative;
+  top: 8px;
+}
+.col1 {
+  position: relative;
+  width: 0;
+  height: 30px;
+  top: -30px;
+  left: 72%;
+}
+.col2 {
+  position: relative;
+  width: 0;
+  height: 30px;
+  top: -60px;
+  left: 86%;
+}
+.col3 {
+  position: relative;
+  width: 0;
+  height: 25px;
+  top: -70px;
+  left: 90%;
+}
+.col4 {
+  position: relative;
+  width: 0;
+  height: 25px;
+  top: -95px;
+  left: 79%;
+}
+.child-heart {
+  position: relative;
+  left: 10px;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+.forum {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  left: 45%;
+}
+.img {
+  position: absolute;
+  right: 2%;
+  top: 5px;
+}
+.username {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  position: absolute;
+  right: 10%;
+  top: 20px;
+}
+
+.note-sujet {
+  position: relative;
+  font-size: 25px;
+  left: 150px;
+}
+.note-date {
+  position: relative;
+  font-size: 25px;
+  left: 82%;
+  top: -40px;
+}
+.note-profil {
+  position: relative;
+  font-size: 25px;
+  left: 88%;
+  top: -40px;
+}
+
+.sujet {
+  position: relative;
+  left: 150px;
+  top: 10px;
+  font-size: 25px;
+}
+.sujet2 {
+  position: relative;
+  left: 60px;
+  top: 40px;
+  font-size: 25px;
+}
+.date {
+  position: relative;
+  left: 56%;
+  top: 10px;
+  font-size: 25px;
+}
+.date2 {
+  position: relative;
+  left: 75%;
+  font-size: 25px;
+}
+.profil {
+  position: relative;
+  left: 64%;
+  top: 10px;
+  font-size: 25px;
+}
+.profil2 {
+  position: relative;
+  left: 89%;
+  top: -45px;
+  font-size: 25px;
+}
+
+.Contacter {
+  width: 33%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 66%;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  height: 84px;
+  background-color: #324d92;
+}
+
+.Forum {
+  width: 33%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 33%;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  height: 84px;
+  background-color: #324d92;
+}
+.FAQ {
+  width: 33%;
+  height: 84px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 10px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  background-color: #324d92;
+}
+
+.mail{
+    border: black;
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 84px;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    background-color: rgb(223, 223, 223);
+}
+
+.fenetremodale{
+    margin-top: 25px;
+    border: 1ps solid black;
+    width: 100%;
+}
+.croix{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: black;
+    font-size: 30px;
+    font-weight: 700px;
+}
+.croix:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.textzone{
+    padding-top: 10px;
+    width: 100%;
+    margin: 0px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+.content{
+    padding-top: 20px;
+}
+
+.envoyer{
+    position: absolute;
+    top: 370px;
+    left: 10px;
+}
