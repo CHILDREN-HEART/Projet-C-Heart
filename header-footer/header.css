@@ -1,7 +1,8 @@
 .inscription {
     position: absolute;
-    right: 140px;
-    text-align: center;
+    font-size: 1.2em;
+    right: 4%;
+    transform: translateX(-50%);
 }
 
 .img1 {
@@ -27,11 +28,6 @@ header {
     left: 50%;
     transform: translateX(-50%);
     top: 15%;
-}
-.inscription {
-    position: absolute;
-    top: 0%;
-    font-size: 1.2em;
 }
 
 .line {
