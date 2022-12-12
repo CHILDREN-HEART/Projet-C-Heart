@@ -4,7 +4,6 @@
     text-align: center;
 }
 
-
 .img1 {
     position: absolute;
     top: 0%;
@@ -15,7 +14,7 @@ header {
     font-family: "Roboto", sans-serif;
     height: 126px;
     width: 100%;
-    background:#40599a;
+    background: #40599a;
     letter-spacing: 2px;
     font-size: 6rem;
     color: white;
@@ -25,12 +24,12 @@ header {
 }
 .c {
     position: absolute;
-    left: 40%;
-    top: 20%;
+    left: 50%;
+    top: 15%;
 }
 .inscription {
     position: absolute;
-    top: 20%;
+    top: 0%;
     font-size: 1.2em;
 }
 
@@ -40,4 +39,10 @@ header {
     top: 26%;
     height: 50%;
     color: white;
+}
+
+.entete a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.5em;
 }
