@@ -1,0 +1,43 @@
+.inscription {
+    position: absolute;
+    right: 140px;
+    text-align: center;
+}
+
+
+.img1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 126px;
+}
+header {
+    font-family: "Roboto", sans-serif;
+    height: 126px;
+    width: 100%;
+    background:#40599a;
+    letter-spacing: 2px;
+    font-size: 6rem;
+    color: white;
+    display: flex;
+    z-index: 1;
+    position: fixed;
+}
+.c {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.inscription {
+    position: absolute;
+    top: 20%;
+    font-size: 1.2em;
+}
+
+.line {
+    position: absolute;
+    left: 92%;
+    top: 26%;
+    height: 50%;
+    color: white;
+}
