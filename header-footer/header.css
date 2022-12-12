@@ -31,11 +31,11 @@ header {
 }
 
 .line {
-    position: absolute;
-    left: 92%;
-    top: 26%;
+    top: 25%;
     height: 50%;
-    color: white;
+    position: absolute;
+    right: 0%;
+    transform: translateX(-50%);
 }
 
 .entete a {
