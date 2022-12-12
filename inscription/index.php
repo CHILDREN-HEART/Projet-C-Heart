@@ -91,7 +91,7 @@
                                     type="button"
                                     value="Valider"
                                 />
-                                <a href="../index.html">
+                                <a href="../index.php">
                                     <input
                                         type="button"
                                         value="Retour"

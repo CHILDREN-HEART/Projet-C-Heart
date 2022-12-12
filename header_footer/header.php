@@ -33,7 +33,7 @@
                     >
                 </div>
                 <a
-                    href="../connexion/index.html"
+                    href="../connexion/index.php"
                     class="img2"
                     ><img
                         src="../assets/logoconnexion.png"

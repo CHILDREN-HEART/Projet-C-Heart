@@ -152,9 +152,9 @@
 </div>
 <footer>
   <div class="btn-group">
-    <a href="../forum/index.html">
+    <a href="../forum/index.php">
     <button class="button2">Forum</button></a>
-    <a href="./index.html">
+    <a href="./index.php">
     <button class="button4">Contacter un admin</button></a>
   </div>
 </div>

@@ -34,7 +34,7 @@
                     >
                 </div>
                 <a
-                    href="./connexion/index.html"
+                    href="connexion/index.php"
                     class="img2"
                     ><img
                         src="../assets/64572.png"
@@ -129,8 +129,8 @@
 
         <footer>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="faq/index.html">FAQ</a></li>
-                <li class="list-inline-item"><a href="forum/index.html">Forum</a></li>
+                <li class="list-inline-item"><a href="faq/index.php">FAQ</a></li>
+                <li class="list-inline-item"><a href="forum/index.php">Forum</a></li>
                 <li class="list-inline-item"><a href="#">Quizz</a></li>
             </ul>
             <p class="copyright">C-HEART ©2022</p>

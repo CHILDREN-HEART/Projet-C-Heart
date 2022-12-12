@@ -20,12 +20,12 @@
           <div class="inscription">
               <a
                   class="mot3"
-                  href="../inscription/index.html"
+                  href="../inscription/index.php"
                   >Inscription</a
               >
           </div>
           <a
-              href="../connexion/index.html"
+              href="../connexion/index.php"
               class="img2"
               ><img
                   src="../assets/64572.png"
