@@ -26,7 +26,7 @@
                     <div class="Valider_Retour">
                         <input type="submit" value="Se Connecter"/>
                         <input type="submit" value="Retour"/>
-                        <div><a href="https://htmlcheatsheet.com/" target="_blank">Mot de passe oublié ?</a></div>
+                        <div><a href="/mdpOublie1" target="_blank">Mot de passe oublié ?</a></div>
                         <div>ou</div>
                         <div><a href="/inscription" target="_blank">S'inscrire</a></div>
                     </div>

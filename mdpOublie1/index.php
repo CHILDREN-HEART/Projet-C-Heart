@@ -28,12 +28,13 @@
                 !
             </div>
             <div class="grid-container">
-
-                <input type="text" id="login" name="login" placeholder="Adresse mail"/>
-                <div class="Valider_Retour">
-                    <input type="submit" value="Réinitialiser votre mot de passe"/>
-                    <input type="submit" value="Retour"/>
-                </div>
+                <form action="/mdpOublie2" method="post">
+                    <input type="text" id="login" name="login" placeholder="Adresse mail"/>
+                    <div class="Valider_Retour">
+                        <input type="submit" value="Réinitialiser votre mot de passe"/>
+                        <input type="submit" value="Retour"/>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
