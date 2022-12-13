@@ -14,19 +14,16 @@
     background: #40599a;
     height: 60px;
 }
-
-.btn1 {
+/* 
+.btn {
     border-right: 1px solid #fff;
-}
+} */
 
-.btn2 {
-    border-right: 1px solid #fff;
-}
-
-.btn3 {
-    border-right: 1px solid #fff;
-}
-
+/* .btn + .btn {
+    border-left: white 2px solid;
+} */
+  
+  
 html {
     font-size: 63%;
 }

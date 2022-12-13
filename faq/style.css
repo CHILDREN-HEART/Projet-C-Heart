@@ -1,165 +1,89 @@
 ::before,
 ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html,
 body {
-  background: white;
-  display: flex;
-  flex-direction: column;
+    background: white;
+    display: flex;
+    flex-direction: column;
 }
 :root {
-  --blue1: #40599a;
-  --blue2: #00c4b3;
-  --blue3: #72ebfe;
-  --blue4: #85fff5;
-  --blue5: #c2fffa;
-  --white: #c2fffa;
-  --black: #000000;
-  --grey: #888888;
-}
-
-header {
-  height: 126px;
-  margin: 0;
-  background: #40599a;
+    --blue1: #40599a;
+    --blue2: #00c4b3;
+    --blue3: #72ebfe;
+    --blue4: #85fff5;
+    --blue5: #c2fffa;
+    --white: #c2fffa;
+    --black: #000000;
+    --grey: #888888;
 }
 
 #titre1 {
-  /*espace entre lettre */
-  letter-spacing: 2px;
-  /*taille texte */
-  font-size: 6rem;
-  color: white;
-  margin-top: 13px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    /*espace entre lettre */
+    letter-spacing: 2px;
+    /*taille texte */
+    font-size: 6rem;
+    color: white;
+    margin-top: 13px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .menu {
-  margin: 5;
-  font-size: 1.2em;
-  box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif;
-  list-style: none;
-  overflow: hidden;
+    margin: 5;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    list-style: none;
+    overflow: hidden;
 }
 
 .menu-item {
-  background-color: white;
-  color: black;
-  margin: 1rem 100;
-  border-radius: 0.6rem;
-  text-align: center;
+    background-color: white;
+    color: black;
+    margin: 1rem 100;
+    border-radius: 0.6rem;
+    text-align: center;
 }
 
 .menu-item-header {
-  padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3rem;
-  line-height: 4rem;
-  font-weight: bold;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3rem;
+    line-height: 4rem;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .menu-item-header::after {
-  content: "	\2B9F";
-  font-size: 1.3rem;
-  position: absolute;
-  right: 1.4rem;
+    content: "	\2B9F";
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1.4rem;
 }
 
 .menu-item-header.active::after {
-  content: "\2B9D";
+    content: "\2B9D";
 }
 
 .menu-item-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .menu-item-body-content {
-  padding: 1rem;
-  line-height: 1.5rem;
-  border-top: 1px solid;
-  color: white;
-  border-image: linear-gradient(to right, transparent, #40599a, transparent) 1;
-  background-color: var(--blue1);
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.btn-group {
-  height: 84px;
-  width: 100%;
-  background: #40599a;
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  font-size: 50px;
-}
-
-.button1 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
-}
-
-.button2 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
-}
-
-.button3 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
-}
-
-.button4 {
-  background-color: #40599a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 15px 60px;
-  cursor: pointer;
-}
-
-footer {
-  height: 84px;
-  width: 100%;
-  background: #40599a;
-  position: absolute;
-  bottom: 0px;
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    color: white;
+    border-image: linear-gradient(to right, transparent, #40599a, transparent) 1;
+    background-color: var(--blue1);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }

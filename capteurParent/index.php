@@ -21,19 +21,19 @@
 
     <main>
       <h2>Informations de l'enfant</h2>
+      <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
       <div class="conteneur">
         <div class="conteneurchild">
           <span class="titre3">Fréquence Cardiaque</span>
           <span class="groschiffre">10</span>
+          <span class="moyenchiffre">bpm/min</span>
         </div>
 
         <div class="divider"></div>
         <div class="conteneurchild">
           <span class="titre3">Température</span>
           <span class="groschiffre">10</span>
-        </div>
-        <div>
-          <span class="titre3">°C</span>
+          <span class="moyenchiffre">°C</span>
         </div>
       </div>
     </main>

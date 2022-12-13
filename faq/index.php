@@ -9,27 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FAQ</title>
     <link rel="shortcut icon" href="./assets/Logo.png" />
+    <link rel="stylesheet" href="../header_footer/header1.css">
+    <link rel="stylesheet" href="../header_footer/footer1.css">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <span id="titre1">FAQ</span>
-      <span id="img2"
-        ><img src="../assets/Logo.png" height="126" width="126" alt="Logo"
-      /></span>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
-      />
+      <?php include('../header_footer/header1.php');?>
     </header>
 
     <div class="menu">
@@ -151,13 +138,7 @@
     </div>
 </div>
 <footer>
-  <div class="btn-group">
-    <a href="../forum/index.php">
-    <button class="button2">Forum</button></a>
-    <a href="./index.php">
-    <button class="button4">Contacter un admin</button></a>
-  </div>
-</div>
+  <?php include('../header_footer/footer1.php');?>
 </footer>
 </body>
 </html>
