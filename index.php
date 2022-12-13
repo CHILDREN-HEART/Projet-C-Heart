@@ -60,7 +60,7 @@
 
 <footer>
     <?php include('header_footer/footer.php'); ?>
-    <p class="copyright">C-HEART ©2022</p>
+    <p class="copyright">C-HEART ©2022.</p>
 </footer>
 
 <script src="pagedaccueil.js"></script>
