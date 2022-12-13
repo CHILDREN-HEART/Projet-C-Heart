@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>-->
     <link rel="stylesheet" href="header_footer/header.css">
+    <link rel="stylesheet" href="header_footer/footer.css">
 </head>
 <body>
 <header>
@@ -58,11 +59,7 @@
 </div>
 
 <footer>
-    <ul class="list-inline">
-        <li class="list-inline-item"><a href="faq/index.php">FAQ</a></li>
-        <li class="list-inline-item"><a href="forum/index.php">Forum</a></li>
-        <li class="list-inline-item"><a href="#">Quizz</a></li>
-    </ul>
+    <?php include('header_footer/footer.php'); ?>
     <p class="copyright">C-HEART ©2022</p>
 </footer>
 
