@@ -16,8 +16,8 @@
 
 .flexboxHeader2 {
     margin: auto;
-    transform: translateX(-60px);
-    /* revenir de img1 / 2 */
+    transform: translateX(30px);
+    /* avancer de 200-120 / 2 */
     font-family: "Roboto", sans-serif;
     letter-spacing: 2px;
     font-size: 60px;
@@ -29,12 +29,30 @@ html {
 }
 
 .flexboxHeader3 {
-    display: flex;
-    align-items: center;
     font-family: "Roboto", sans-serif;
-    letter-spacing: 2px;
-    font-size: 60px;
-    color: white;
+    font-size: 30px;
+
 }
+.flexboxHeader4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin: 25px;
+
+}
+
+a, a:visited {
+    color: #ffffff;
+}
+
+#inscription:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.2rem;
+}
+
+#logo_connexion{
+    height: 60px;
+}
+
 
 
