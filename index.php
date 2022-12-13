@@ -57,15 +57,6 @@
     </div>
 </div>
 
-<footer>
-    <ul class="list-inline">
-        <li class="list-inline-item"><a href="faq/index.php">FAQ</a></li>
-        <li class="list-inline-item"><a href="forum/index.php">Forum</a></li>
-        <li class="list-inline-item"><a href="#">Quizz</a></li>
-    </ul>
-    <p class="copyright">C-HEART ©2022</p>
-</footer>
 
-<script src="pagedaccueil.js"></script>
 </body>
 </html>
