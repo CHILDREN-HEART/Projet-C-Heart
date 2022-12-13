@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Inscription</title>
     <link rel="shortcut icon" href="./assets/Logo.png" />
-    <link rel="stylesheet" href="../header_footer/header.css">
+    <link rel="stylesheet" href="../header_footer/header2.css">
+    <link rel="stylesheet" href="../header_footer/footer1.css">
     <link rel="stylesheet" href="capteurpa.css" />
   </head>
 
@@ -37,6 +38,6 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer><?php include('../header_footer/footer1.php');?></footer>
   </body>
 </html>
