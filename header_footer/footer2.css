@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flexboxFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #40599a;
+    height: 60px;
+
+
+}
+
+html {
+    font-size: 63%;
+}
+
+input[type='submit'], input[type='button'] {
+    background-color: #40599a;
+    border: 0.1rem solid #40599a;
+    border-radius: 0.4rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 3.8rem;
+    padding: 0 3rem;
+    text-transform: uppercase;
+
+}
