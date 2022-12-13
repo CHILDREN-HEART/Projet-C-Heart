@@ -13,22 +13,7 @@
   </head>
   <body>
     <header>
-      <span id="titre1">Bienvenue Parent</span>
-      <span id="img2"
-        ><img src="../assets/Logo.png" height="126" width="126" alt="Logo"
-      /></span>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
-      />
+    <?php include('header_footer/header.php'); ?>
     </header>
 
     <main>

@@ -1,15 +1,3 @@
-header {
-    font-family: "Roboto", sans-serif;
-    height: 126px;
-    width: 100%;
-    background: linear-gradient(#40599a, 75%, white);
-    letter-spacing: 2px;
-    font-size: 6rem;
-    color: white;
-    display: flex;
-    z-index: 1;
-    position: fixed;
-}
 .c {
     position: absolute;
     left: 40%;
@@ -59,58 +47,69 @@ p {
     text-align: center;
 }
 
+
 .entete a {
     color: white;
     text-decoration: none;
     font-size: 0.5em;
 }
 
+
+.carrousel {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.5s;
+  }
+  
+  .carrousel .slide:nth-child(1) {
+    left: 0;
+  }
+  
+  .carrousel .slide:nth-child(2) {
+    left: 100%;
+  }
+  
+  .carrousel .slide:nth-child(3) {
+    left: 200%;
+  }
+.carrousel {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.5s;
+}
+
+.carrousel .slide:nth-child(1) {
+  left: 0;
+}
+
+.carrousel .slide:nth-child(2) {
+  left: 100%;
+}
+
+.carrousel .slide:nth-child(3) {
+  left: 200%;
+}
+  
 .container {
-    width: 100%!important;
-}
-
-.entete {
-    text-decoration: none;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.footer-basic {
-    padding: 40px 0;
-    background-color: #ffffff;
-    color: #4b4c4d;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 15px;
-    line-height: 15;
-    margin-bottom: 0;
-    left: 40%;
-}
-
-li {
-    padding: 0 10px;
-}
-
-ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-ul a:hover {
-    opacity: 1;
-}
-
-.copyright {
-    margin-top: 0%;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-    margin-left: 40%;
+    width: 100% !important;
 }
