@@ -1,45 +1,31 @@
-.inscription {
-    position: absolute;
-    font-size: 1.2em;
-    right: 4%;
-    transform: translateX(-50%);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.img1 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 126px;
+#img1 {
+    height: 12rem;
 }
-header {
-    font-family: "Roboto", sans-serif;
-    height: 126px;
-    width: 100%;
+.flexboxHeader {
+    display: flex;
     background: #40599a;
-    letter-spacing: 2px;
+    height: 12rem;
+    align-items: center;
+
+}
+
+.flexboxHeader2 {
+    margin: auto;
+    transform: translateX(-6rem);
+    /* revenir de img1 / 2 */
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.2rem;
     font-size: 6rem;
     color: white;
-    display: flex;
-    z-index: 1;
-    position: fixed;
-}
-.c {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 15%;
 }
 
-.line {
-    top: 25%;
-    height: 50%;
-    position: absolute;
-    right: 0%;
-    transform: translateX(-50%);
+html {
+    font-size: 63%;
 }
 
-.entete a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.5em;
-}
+

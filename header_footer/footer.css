@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flexboxFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #40599a;
+    height: 6rem;
+
+
+}
+
+html {
+    font-size: 63%;
+}

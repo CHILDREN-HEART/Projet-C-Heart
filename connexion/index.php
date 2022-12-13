@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Connectez-vous</title>
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 </head>
 <body>
 <header>
-    <span id="img1"><img src="../assets/Logo.png" height="126" width="126" alt="Logo"></span>
-    <span id="titre1">Child heart</span>
-    <span id="img2"><img src="../assets/Logo.png" height="126" width="126" alt="Logo"></span>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <?php include('../header_footer/header1.php'); ?>
 </header>
 <main>
     <div class="grid">
@@ -23,9 +21,7 @@
             <h2>Connectez-vous</h2>
             <div class="grid-container">
                 <form action="connexion.php" method="post">
-<!--                    <i class="fa-solid fa-user"></i>-->
                     <input type="text" id="login" name="login" placeholder="Adresse mail"/>
-<!--                    <span class="icon">&#9812</span>-->
                     <input type="password" id="password" name="password" placeholder="Mot de passe"/>
                     <div class="Valider_Retour">
                         <input type="submit" value="Se Connecter"/>
@@ -40,7 +36,9 @@
     </div>
 </main>
 
-<footer></footer>
+<footer>
+    <?php include('../header_footer/footer1.php'); ?>
+</footer>
 
 </body>
 

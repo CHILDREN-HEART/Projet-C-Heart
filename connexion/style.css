@@ -1,25 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-header {
-    height: 126px;
-    margin: 0;
-    background: #40599A;
-}
-
-#titre1 {
-    /*espace entre lettre */
-    letter-spacing: 2px;
-    /*taille texte */
-    font-size: 6rem;
-    color: white;
-    margin-top: 13px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%)
-
+    box-sizing: inherit;
 }
 
 #img2 {
@@ -28,16 +10,6 @@ header {
     position: absolute;
     right: 0;
 }
-
-/**!#rectangle {*/
-/*    height: 100%;*/
-/*    width: 800px; !*ou 25% du parent par ex*!*/
-/*    position: absolute; !*evolue librement dans son parent*!*/
-/*    left: 50%; !*centre le bord gauche de la boite*!*/
-/*    transform: translateX(-50%); !*revient de 50% sur ca taille*!*/
-/*    !*transform: translate(-50%, -50%)*! !*sur l axe X puis Y*!*/
-/*    z-index: -1;*/
-/*}*/
 
 #rectangle {
     width: 60%;
@@ -57,13 +29,7 @@ h2 {
     opacity: 25%;
 }
 
-footer {
-    height: 84px;
-    width: 100%;
-    background: #40599A;
-    position: absolute;
-    bottom: 0px;
-}
+
 
 input[type='text'], input[type='password'] {
     -webkit-appearance: none;
@@ -102,7 +68,7 @@ input {
     border-image: initial;
 }
 
-body {
+main {
     color: #606c76;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6em;
@@ -111,16 +77,12 @@ body {
     line-height: 1.6;
 }
 
-html {
+html:not(.flexboxHeader, .flexboxFooter) {
     box-sizing: border-box;
     font-size: 63%;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
 }
 
-* {
-    box-sizing: inherit;
-}
+
 
 input[type='submit'] {
     background-color: #40599a;
