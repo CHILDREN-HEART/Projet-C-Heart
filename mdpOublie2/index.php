@@ -8,13 +8,12 @@
     <title>Mot de passe oublié</title>
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 </head>
 <body>
 <header>
-    <span id="img1"><img src="../assets/Logo.png" height="126" width="126" alt="Logo"></span>
-    <span id="titre1">Child heart</span>
-    <span id="img2"><img src="../assets/Logo.png" height="126" width="126" alt="Logo"></span>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <?php include('../header_footer/header1.php'); ?>
 </header>
 <main>
     <div class="grid">
@@ -39,7 +38,9 @@
     </div>
 </main>
 
-<footer></footer>
+<footer>
+    <?php include('../header_footer/footer1.php'); ?>
+</footer>
 
 </body>
 

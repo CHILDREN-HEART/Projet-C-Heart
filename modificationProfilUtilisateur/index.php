@@ -8,13 +8,12 @@
     <title>Modifier Profil</title>
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 </head>
 <body>
 <header>
-    <span id="img1"><img src="../assets/Logo.png" height="126" width="126" alt="Logo"></span>
-    <span id="titre1">Child heart</span>
-    <span id="img2"><img src="../assets/Logo.png" height="126" width="126" alt="Logo"></span>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <?php include('../header_footer/header1.php'); ?>
 </header>
 <main>
     <div class="grid">
@@ -35,7 +34,8 @@
                     <input type="text" id="email" placeholder="Adresse mail"/>
                     <input type="password" id="password" placeholder="Modifier mot de passe"/>
                     <input type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
-                    <label id="CGU"><a href="" target="_blank"> Consulter les Conditions Générales d'Utilisation (CGU) </a></label>
+                    <label id="CGU"><a href="" target="_blank"> Consulter les Conditions Générales d'Utilisation
+                            (CGU) </a></label>
                     <div class="Valider_Retour">
                         <input type="submit" value="Valider"/>
                         <input type="submit" value="Retour"/>
@@ -46,7 +46,9 @@
     </div>
 </main>
 
-<footer></footer>
+<footer>
+    <?php include('../header_footer/footer1.php'); ?>
+</footer>
 
 </body>
 
