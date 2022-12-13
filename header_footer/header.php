@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="header1.css">
+<link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 <div class="flexboxHeader">
     <div>
@@ -9,9 +9,9 @@
     </div>
     <div class="flexboxHeader3">
         <div class="inscription">
-            <a class="mot3" href="inscription/">Inscription</a>
+            <a id="inscription" href="inscription/">Inscription</a>
         </div>
-        <a href="../connexion/index.php" class="img2"><img src="../assets/logoconnexion.png" class="line"
+        <a href="../connexion/index.php" class="img2"><img src="../assets/logoconnexion.png"
                                                            alt="logo connection"/></a>
     </div>
 </div>
