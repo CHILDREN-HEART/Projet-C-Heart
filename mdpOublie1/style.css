@@ -1,4 +1,4 @@
-/*nécessite tout le code CSS de ../connexion/style.css */
+/*nécessite tout le code CSS de ../style.css */
 
 #aide1 {
     text-align: center;
@@ -14,4 +14,12 @@
     padding-bottom: 20px;
     text-align: center;
 }
+
+.Valider_Retour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 

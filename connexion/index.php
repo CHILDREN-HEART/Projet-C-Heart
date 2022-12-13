@@ -8,6 +8,7 @@
     <title>Connectez-vous</title>
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 </head>
 <body>
@@ -25,7 +26,7 @@
                     <input type="password" id="password" name="password" placeholder="Mot de passe"/>
                     <div class="Valider_Retour">
                         <input type="submit" value="Se Connecter"/>
-                        <input type="submit" value="Retour"/>
+                        <a href="/connexion" target="_blank"><input type="button" value="Retour"/></a>
                         <div><a href="/mdpOublie1" target="_blank">Mot de passe oublié ?</a></div>
                         <div>ou</div>
                         <div><a href="/inscription" target="_blank">S'inscrire</a></div>

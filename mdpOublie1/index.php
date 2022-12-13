@@ -8,7 +8,7 @@
     <title>Mot de passe oublié</title>
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../connexion/style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 
 </head>
@@ -32,7 +32,7 @@
                     <input type="text" id="login" name="login" placeholder="Adresse mail"/>
                     <div class="Valider_Retour">
                         <input type="submit" value="Réinitialiser votre mot de passe"/>
-                        <input type="submit" value="Retour"/>
+                        <a href="/connexion" target="_blank"><input type="button" value="Retour"/></a>
                     </div>
                 </form>
             </div>
