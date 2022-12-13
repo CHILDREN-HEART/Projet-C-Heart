@@ -55,61 +55,6 @@ p {
 }
 
 
-.carrousel {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: left 0.5s;
-  }
-  
-  .carrousel .slide:nth-child(1) {
-    left: 0;
-  }
-  
-  .carrousel .slide:nth-child(2) {
-    left: 100%;
-  }
-  
-  .carrousel .slide:nth-child(3) {
-    left: 200%;
-  }
-.carrousel {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-}
 
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: left 0.5s;
-}
-
-.carrousel .slide:nth-child(1) {
-  left: 0;
-}
-
-.carrousel .slide:nth-child(2) {
-  left: 100%;
-}
-
-.carrousel .slide:nth-child(3) {
-  left: 200%;
-}
   
-.container {
-    width: 100% !important;
-}
+  
