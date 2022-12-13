@@ -58,6 +58,10 @@
     </div>
 </div>
 
+<footer>
+    <?php include('header_footer/footer.php'); ?>
+    <p class="copyright">C-HEART ©2022.</p>
+</footer>
 
 </body>
 </html>
