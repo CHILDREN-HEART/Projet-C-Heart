@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.flexboxFooter {
+.flexboxFooter1 {
     justify-content: space-around;
     position: fixed;
     display: flex;
@@ -13,6 +13,18 @@
     width: 100%;
     background: #40599a;
     height: 60px;
+}
+
+.btn1 {
+    border-right: 1px solid #fff;
+}
+
+.btn2 {
+    border-right: 1px solid #fff;
+}
+
+.btn3 {
+    border-right: 1px solid #fff;
 }
 
 html {
