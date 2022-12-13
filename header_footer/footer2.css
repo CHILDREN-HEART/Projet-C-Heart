@@ -4,6 +4,7 @@
 }
 
 .flexboxFooter {
+    justify-content: space-around;
     position: fixed;
     display: flex;
     align-items: center;
@@ -14,29 +15,6 @@
     height: 60px;
 }
 
-.btn1 {
-    /* revenir de img1 / 2 */
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 2px;
-    font-size: 60px;
-    color: white;
-}
-.btn2 {
-    
-    /* revenir de img1 / 2 */
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 2px;
-    font-size: 60px;
-    color: white;
-}
-.btn3 {
-    
-    /* revenir de img1 / 2 */
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 2px;
-    font-size: 60px;
-    color: white;
-}
 html {
     font-size: 63%;
 }
