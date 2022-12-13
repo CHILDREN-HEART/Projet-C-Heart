@@ -4,23 +4,23 @@
 }
 
 #img1 {
-    height: 12rem;
+    height: 120px;
 }
 .flexboxHeader {
     display: flex;
     background: #40599a;
-    height: 12rem;
+    height: 120px;
     align-items: center;
 
 }
 
 .flexboxHeader2 {
     margin: auto;
-    transform: translateX(-6rem);
+    transform: translateX(-60px);
     /* revenir de img1 / 2 */
     font-family: "Roboto", sans-serif;
-    letter-spacing: 0.2rem;
-    font-size: 6rem;
+    letter-spacing: 2px;
+    font-size: 60px;
     color: white;
 }
 
