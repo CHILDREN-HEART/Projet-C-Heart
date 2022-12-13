@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mot de passe oublié</title>
     <link rel="shortcut icon" href="../assets/Logo.png">
+    <link rel="stylesheet" href="../header_footer/header1.css">
+    <link rel="stylesheet" href="../header_footer/footer1.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
