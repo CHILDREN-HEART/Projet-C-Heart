@@ -15,28 +15,7 @@
   </head>
   <body>
     <header>
-      <div class="entete">
-          <div class="c">Child heart</div>
-          <div class="inscription">
-              <a
-                  class="mot3"
-                  href="../inscription/index.php"
-                  >Inscription</a
-              >
-          </div>
-          <a
-              href="../connexion/index.php"
-              class="img2"
-              ><img
-                  src="../assets/64572.png"
-                  class="line"
-                  alt="logo connection"
-          /></a>
-          <link
-              rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
-          />
-      </div>
+    <?php include('../header_footer/header1.php');?>
   </header>
 
       <div id="center">

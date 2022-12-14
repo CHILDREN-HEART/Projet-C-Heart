@@ -3,29 +3,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
   width: 1520px;
 }
 #conteneur {
   width: 100%;
   overflow: hidden;
-}
-header {
-  font-family: "Roboto", sans-serif;
-  height: 126px;
-  background: linear-gradient(#40599a, 75%, white);
-  letter-spacing: 2px;
-  font-size: 6rem;
-  color: white;
-  display: flex;
-  z-index: 1;
-}
-.c {
-  
-}
-
-.inscription {
- 
 }
 
 #center {
