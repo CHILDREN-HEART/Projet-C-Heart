@@ -26,16 +26,16 @@
     <p style="text-align:justify">N*TVA Intracommunautaire : <strong>FR 785797958866</strong><br />
     Adresse email : <strong><a href="mailto:c-heart@gmail.com?subject=Contact a partir des mentions légales via le site hvjhvj">c-heart@gmail.com</a></strong><br />
     <br />
-        Le Développeur du site est : <strong>Cachot henry</strong><br />
-    Décideur de publication est : <strong>Benaut Alix</strong><br />
-    Par quel moyen entrer en contact avec le Décideur de publication : <strong><a href="mailto:benautalix@gmail.com?subject=Contact a partir des mentions légales via le site hvjhvj">benautalix@gmail.com</a></strong></p>
+        Le Développeur du site est : <strong>TABLEAU Clément</strong><br />
+    Décideur de publication est : <strong>ROUX Eloi</strong><br />
+    Par quel moyen entrer en contact avec le Décideur de publication : <strong><a href="mailto:eloi.roux@eleve.isep.fr?subject=Contact a partir des mentions légales via le site hvjhvj">eloi.roux@eleve.isep.fr</a></strong></p>
     <br />
 
-    Le Réalisateur est : <strong>Craie Damien</strong><br />
-    Comment joindre le Concepteur : <strong><a href="mailto:craiedamien@gmail.com?subject=Contact a partir des mentions légales via le site hvjhvj">craiedamien@gmail.com</a></strong><br />
+    Le Réalisateur est : <strong>ROUX Eloi</strong><br />
+    Comment joindre le Concepteur : <strong><a href="mailto:eloi.roux@eleve.isep.fr?subject=Contact a partir des mentions légales via le site hvjhvj">eloi.roux@eleve.isep.fr</a></strong><br />
     <br />
 
-    Hebergeur : O2Switch<br />
+    Hebergeur : OVH<br />
     SASU<br />
     RCS Clermont-Ferrand B 510909807<br />
     Code APE (INSEE) 6311Z<br />
