@@ -8,6 +8,6 @@
         <a href="../forum"><input type="button" value="Forum"/></a>
     </div>
     <div class="btn">
-        <a href="../Quizz"><input type="button" value="Quizz"/></a>
+        <a href="../quizz"><input type="button" value="Quizz"/></a>
     </div>
 </div>

@@ -12,7 +12,7 @@
     <div style="background: white; height: 40px; width: 2px;"></div>
 
     <div class="btn">
-        <a href="../Quizz"><input type="button" value="Quizz"/></a>
+        <a href="../quizz"><input type="button" value="Quizz"/></a>
     </div>
     <div style="background: white; height: 40px; width: 2px;"></div>
 
