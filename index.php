@@ -10,7 +10,7 @@
 
 <?php
 
-session_start();
+if ( empty(session_id()) ) session_start();
 $connected = isset($_SESSION['user']) ?? null;
 
 if (!$connected) {

@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+if ( empty(session_id()) ) session_start();
 
 echo "Bonjour jeune beau gosse ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'];
 
