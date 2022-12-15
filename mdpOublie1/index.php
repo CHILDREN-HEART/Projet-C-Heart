@@ -45,7 +45,7 @@
                     <input type="text" id="login" name="login" placeholder="Adresse mail"/>
                     <div class="Valider_Retour">
                         <input type="submit" value="Réinitialiser votre mot de passe"/>
-                        <a href="/connexion" target="_blank"><input type="button" value="Retour"/></a>
+                        <a href="../pages/connexion.php"><input id="retour" value="Retour"/></a>
                     </div>
                 </form>
             </div>
@@ -54,7 +54,7 @@
 </main>
 
 <footer>
-    <?php include('../header_footer/footer1.php'); ?>
+    <?php require('../components/footer1.php'); ?>
 </footer>
 
 </body>

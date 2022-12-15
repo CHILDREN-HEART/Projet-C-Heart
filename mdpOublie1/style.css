@@ -1,5 +1,139 @@
 /*nécessite tout le code CSS de ../style.css */
 
+/*#aide1 {*/
+/*    text-align: center;*/
+/*}*/
+
+/*#aide2 {*/
+/*    text-align: center;*/
+/*    padding-bottom: 20px;*/
+/*    padding-top: 20px;*/
+/*}*/
+
+/*#aide3 {*/
+/*    padding-bottom: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.Valider_Retour {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#rectangle {
+    width: 60%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #40599A;
+    padding: 2rem;
+}
+
+input[type='text'], input[type='password'] {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0.1rem solid #d1d1d1;
+    border-radius: 0.4rem;
+    box-shadow: none;
+    box-sizing: inherit;
+    height: 3.8rem;
+    padding: 0.6rem 1rem 0.7rem;
+    width: 100%;
+}
+
+input {
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin-bottom: 1.5rem;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
+}
+
+body {
+    color: #606c76;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 63%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+input[type='submit'] {
+    background-color: #40599a;
+    border: 0.1rem solid #40599a;
+    border-radius: 0.4rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 3.8rem;
+    padding: 0 3rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.Valider_Retour {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+a, a:visited {
+    color: #40599A;
+}
+
+.icon {
+    padding: 10px;
+    background: #40599A;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
 #aide1 {
     text-align: center;
 }
@@ -15,11 +149,24 @@
     text-align: center;
 }
 
-.Valider_Retour {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#retour {
+    background-color: #40599a;
+    border: 0.1rem solid #40599a;
+    border-radius: 0.4rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 3.8rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
+
 
 
 
