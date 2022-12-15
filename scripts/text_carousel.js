@@ -18,7 +18,7 @@ function showSlides(n) {
     const slides = document.getElementsByClassName("carousel__item");
     console.log(`showSlides called ${n} ${slides.length}`);
     const dots = document.getElementsByClassName("carousel__dot__item");
-    if (n > slides.length) {
+    if (n >= slides.length) {
         slideIndex = 1;
     }
     if (n < 1) {
