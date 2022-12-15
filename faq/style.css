@@ -34,7 +34,7 @@ body {
 }
 
 .menu {
-    margin: 5;
+    margin: 5px;
     font-size: 1.2em;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
@@ -58,6 +58,15 @@ body {
     align-items: center;
     position: relative;
     cursor: pointer;
+}
+
+.menu-item-header-inv {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3rem;
+    line-height: 4rem;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
 }
 
 .menu-item-header::after {

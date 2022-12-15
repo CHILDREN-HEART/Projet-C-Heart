@@ -5,11 +5,26 @@
     <title>Inscription</title>
     <link rel="shortcut icon" href="../assets/icons/logo.ico">
     <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/pages/inscription.css">
+    <link rel="stylesheet" href="../assets/styles/pages/inscriptiontempo.css">
 </head>
 <body>
-<!--<header>-->
+<header>
+    <nav>
+        <div class="nav__logo">
+            <img src="../assets/icons/logo.ico" alt="Logo de C-Heart">
+        </div>
+
+        <div class="nav__title">
+            <h1>Child-Heart</h1>
+        </div>
+
+        <div class="nav__inscription">
+            <img src="../assets/icons/profil.ico" alt="Icône de profil">
+        </div>
+    </nav>
 <!--    --><?php //require('../header_footer/header1.php'); ?>
-<!--</header>-->
+</header>
 <main>
     <div class="grid">
         <div id="rectangle">
@@ -56,7 +71,7 @@
 </main>
 
 <footer>
-    <?php require('../components/footer.php'); ?>
+    <?php require('../components/footer1.php'); ?>
 </footer>
 </body>
 </html>

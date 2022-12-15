@@ -10,7 +10,7 @@
         </div>
 
         <div class="nav__inscription">
-            <a href="../pages/inscription.php">Inscription</a>
+            <a href="./pages/inscription.php">Inscription</a>
             <img src="../assets/icons/profil.ico" alt="Icône de profil">
         </div>
     </nav>
@@ -23,7 +23,7 @@
 
     <article id="decoration">
         <div class="decoration__container">
-            <img src="../assets/images/backgrounds/mains_croisees.jpg" alt="Image de mains croisées" width="500px">
+            <img src="../assets/images/backgrounds/mains_croisees.jpg" alt="Image de mains croisées" width="400px">
         </div>
     </article>
 </main>

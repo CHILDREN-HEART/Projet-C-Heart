@@ -2,12 +2,12 @@
 
 <footer>
     <div class="btn">
-        <a href="../faq"><input type="button" value="FAQ"/></a>
+        <a href="./faq"><input type="button" value="FAQ"/></a>
     </div>
     <div class="btn">
-        <a href="../forum"><input type="button" value="Forum"/></a>
+        <a href="./forum"><input type="button" value="Forum"/></a>
     </div>
     <div class="btn">
-        <a href="../quizz"><input type="button" value="Quizz"/></a>
+        <a href="./quizz"><input type="button" value="Quizz"/></a>
     </div>
 </footer>
