@@ -6,17 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mot de passe oublié</title>
-    <link rel="shortcut icon" href="../assets/images/Logo.png">
-    <link rel="stylesheet" href="../header_footer/header1.css">
-    <link rel="stylesheet" href="../header_footer/footer1.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/icons/logo.ico">
     <link rel="stylesheet" href="../assets/styles/base.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="../assets/styles/pages/inscription.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <header>
-    <?php include('../header_footer/header1.php'); ?>
+    <nav>
+        <div class="nav__logo">
+            <img src="../assets/icons/logo.ico" alt="Logo de C-Heart">
+        </div>
+
+        <div class="nav__title">
+            <h1>Child-Heart</h1>
+        </div>
+
+        <div class="nav__inscription">
+            <a href="../pages/connexion.php"> <img src="../assets/icons/profil.ico" alt="Icône de profil"></a>
+        </div>
+    </nav>
+    <!--    --><?php //require('../header_footer/header1.php'); ?>
 </header>
 <main>
     <div class="grid">
