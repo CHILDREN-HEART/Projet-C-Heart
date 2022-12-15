@@ -23,7 +23,7 @@
             <a href="../pages/connexion.php"> <img src="../assets/icons/profil.ico" alt="Icône de profil"></a>
         </div>
     </nav>
-<!--    --><?php //require('../header_footer/header1.php'); ?>
+    <!--    --><?php //require('../header_footer/header1.php'); ?>
 </header>
 <main>
     <div class="grid">
@@ -51,19 +51,17 @@
             <h2>Inscrivez-vous</h2>
             <div class="grid-container">
                 <form action="../controllers/register.php" method="POST">
-                    <input type="text" name="surname" id="surname" placeholder="Nom" />
-                    <input type="text" name="firstname" id="firstname" placeholder="Prénom" />
-                    <input type="text" name="phone" id="phone" placeholder="Numéro de téléphone" />
+                    <input type="text" name="surname" id="surname" placeholder="Nom"/>
+                    <input type="text" name="firstname" id="firstname" placeholder="Prénom"/>
+                    <input type="text" name="phone" id="phone" placeholder="Numéro de téléphone"/>
                     <input type="text" name="email" id="email" placeholder="Adresse mail"/>
                     <input type="password" name="password" id="password" placeholder="Mot de passe"/>
                     <input type="password" name="confirm_password" id="confirm_password"
                            placeholder="Confirmer mot de passe"/>
-                    <!--                    <label><input type="checkbox" /><a href="" target="_blank">Accepter les Conditions Générales-->
-                    <!--                            d'Utilisation (CGU)</a></label>-->
-                    <!--                    <div class="Valider_Retour">-->
+                    <div><input type="checkbox"/><a href="../CGU/CGU.php">Accepter les Conditions Générales
+                            d'Utilisation (CGU)</a></div>
                     <input type="submit" value="Valider"/>
                     <a href="../index.php"><input id="retour" value="Retour"/></a>
-                    <!--                    </div>-->
                 </form>
             </div>
         </div>

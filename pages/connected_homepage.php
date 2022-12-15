@@ -4,7 +4,7 @@ $dbname = "c_heart";
 $username = "root";
 $password = "";
 
-if ( empty(session_id()) ) session_start();
+session_start();
 
 echo "Bonjour jeune beau gosse ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'];
 

@@ -10,8 +10,10 @@
 
 <?php
 
-if ( empty(session_id()) ) session_start();
+session_start();
 $connected = isset($_SESSION['user']) ?? null;
+echo $connected;
+echo $_SESSION['user'];
 
 if (!$connected) {
     require("pages/guest_homepage.php");

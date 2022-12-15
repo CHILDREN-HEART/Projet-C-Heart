@@ -37,7 +37,7 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
         exit();
     }
 
-    if ( empty(session_id()) ) session_start();
+    session_start();
     $_SESSION['user'] = $data['id'];
 
     header('Location: ../index.php');
