@@ -11,7 +11,7 @@
 
         <div class="nav__inscription">
             <a href="./pages/inscription.php">Inscription</a>
-            <img src="../assets/icons/profil.ico" alt="Icône de profil">
+            <a href="../pages/connexion.php"> <img src="../assets/icons/profil.ico" alt="Icône de profil"></a>
         </div>
     </nav>
 </header>

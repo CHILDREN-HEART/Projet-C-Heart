@@ -20,7 +20,7 @@
         </div>
 
         <div class="nav__inscription">
-            <img src="../assets/icons/profil.ico" alt="Icône de profil">
+            <a href="../pages/connexion.php"> <img src="../assets/icons/profil.ico" alt="Icône de profil"></a>
         </div>
     </nav>
 <!--    --><?php //require('../header_footer/header1.php'); ?>
