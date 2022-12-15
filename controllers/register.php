@@ -59,7 +59,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm
         'phone' => $_POST['phone']
     ]);
 
-    header('Location: ../index.php');
+    header('Location: ../pages/connexion.php');
 
     exit;
 }

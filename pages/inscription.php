@@ -62,7 +62,7 @@
                     <!--                            d'Utilisation (CGU)</a></label>-->
                     <!--                    <div class="Valider_Retour">-->
                     <input type="submit" value="Valider"/>
-                    <a href="../index.php"><input type="" value="Retour"/></a>
+                    <a href="../index.php"><input id="retour" value="Retour"/></a>
                     <!--                    </div>-->
                 </form>
             </div>
