@@ -6,11 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Modifier Profil</title>
-    <link rel="shortcut icon" href="../assets/Logo.png"/>
+    <link rel="shortcut icon" href="../assets/images/Logo.png"/>
     <link rel="stylesheet" href="../header_footer/header1.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/styles/base.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 </head>
 <body>

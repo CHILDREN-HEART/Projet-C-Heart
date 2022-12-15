@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "roboto" sans-serif;
-}
-
-.flexboxFooter {
+footer {
     justify-content: space-around;
     position: fixed;
     display: flex;

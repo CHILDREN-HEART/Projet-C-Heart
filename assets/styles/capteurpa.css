@@ -27,8 +27,7 @@ h2 {
     color: rgb(0, 0, 0);
     position: absolute;
     left: 20%;
-    font-family: Inter;
-    font-weight: Regular;
+    font-family: Inter, sans-serif;
     font-size: 30px;
     opacity: 1;
 
@@ -38,8 +37,7 @@ h2 {
 .titre3 {
     background-repeat: no-repeat;
     background-position: center center;
-    font-family: Inter;
-    font-weight: Regular;
+    font-family: Inter, sans-serif;
     font-size: 30px;
     background-size: cover;
     opacity: 1;

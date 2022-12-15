@@ -1,9 +1,0 @@
-.Valider_Retour {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-a, a:visited {
-    color: #40599A;
-}

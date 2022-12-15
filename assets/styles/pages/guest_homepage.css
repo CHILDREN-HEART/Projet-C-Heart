@@ -1,0 +1,16 @@
+.nav__title {
+    font-size: 40px;
+    color: var(--text-color-primary);
+    margin: auto;
+}
+
+main#guest_homepage {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#carousel, #decoration, #decoration__container {
+    width: 500px;
+}
