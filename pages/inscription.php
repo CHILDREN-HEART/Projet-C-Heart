@@ -16,13 +16,19 @@
             <?php
             if (isset($_GET['error'])) {
                 if ($_GET['error'] == 'missing_data') {
-                    echo '<p>Vous devez remplir tous les champs</p>';
+                    echo '<p class="error_message">Vous devez remplir tous les champs</p>';
                 } else if ($_GET['error'] == 'passwords_not_matching') {
-                    echo '<p>Les mots de passe ne correspondent pas</p>';
+                    echo '<p class="error_message">Les mots de passe ne correspondent pas</p>';
                 } else if ($_GET['error'] == 'email_already_used') {
-                    echo '<p>Cet email est déjà utilisé</p>';
+                    echo '<p class="error_message">Cet email est déjà utilisé</p>';
                 } else if ($_GET['error'] == 'invalid_email') {
-                    echo '<p>Cet email n\'est pas valide</p>';
+                    echo '<p class="error_message">Cet email n\'est pas valide</p>';
+                } else if ($_GET['error'] == 'invalid_name') {
+                    echo '<p class="error_message">Le nom n\'est pas valide</p>';
+                } else if ($_GET['error'] == 'invalid_firstname') {
+                    echo '<p class="error_message">Le prénom n\'est pas valide</p>';
+                } else if ($_GET['error'] == 'invalid_phone') {
+                    echo '<p class="error_message">Le numéro de téléphone n\'est pas valide</p>';
                 }
             }
             ?>
@@ -30,9 +36,9 @@
             <h2>Inscrivez-vous</h2>
             <div class="grid-container">
                 <form action="../controllers/register.php" method="POST">
-                    <!--                    <input type="text" id="surname" placeholder="Nom" />-->
-                    <!--                    <input type="text" id="firstname" placeholder="Prénom" />-->
-                    <!--                    <input type="text" id="phone" placeholder="Numéro de téléphone" />-->
+                    <input type="text" name="surname" id="surname" placeholder="Nom" />
+                    <input type="text" name="firstname" id="firstname" placeholder="Prénom" />
+                    <input type="text" name="phone" id="phone" placeholder="Numéro de téléphone" />
                     <input type="text" name="email" id="email" placeholder="Adresse mail"/>
                     <input type="password" name="password" id="password" placeholder="Mot de passe"/>
                     <input type="password" name="confirm_password" id="confirm_password"
