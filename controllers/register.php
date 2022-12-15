@@ -1,4 +1,8 @@
 <?php
+$host = "localhost";
+$dbname = "c_heart";
+$username = "root";
+$password = "";
 
 if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm_password'])) {
 
@@ -12,7 +16,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm
         exit();
     }
 
-    $mysqlInstance = new PDO("mysql:dbname=teroaz;host=visionrp.fr", "user", "password");
+    $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 
     $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE mail = :email");
     $statement->execute([
