@@ -40,7 +40,8 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
     session_start();
     $_SESSION['user'] = $data['id'];
 
-    header('Location: ../index.php');
+
+    header('Location: ../capteurParent/index.php');
     exit();
 //    if (count($data) == 0) {
 //        header('Location: ../pages/connexion.php?error=wrong_credentials');

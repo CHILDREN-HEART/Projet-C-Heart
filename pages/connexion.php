@@ -46,7 +46,6 @@
                     <input type="password" id="password" name="password" placeholder="Mot de passe" />
                     <div class="Valider_Retour">
                         <input type="submit" value="Se Connecter" />
-
                         <a href="../index.php"><input id="retour" value="Retour"/></a>
                         <div><a href="../mdpOublie1">Mot de passe oublié ?</a></div>
                         <div>ou</div>
