@@ -8,7 +8,6 @@ session_start();
 
 echo "Bonjour jeune beau gosse ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'];
 
-
 $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 
 $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE id = :user_id");
@@ -24,4 +23,4 @@ echo "Tu es connecté en tant que " . $data['mail'];
 ?>
 
 <form action="../controllers/logout.php" method="post">
-    <input type="submit" value="Se déconnecter" />
+    <input type="submit" value="Se déconnecter"/>

@@ -4,7 +4,7 @@
         <img id="img1" src="../assets/icons/logo.ico" alt="logo">
     </div>
     <div class="flexboxHeader2">
-        <span>Bienvenue $Parent</span>
+        <span>Child Heart</span>
     </div>
 
     <div class="flexboxHeader3">
