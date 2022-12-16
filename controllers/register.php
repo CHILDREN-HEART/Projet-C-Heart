@@ -4,6 +4,12 @@ $dbname = "c_heart";
 $username = "root";
 $password = "";
 
+if (!isset($_POST['accept_terms']) && $_POST['accept_terms'] != 'yes') {
+    // La checkbox n'a pas été cochée
+    header('Location: ../pages/inscription.php?error=missing_data');
+    exit();
+}
+
 if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm_password']) && isset($_POST['surname']) && isset($_POST['firstname']) && isset($_POST['phone'])) {
 
     if ($_POST['email'] == "" || $_POST['password'] == "" || $_POST['confirm_password'] == "" || $_POST['surname'] == "" || $_POST['firstname'] == "" || $_POST['phone'] == "") {
@@ -35,17 +41,17 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm
         exit();
     }
 
-    if (!filter_var($_POST['surname'], FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z]+$/")))) {
+    if (!filter_var($_POST['surname'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
         header('Location: ../pages/inscription.php?error=invalid_name');
         exit();
     }
 
-    if (!filter_var($_POST['firstname'], FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z]+$/")))) {
+    if (!filter_var($_POST['firstname'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
         header('Location: ../pages/inscription.php?error=invalid_firstname');
         exit();
     }
 
-    if (!filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[0-9]+$/")))) {
+    if (!filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/")))) {
         header('Location: ../pages/inscription.php?error=invalid_phone');
         exit();
     }

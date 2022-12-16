@@ -31,7 +31,7 @@
             <?php
             if (isset($_GET['error'])) {
                 if ($_GET['error'] == 'missing_data') {
-                    echo '<p class="error_message">Vous devez remplir tous les champs</p>';
+                    echo '<p class="error_message">Vous devez remplir/accepter tous les champs</p>';
                 } else if ($_GET['error'] == 'passwords_not_matching') {
                     echo '<p class="error_message">Les mots de passe ne correspondent pas</p>';
                 } else if ($_GET['error'] == 'email_already_used') {
@@ -58,7 +58,7 @@
                     <input type="password" name="password" id="password" placeholder="Mot de passe"/>
                     <input type="password" name="confirm_password" id="confirm_password"
                            placeholder="Confirmer mot de passe"/>
-                    <div><input type="checkbox"/><a href="../CGU/CGU.php">Accepter les Conditions Générales
+                    <div><input type="checkbox" name="accept_terms" value="yes"/><a href="../CGU/CGU.php">Accepter les Conditions Générales
                             d'Utilisation (CGU)</a></div>
                     <input type="submit" value="Valider"/>
                     <a href="../index.php"><input id="retour" value="Retour"/></a>
