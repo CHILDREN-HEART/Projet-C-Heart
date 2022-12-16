@@ -10,7 +10,7 @@
         </div>
 
         <div class="nav__inscription">
-            <a href="./pages/inscription.php">Inscription</a>
+            <a id="inscription" href="./pages/inscription.php">Inscription</a>
             <a href="./pages/connexion.php"> <img src="../assets/icons/profil.ico" alt="Icône de profil"></a>
         </div>
     </nav>
