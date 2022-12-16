@@ -8,12 +8,13 @@
     </div>
 
     <div class="flexboxHeader3">
-        <a id="inscription" href="">$Prénom $Nom</a>
+        <a id="inscription" href=""><?php session_start();
+            echo(($_SESSION['prenom'] ?? "Prénom") . " " . ($_SESSION['nom'] ?? "Nom")) ?></a>
     </div>
     <div class="flexboxHeader4">
         <a href="../modificationProfilUtilisateur/index.php" class="logo_connexion"><img id="logo_connexion"
-                                                                     src="../assets/icons/profil.ico"
-                                                                     alt="logo_modif_profil"/></a>
+                                                                                         src="../assets/icons/profil.ico"
+                                                                                         alt="logo_modif_profil" /></a>
     </div>
 
 </div>
