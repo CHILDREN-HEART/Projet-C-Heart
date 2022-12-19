@@ -11,33 +11,20 @@
 <header>
     <?php require "../header_footer/header1.php"; ?>
 </header>
+
 <div class="quiz-container" id="quiz">
     <div class="quiz-header">
         <h2 id="question">Question text</h2>
-        <ul>
-            <li>
-                <input type="radio" name="answer" id="a" class="answer"/>
-                <label for="a" id="a_text">Answer</label>
-            </li>
-            <li>
-                <input type="radio" name="answer" id="b" class="answer"/>
-                <label for="b" id="b_text">Answer</label>
-            </li>
-            <li>
-                <input type="radio" name="answer" id="c" class="answer"/>
-                <label for="c" id="c_text">Answer</label>
-            </li>
-            <li>
-                <input type="radio" name="answer" id="d" class="answer"/>
-                <label for="d" id="d_text">Answer</label>
-            </li>
+        <ul id="answers">
         </ul>
     </div>
     <button id="submit">Submit</button>
 </div>
+
 <script src="quizz.js"></script>
 <footer>
     <?php require "../components/footer1.php"; ?>
 </footer>
 </body>
 </html>
+
