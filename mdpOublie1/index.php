@@ -32,6 +32,19 @@
 <main>
     <div class="grid">
         <div id="rectangle">
+            <?php
+            if (isset($_GET['error'])) {
+                if ($_GET['error'] == 'missing_data') {
+                    echo '<p class="error_message">Vous devez entrer votre adresse mail</p>';
+                } else if ($_GET['error'] == 'invalid_email') {
+                    echo '<p class="error_message">Cet email n\'est pas valide</p>';
+                } else if ($_GET['error'] == 'test') {
+                    echo '<p class="error_message">test</p>';
+                }
+            }
+
+
+            ?>
             <h2>Réinitialiser mon mot de passe </h2>
             <div id="aide1">1 - Entrez l’adresse e-mail associée à votre compte ci-dessous.</div>
             <div id="aide2">2 - Vous allez recevoir un email, cliquez sur le lien pour choisir un nouveau mot de
@@ -41,8 +54,8 @@
                 !
             </div>
             <div class="grid-container">
-                <form action="/mdpOublie2" method="post">
-                    <input type="text" id="login" name="login" placeholder="Adresse mail"/>
+                <form action="email.php" method="post">
+                    <input type="text" name="email" id="email" placeholder="Adresse mail"/>
                     <div class="Valider_Retour">
                         <input type="submit" value="Réinitialiser votre mot de passe"/>
                         <a href="../pages/connexion.php"><input id="retour" value="Retour"/></a>
