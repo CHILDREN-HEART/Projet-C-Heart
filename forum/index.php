@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Page de Form</title>
-    <link rel="stylesheet" href="pagedeform.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css"
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
-    <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FAQ</title>
+    <link rel="shortcut icon" href="./assets/Logo.png" />
+    <link rel="stylesheet" href="../header_footer/header1.css">
+    <link rel="stylesheet" href="../header_footer/footer1.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
     <?php include('../header_footer/header1.php');?>
   </header>
@@ -107,14 +108,8 @@
         </div>
       </div>
 
-      <div id="footer">
-        <div class="btn-group">
-          <button class="Contacter">Contacter un admin</button>
-          <button class="Ticket">Ticket</button>
-          <button class="Forum">Forum</button>
-          <button class="FAQ">FAQ</button>
-        </div>
-      </div>
-    </div>
+      <footer>
+  <?php include('../header_footer/footer1.php');?>
+</footer>
   </body>
 </html>
