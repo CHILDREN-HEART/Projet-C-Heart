@@ -1,6 +1,6 @@
 const quizData = [
     {
-        question: "La fréquence cardiaque d'un enfant augmente avec l'age.",
+        question: "La fréquence cardiaque d'un enfant augmente avec l'âge.",
         a: "vrai",
         b: "faux",
         correct: "b",
