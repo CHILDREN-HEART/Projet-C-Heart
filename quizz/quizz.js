@@ -26,7 +26,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Par voie bucale, l'enfant est considéré comme fiévreux à partir de :",
+        question: "Par voie buccale, l'enfant est considéré comme fébrile à partir de :",
         a: "37,1°C",
         b: "37,5°C",
         c: "38°C",
@@ -42,12 +42,10 @@ const quizData = [
         correct: "c",
     },
     {
-        question: "Pour prendre la température d'un enfant par voie bucale, il faut laisser le thermomètre sous la langue au moins:",
-        a: "20s",
-        b: "40s",
-        c: "1min",
-        d: "1min30s",
-        correct: "c",
+        question: "Comment évacuer le CO2 dans une pièce ?",
+        a: "En fermant les fenêtres",
+        b: "En ouvrant les fenêtres",
+        correct: "b",
     },
 ];
 

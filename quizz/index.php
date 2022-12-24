@@ -18,7 +18,7 @@
         <ul id="answers">
         </ul>
     </div>
-    <button id="submit">Submit</button>
+    <button id="submit">Validé</button>
 </div>
 
 <script src="quizz.js"></script>
