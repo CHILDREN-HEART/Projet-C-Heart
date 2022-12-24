@@ -6,11 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modifier Profil</title>
-    <link rel="shortcut icon" href="../assets/images/Logo.png">
-    <link rel="stylesheet" href="../header_footer/header1.css">
-    <link rel="stylesheet" href="../header_footer/footer1.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/icons/logo.ico">
     <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="styletempo.css">
 </head>
 <body>
 <header>
@@ -35,12 +33,12 @@
                     <input type="text" id="email" placeholder="Adresse mail"/>
                     <input type="password" id="password" placeholder="Modifier mot de passe"/>
                     <input type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
-                    <label id="CGU"><a href="" target="_blank"> Consulter les Conditions Générales d'Utilisation
-                            (CGU) </a></label>
-                    <div class="Valider_Retour">
-                        <input type="submit" value="Valider"/>
-                        <input type="submit" value="Retour"/>
-                    </div>
+                    <div><label id="CGU"><a href="../CGU/CGU.php"> Consulter les Conditions Générales d'Utilisation
+                                (CGU) </a></label></div>
+
+                    <input type="submit" value="Valider"/>
+                    <a href="../capteurParent/index.php"><input id="retour" value="Retour"/></a>
+
                 </form>
             </div>
         </div>
@@ -48,7 +46,7 @@
 </main>
 
 <footer>
-    <?php include('../header_footer/footer1.php'); ?>
+    <?php require('../components/footer1.php'); ?>
 </footer>
 
 </body>

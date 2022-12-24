@@ -1,4 +1,8 @@
 <?php
+$host = "localhost";
+$dbname = "c_heart";
+$username = "root";
+$password = "";
 
 if (isset($_POST['login']) || isset($_POST['password'])) {
 
@@ -12,7 +16,7 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
         exit();
     }
 
-    $mysqlInstance = new PDO("mysql:dbname=teroaz;host=visionrp.fr", "user", "password");
+    $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 
     $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE mail = :email");
     $statement->execute([
@@ -33,10 +37,14 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
         exit();
     }
 
-    if ( empty(session_id()) ) session_start();
+    session_start();
     $_SESSION['user'] = $data['id'];
+    $_SESSION['email'] = $data['mail'];
+    $_SESSION['nom'] = $data['nom'];
+    $_SESSION['prenom'] = $data['prenom'];
 
-    header('Location: ../index.php');
+
+    header('Location: ../capteurParent/index.php');
     exit();
 //    if (count($data) == 0) {
 //        header('Location: ../pages/connexion.php?error=wrong_credentials');

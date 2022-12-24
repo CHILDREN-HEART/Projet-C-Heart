@@ -4,9 +4,15 @@ $dbname = "c_heart";
 $username = "root";
 $password = "";
 
-if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm_password'])) {
+if (!isset($_POST['accept_terms']) && $_POST['accept_terms'] != 'yes') {
+    // La checkbox n'a pas été cochée
+    header('Location: ../pages/inscription.php?error=missing_data');
+    exit();
+}
 
-    if ($_POST['email'] == "" || $_POST['password'] == "" || $_POST['confirm_password'] == "") {
+if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm_password']) && isset($_POST['surname']) && isset($_POST['firstname']) && isset($_POST['phone'])) {
+
+    if ($_POST['email'] == "" || $_POST['password'] == "" || $_POST['confirm_password'] == "" || $_POST['surname'] == "" || $_POST['firstname'] == "" || $_POST['phone'] == "") {
         header('Location: ../pages/inscription.php?error=missing_data');
         exit();
     }
@@ -35,14 +41,31 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm
         exit();
     }
 
+    if (!filter_var($_POST['surname'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
+        header('Location: ../pages/inscription.php?error=invalid_name');
+        exit();
+    }
 
-    $statement = $mysqlInstance->prepare("INSERT INTO utilisateur (mail, password) VALUES (:email, :password)");
+    if (!filter_var($_POST['firstname'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
+        header('Location: ../pages/inscription.php?error=invalid_firstname');
+        exit();
+    }
+
+    if (!filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/")))) {
+        header('Location: ../pages/inscription.php?error=invalid_phone');
+        exit();
+    }
+
+    $statement = $mysqlInstance->prepare("INSERT INTO utilisateur (mail, password, nom, prenom, telephone) VALUES (:email, :password, :surname, :firstname, :phone)");
     $statement->execute([
         'email' => $_POST['email'],
-        'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
+        'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
+        'surname' => $_POST['surname'],
+        'firstname' => $_POST['firstname'],
+        'phone' => $_POST['phone']
     ]);
 
-    header('Location: ../index.php');
+    header('Location: ../pages/connexion.php');
 
     exit;
 }

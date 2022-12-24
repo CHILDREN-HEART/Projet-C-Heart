@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Page d'accueil</title>
+    <title>Accueil</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="assets/styles/base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,8 +10,10 @@
 
 <?php
 
-if ( empty(session_id()) ) session_start();
+session_start();
 $connected = isset($_SESSION['user']) ?? null;
+
+//echo $_SESSION['user'];
 
 if (!$connected) {
     require("pages/guest_homepage.php");

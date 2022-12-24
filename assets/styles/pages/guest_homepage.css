@@ -2,6 +2,7 @@
     font-size: 40px;
     color: var(--text-color-primary);
     margin: auto;
+    transform: translateX(60px);
 }
 
 main#guest_homepage {
@@ -12,5 +13,28 @@ main#guest_homepage {
 }
 
 #carousel, #decoration, #decoration__container {
-    width: 500px;
+    width: 600px;
+}
+
+.nav__inscription {
+    display: flex;
+    font-size: 20px;
+    margin: 25px;
+}
+
+#inscription{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+a, a:visited {
+    color: #ffffff;
+}
+
+#inscription:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.2rem;
 }

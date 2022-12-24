@@ -2,59 +2,12 @@
     box-sizing: border-box;
 }
 
-header {
-    font-family: "Roboto", sans-serif;
-    height: 126px;
-    width: 100%;
-    background: #40599a;
-    letter-spacing: 2px;
-    font-size: 3rem;
-    align-items: center;
-    color: white;
-    display: flex;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-}
-
-#titre1 {
-    /*espace entre lettre */
-    letter-spacing: 2px;
-    /*taille texte */
-    font-size: 6rem;
-    color: white;
-    margin-top: 13px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#img2 {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-}
-
-footer {
-    margin-top: 50px;
-    height: 100px;
-    width: 100%;
-    background: #40599a;
-    font-family: "Roboto", sans-serif;
-    position: absolute;
-    bottom: 0;
-}
-
 body {
     font-family: "Roboto", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
-    margin: 0;
-    height: 100vh;
+
 }
+
 .quiz-header {
     padding: 4rem;
 }
