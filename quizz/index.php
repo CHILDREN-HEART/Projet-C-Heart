@@ -19,6 +19,7 @@
         </ul>
     </div>
     <button id="submit">Validé</button>
+    <button id="réponse>" href="réponse.html">Réponse</button>
 </div>
 
 <script src="quizz.js"></script>
