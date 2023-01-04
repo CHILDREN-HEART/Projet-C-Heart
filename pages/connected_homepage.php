@@ -1,12 +1,18 @@
 <?php
-$host = "localhost";
-$dbname = "c_heart";
-$username = "root";
-$password = "";
+$host = "herogu.garageisep.com";
+$dbname = "tw7TQUoQ7u_cheart";
+$username = "HCjpLtsbkh_cheart";
+$password = "dRQscVBnTH6HWDYK";
+
+//$host = "localhost";
+//$dbname = "c_heart";
+//$username = "root";
+//$password = "";
+
 
 session_start();
 
-echo "Bonjour jeune beau gosse ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'];
+echo "Bonjour ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'];
 
 $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 

@@ -54,13 +54,9 @@
                             placeholder="Confirmer mot de passe"
                     />
                     <label id="CGU"
-                    ><a
-                                href=""
-                                target="_blank"
-                        >
-                            Consulter les Conditions Générales d'Utilisation (CGU)
-                        </a></label
-                    >
+                    ><div><label id="CGU"><a href="../CGU/CGU.php"> Consulter les Conditions Générales d'Utilisation
+                                (CGU) </a></label></div>
+
                     <div class="Valider_Retour">
                         <input
                                 type="submit"
