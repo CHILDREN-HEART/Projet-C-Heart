@@ -56,7 +56,7 @@
                     <label id="CGU"
                     ><div><label id="CGU"><a href="../CGU/CGU.php"> Consulter les Conditions Générales d'Utilisation
                                 (CGU) </a></label></div>
-                    >
+
                     <div class="Valider_Retour">
                         <input
                                 type="submit"
