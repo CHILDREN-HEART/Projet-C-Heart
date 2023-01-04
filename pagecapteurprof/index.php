@@ -46,12 +46,9 @@
     <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
     <div style="height: 150px;"></div>
 
-    <div id="center">
-      <span class="Saisie">Saisie du nom :</span>
-      <button class="Favori">Favori</button>
-      <form class="example" action="/">
-        <input type="text" placeholder="taper le nom.." name="search" />
-        <button class="btn1" type="submit"><i class="fa fa-search"></i></button>
+    <form action = "verif-form.php" method = "get">
+   <input type = "search" name = "terme">
+   <input type = "submit" name = "s" value = "Rechercher">
       </form>
     </div>
 </main>
