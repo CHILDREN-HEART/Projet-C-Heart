@@ -1,9 +1,17 @@
 <?php
 // Connexion à la base de données
-$host = "localhost";
-$dbname = "c_heart";
-$username = "root";
-$password = "";
+
+
+$host = "herogu.garageisep.com";
+$dbname = "tw7TQUoQ7u_cheart";
+$username = "HCjpLtsbkh_cheart";
+$password = "dRQscVBnTH6HWDYK";
+
+//$host = "localhost";
+//$dbname = "c_heart";
+//$username = "root";
+//$password = "";
+
 $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 
 // Vérification de la soumission du formulaire
