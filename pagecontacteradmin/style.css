@@ -1,0 +1,84 @@
+.modal {
+    display: none; /* Masque la fenêtre modale par défaut */
+    position: fixed; /* Fixe la position de la fenêtre modale */
+    z-index: 1; /* Place la fenêtre modale au premier plan */
+    padding-top: 100px; /* Espace en haut de la fenêtre modale */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largeur de la fenêtre modale */
+    height: 100%; /* Hauteur de la fenêtre modale */
+    overflow: auto; /* Affiche un défilement si nécessaire */
+    background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent */
+}
+
+/* Contenu de la fenêtre modale */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Largeur de la fenêtre modale */
+    height: 75%; /* Hauteur de la fenêtre modale */
+}
+
+/* Bouton de fermeture */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Bouton de réduction */
+.minimize {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.minimize:hover,
+.minimize:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style du formulaire de chat */
+form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    flex: 0;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
