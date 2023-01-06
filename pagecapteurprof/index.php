@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="capteurParent/index.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
     <link rel="stylesheet" href="../assets/styles/capteurpa.css"/>
-    <link rel="stylesheet" href="./search.css"/>
+    <link rel="stylesheet" href="pagecapteurprof/capteurprof.css"/>
 
 
 </head>
@@ -40,17 +40,12 @@
             <span class="moyenchiffre">°C</span>
         </div>
     </div>
-    
-    
-    <div style="height: 50px;"></div>
-    <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
-    <div style="height: 150px;"></div>
-
+ 
     <form action = "verif-form.php" method = "get">
-   <input type = "search" name = "terme">
-   <input type = "submit" name = "s" value = "Rechercher">
+   <input type = "search" name = "barre" id="barre">
+   <input type = "submit" name = "btn" id="btn" value = "Rechercher">
       </form>
-    </div>
+
 </main>
 
 
