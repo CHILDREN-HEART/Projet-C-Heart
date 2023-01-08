@@ -1,13 +1,28 @@
-.btn {
+.search-component-container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20%;
+    text-align: center;
+}
+
+#btn {
     background-color: #40599a;
     color: white;
     border: none;
     display: block;
-    width: 20%;
-    margin: auto;
     cursor: pointer;
+    width: 100%;
     font-size: 2rem;
     font-family: inherit;
     padding: 3rem;
     border-radius: 10px;
+}
+
+
+#barre {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
