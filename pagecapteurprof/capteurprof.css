@@ -2,6 +2,7 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
     width: 20%;
     text-align: center;
 }
@@ -26,3 +27,16 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.titre4 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    background-size: cover;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    overflow: hidden;
+  }

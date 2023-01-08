@@ -42,6 +42,7 @@
         </div>
 
         <div class="search-component-container">
+            <p class="titre4">Recherche elevée</p>
             <form action="verif-form.php" method="get">
                 <input type="search" name="barre" id="barre">
                 <input type="submit" name="btn" id="btn" value="Rechercher">
