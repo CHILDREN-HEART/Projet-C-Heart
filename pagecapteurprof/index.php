@@ -52,10 +52,13 @@
             <div style="height: 3px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
             
             <form action="verif-form.php" method="get">
-                <input type="search" name="barre" id="barre">
+                <input type="search" name="barre" placeholder="Rechercher un nom">
                 <input type="submit" name="btn" id="btn" value="Rechercher">
             </form>
+
+        <div class="vide">
         
+        </div>
     </main>
 
 
