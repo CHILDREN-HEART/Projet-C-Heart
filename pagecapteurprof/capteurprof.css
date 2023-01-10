@@ -8,7 +8,9 @@
 }
 
 #btn {
+    display: flex;
     background-color: #40599a;
+    text-align: center;
     color: white;
     border: none;
     display: block;
@@ -19,8 +21,9 @@
     border-radius: 10px;
 }
 
-#barre {
+.barre {
     display: block;
+    align-items: center;
     width: 50%;
     margin-top: 10px;
     margin-bottom: 10px;

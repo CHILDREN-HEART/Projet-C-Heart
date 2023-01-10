@@ -49,13 +49,15 @@
 
             <h2>Rechercher un élève</h2>
             
-            <div style="height: 3px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
+            <div style="height: 3px; background: black; width: 95%; margin-left: auto; margin-right: auto;">
+        </div><div style="height: 50px;"></div>
             
+        <div class="barre>
             <form action="verif-form.php" method="get">
                 <input type="search" name="barre" placeholder="Rechercher un nom">
                 <input type="submit" name="btn" id="btn" value="Rechercher">
             </form>
-
+</div>
         <div class="vide">
         
         </div>
