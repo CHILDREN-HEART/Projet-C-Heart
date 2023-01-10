@@ -74,7 +74,7 @@
 </main>
 
 <footer>
-    <?php include('../header_footer/footer1.php'); ?>
+    <?php //require('../components/footer1.php'); ?>
 </footer>
 </body>
 </html>
