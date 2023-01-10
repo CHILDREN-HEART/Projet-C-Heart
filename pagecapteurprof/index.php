@@ -35,7 +35,7 @@
 
             <div class="divider"></div>
             <div class="conteneurchild">
-                <span class="titre3">Température</span>
+                <span class="titre3">Température                   </span>
                 <span class="groschiffre">10</span>
                 <span class="moyenchiffre">°C</span>
             </div>
