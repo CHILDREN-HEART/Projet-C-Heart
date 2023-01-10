@@ -40,11 +40,11 @@
                 <span class="moyenchiffre">°C</span>
             </div>
         </div>
-        <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 100px;"></div>
+        <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto; margin-top: 50px;"></div>
 
         <div class="search-component-container">
             <h2>Rechercher un élève</h2>
-            <div class="separator"></div>
+            <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto; margin-top: 50px;"></div>
             <form action="verif-form.php" method="get">
                 <input type="search" name="barre" id="barre">
                 <input type="submit" name="btn" id="btn" value="Rechercher">
