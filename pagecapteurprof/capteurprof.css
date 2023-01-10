@@ -27,16 +27,10 @@
 }
 
 .titre4 {
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-family: Inter, sans-serif;
-    font-size: 22px;
-    background-size: cover;
-    opacity: 1;
-    color: rgb(0, 0, 0);
-    display: block;
     text-align: center;
-    overflow: hidden;
+    font-size: 3rem;
+    color: #40599a;
+    padding: 2rem;
 }
 
 .separator {

@@ -35,7 +35,7 @@
 
             <div class="divider"></div>
             <div class="conteneurchild">
-                <span class="titre3">Température                   </span>
+                <span class="titre3">Température       (de la classe)</span>
                 <span class="groschiffre">10</span>
                 <span class="moyenchiffre">°C</span>
             </div>
@@ -43,7 +43,7 @@
         <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 100px;"></div>
 
         <div class="search-component-container">
-            <p class="titre4">Recherche elevée</p>
+            <h2>Rechercher un élève</h2>
             <div class="separator"></div>
             <form action="verif-form.php" method="get">
                 <input type="search" name="barre" id="barre">
