@@ -78,8 +78,16 @@ a:visited {
     height: 60px;
 }
 
-@media only screen and (max-width: 600px) {
-    .flexboxHeader2 {
-        font-size: 12px;
+@media (max-width: 480px) {
+    .flexboxHeader2_1 {
+        text-align: right;
+        order: 2;
+        width: 80%;
+    }
+    .flexboxHeader3,
+    .flexboxHeader4 {
+        order: 1;
+        width: 100%;
+        text-align: center;
     }
 }
