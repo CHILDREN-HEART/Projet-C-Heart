@@ -20,20 +20,22 @@
   </header>
   
 <h1>Forum</h1>
+<div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
+
   <table>
   <tr>
-    <th>Titre</th>
     <th>Date</th>
+    <th>Titre</th>
     <th>Lien</th>
   </tr>
   <tr>
+  <td>11 janvier 2021</td>
     <td>Titre 1</td>
-    <td>11 janvier 2021</td>
     <td><input type="submit" name="submit" value="Lien1" href="sujet.php"></td>
   </tr>
   <tr>
+  <td>12 janvier 2021</td>
     <td>Titre 2</td>
-    <td>12 janvier 2021</td>
     <td><input type="submit" name="submit" value="Lien2" href="sujet.php"></td>
   </tr>
 </table>

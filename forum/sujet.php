@@ -28,7 +28,10 @@ if (isset($_POST['submit'])) {
   mysqli_query($conn, $query);
 }
 ?>
-<h1>Forum</h1
+<h1>Forum</h1>
+
+<div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
+
  <form action="" method="post">
   <label for="user">Username:</label>
   <input type="text" id="user" name="user">

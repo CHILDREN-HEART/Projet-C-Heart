@@ -2,7 +2,14 @@ table {
     width: 100%;
     display: flex;
     overflow-x: auto;
-    justify-content: space-around
+    justify-content: space-around;
+}
+
+.conteneur {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-around;
 }
 
 @media (max-width: 600px) {
@@ -11,4 +18,14 @@ table {
     table td:nth-child(3) {
         display: flex;
     }
+}
+
+h1 {
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #40599a;
+    font-family: "roboto", sans-serif;
+    padding: 2rem;
 }
