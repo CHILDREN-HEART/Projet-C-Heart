@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Quizz</title>
-    <link rel="stylesheet" href="quizz.css"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>FAQ</title>
+    <link rel="shortcut icon" href="./assets/Logo.png"/>
+    <link rel="stylesheet" href="../assets/styles/components/header.css">
+    <link rel="stylesheet" href="../header_footer/footer1.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 <header>
-    <?php require "../header_footer/header1.php"; ?>
+    <?php include('../header_footer/header1.php'); ?>
 </header>
 
-<div class="quiz-container" id="quiz">
-    <div class="quiz-header">
-        <h2 id="question">Question text</h2>
-        <ul id="answers">
-        </ul>
-    </div>
-</div>
-<input type="submit" id="submit" value="validé" class="validé">
 <div class="menu">
     <div class="menu-item" id="Question1">
         <div href="#Question1" class="menu-item-header">
@@ -147,12 +146,8 @@
                                 </script>
                             </div>
                         </div>
-<script src="quizz.js"></script>
-<div>
-                                </div>
-<footer>
-    <?php require "../components/footer1.php"; ?>
-</footer>
+                        <footer>
+                            <?php include('../header_footer/footer1.php'); ?>
+                        </footer>
 </body>
 </html>
-
