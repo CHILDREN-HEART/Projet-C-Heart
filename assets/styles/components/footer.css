@@ -1,14 +1,14 @@
-footer {
-    justify-content: space-around;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: #40599a;
-    height: 60px;
-}
+/*footer {*/
+/*    justify-content: space-around;*/
+/*    position: fixed;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    background: #40599a;*/
+/*    height: 60px;*/
+/*}*/
 
 html {
     font-size: 63%;
