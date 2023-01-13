@@ -19,94 +19,26 @@
     <?php include('../header_footer/header1.php');?>
   </header>
 
-      <div id="center">
-        <span class="note-sujet"> Dernier sujet de discution </span>
-        <div class="ligne1" style="border-bottom: 4px solid rgb(1, 1, 1)"></div>
-        <span class="note-date">Dates</span>
-        <span class="note-profil">Profil</span>
-        <div class="col3" style="border-left: 3px solid rgb(1, 1, 1)"></div>
-        <div class="col4" style="border-left: 3px solid rgb(1, 1, 1)"></div>
-      </div>
+  <?php
+if (isset($_POST['submit'])) {
+  $user = $_POST['user'];
+  $message = $_POST['message'];
 
-      <div id="mid">
-        <div id="left">
-          <h3>Catégories</h3>
-          <div
-            class="ligne4"
-            style="border-bottom: 4px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne5"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne6"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne7"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne8"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne9"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne10"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne11"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-          <div
-            class="ligne12"
-            style="border-bottom: 2px solid rgb(1, 1, 1)"
-          ></div>
-        </div>
-        <div id="right">
-          <span class="sujet">Sujet de la discution</span>
-          <span class="date">Dates</span>
-          <span class="profil">Profil</span>
-          <div
-            class="ligne13"
-            style="border-bottom: 4px solid rgb(1, 1, 1)"
-          ></div>
-          <div class="col1" style="border-left: 3px solid rgb(1, 1, 1)"></div>
-          <div class="col2" style="border-left: 3px solid rgb(1, 1, 1)"></div>
-          <div class="sujet2">
-            <input
-              type="text"
-              id="sujet"
-              name="sujet"
-              placeholder="Ecrire le sujet ici s'il vous plait"
-              style="width: 425px; height: 30px"
-            />
-          </div>
-          <div class="date2">
-            <input
-              type="text"
-              id="date"
-              name="date"
-              placeholder="  jj/mm/aaaa"
-              style="width: 100px; height: 30px"
-            />
-          </div>
-          <div class="profil2">
-            <input
-              type="text"
-              id="profil"
-              name="porfil"
-              placeholder="     profil"
-              style="width: 100px; height: 30px"
-            />
-          </div>
-        </div>
-      </div>
+  $query = "INSERT INTO messages (user, message) VALUES ('$user', '$message')";
+  mysqli_query($conn, $query);
+}
+?>
+
+<form action="" method="post">
+  <label for="user">Username:</label>
+  <input type="text" id="user" name="user">
+  <br>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
+  <br>
+  <input type="submit" name="submit" value="Validé">
+  
+</form>
 
       <footer>
   <?php include('../header_footer/footer1.php');?>
