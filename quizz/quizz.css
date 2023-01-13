@@ -1,11 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     overflow: hidden;
-
 }
 
 .quiz-header {
@@ -34,25 +29,13 @@ ul li label {
     cursor: pointer;
 }
 
-button {
+.validé {
     background-color: #40599a;
     color: white;
+    padding: 8px 16px;
+    text-decoration: none;
     border: none;
-    display: block;
-    width: 20%;
-    margin: auto;
     cursor: pointer;
-    font-size: 2rem;
-    font-family: inherit;
-    padding: 3rem;
     border-radius: 10px;
-}
-
-button :hover {
-    background-color: #40599a;
-}
-
-button :focus {
-    outline: none;
-    background-color: white;
+    align-items: center;
 }

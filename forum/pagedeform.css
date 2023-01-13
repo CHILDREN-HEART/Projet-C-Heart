@@ -22,6 +22,7 @@ input[type="submit"] {
     text-decoration: none;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .conteneur {
@@ -57,21 +58,18 @@ form {
     flex-direction: column;
 }
 
-/* style the label for the "Username" field */
 label[for="user"] {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
 
-/* style the label for the "Message" field */
 label[for="message"] {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
 
-/* style the textarea for the "Message" */
 textarea#message {
     width: 50%;
     height: 150px;

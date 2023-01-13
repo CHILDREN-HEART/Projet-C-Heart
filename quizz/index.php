@@ -18,10 +18,8 @@
         <ul id="answers">
         </ul>
     </div>
-    <button id="submit">Validé</button>
-    <button id="réponse>" href="réponse.html">Réponse</button>
 </div>
-
+<input type="submit" id="submit" value="validé" class="validé">
 <script src="quizz.js"></script>
 <footer>
     <?php require "../components/footer1.php"; ?>
