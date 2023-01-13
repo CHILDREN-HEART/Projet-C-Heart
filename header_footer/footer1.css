@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "roboto" sans-serif;
+    font-family: "roboto", sans-serif;
 }
 
 .flexboxFooter1 {
@@ -15,7 +15,7 @@
     background: #40599a;
     height: 60px;
 }
-/* 
+/*
 .btn {
     border-right: 1px solid #fff;
 } */
@@ -23,8 +23,8 @@
 /* .btn + .btn {
     border-left: white 2px solid;
 } */
-  
-  
+
+
 html {
     font-size: 63%;
 }

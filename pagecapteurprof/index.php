@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../assets/styles/base.css">
     <link rel="stylesheet" href="../header_footer/header2.css">
     <link rel="stylesheet" href="capteurParent/index.css">
-    <link rel="stylesheet" href="../header_footer/footer1.css">
+    <link rel="stylesheet" href="../assets/styles/components/footer.css">
     <link rel="stylesheet" href="../assets/styles/capteurpa.css" />
     <link rel="stylesheet" href="pagecapteurprof/capteurprof.css" />
 
@@ -49,15 +49,13 @@
 
             <h2>Rechercher un élève</h2>
             
-            <div style="height: 3px; background: black; width: 95%; margin-left: auto; margin-right: auto;">
-        </div><div style="height: 50px;"></div>
+            <div style="height: 3px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
             
-        <div class="barre>
             <form action="verif-form.php" method="get">
                 <input type="search" name="barre" placeholder="Rechercher un nom">
                 <input type="submit" name="btn" id="btn" value="Rechercher">
             </form>
-</div>
+
         <div class="vide">
         
         </div>

@@ -3,11 +3,11 @@
     <div>
         <img id="img1" src="../assets/icons/logo.ico" alt="logo">
     </div>
-    <div class="flexboxHeader2">
+    <div class="flexboxHeader2_2">
         <span>Child Heart</span>
     </div>
 
-    <div class="flexboxHeader3">
+    <div class="flexboxHeader3_2">
         <a id="inscription" href=""><?php session_start();
             echo(($_SESSION['prenom'] ?? "Prénom") . " " . ($_SESSION['nom'] ?? "Nom")) ?></a>
     </div>

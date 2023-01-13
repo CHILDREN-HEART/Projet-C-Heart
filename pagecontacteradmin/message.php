@@ -66,9 +66,9 @@ echo '<button onclick="showModal()">Ouvrir la fenêtre de chat</button>';
 // Script AJAX pour mettre à jour le chat en temps réel
 echo '<script>
 setInterval(function() {
-  // Envoi d'une requête GET en AJAX
+  // Envoi d\'une requête GET en AJAX
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "chat.php?sender=' . $sender . '&recipient=' . $recipient . '");
+  xhr.open("GET", "index.php?sender=' . $sender . '&recipient=' . $recipient . '");
   xhr.onload = function() {
       // Mise à jour de la zone de chat avec la réponse
       document.getElementById("chat").innerHTML = xhr.responseText;

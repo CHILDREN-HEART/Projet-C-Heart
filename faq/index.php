@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>FAQ</title>
     <link rel="shortcut icon" href="./assets/Logo.png"/>
-    <link rel="stylesheet" href="../header_footer/header1.css">
-    <link rel="stylesheet" href="../header_footer/footer1.css">
+    <link rel="stylesheet" href="../assets/styles/components/header.css">
+    <link rel="stylesheet" href="../assets/styles/components/footer.css">
     <link rel="stylesheet" href="style.css"/>
 </head>
 

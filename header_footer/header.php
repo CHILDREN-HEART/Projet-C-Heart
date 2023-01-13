@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="../assets/styles/components/header.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 <div class="flexboxHeader">
     <div>
