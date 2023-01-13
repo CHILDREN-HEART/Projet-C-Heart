@@ -28,8 +28,41 @@ if (isset($_POST['submit'])) {
   mysqli_query($conn, $query);
 }
 ?>
-
-
+<h1>Forum</h1
+ <form action="" method="post">
+  <label for="user">Username:</label>
+  <input type="text" id="user" name="user">
+  <br>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
+  <br>
+  <input type="submit" name="submit" value="Validé">
+  
+</form>
+<div class=sujet>
+<table>
+  <tr>
+    <th>Utilisateur</th>
+    <th>Message</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>Salut tout le monde !</td>
+    <td>11 janvier 2021</td>
+  </tr>
+  <tr>
+    <td>Jane Smith</td>
+    <td>Bienvenue John !</td>
+    <td>11 janvier 2021</td>
+  </tr>
+  <tr>
+    <td>Bob Johnson</td>
+    <td>Merci Jane !</td>
+    <td>12 janvier 2021</td>
+  </tr>
+</table>
+</div>
 
       <footer>
   <?php include('../header_footer/footer1.php');?>

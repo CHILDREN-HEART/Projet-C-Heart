@@ -1,3 +1,14 @@
-.sujet {
-    align-items: ;
+table {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-around
+}
+
+@media (max-width: 600px) {
+    /* cacher certaines colonnes sur les petits écrans */
+    table th:nth-child(3),
+    table td:nth-child(3) {
+        display: flex;
+    }
 }
