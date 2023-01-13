@@ -8,7 +8,7 @@
     <title>Modifier Profil</title>
     <link rel="shortcut icon" href="../assets/images/Logo.png"/>
     <link rel="stylesheet" href="../assets/styles/components/header.css">
-    <link rel="stylesheet" href="../header_footer/footer1.css">
+    <link rel="stylesheet" href="../assets/styles/components/footer.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/styles/base.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">

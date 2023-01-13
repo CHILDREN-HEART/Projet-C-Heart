@@ -42,3 +42,21 @@ input[type="button"]:hover {
 .btn2 {
     border-right: 1px solid #fff;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+}
+
+.flexboxFooter1 {
+    justify-content: space-around;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #40599a;
+    height: 60px;
+}

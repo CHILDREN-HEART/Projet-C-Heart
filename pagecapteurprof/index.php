@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../assets/styles/base.css">
     <link rel="stylesheet" href="../header_footer/header2.css">
     <link rel="stylesheet" href="capteurParent/index.css">
-    <link rel="stylesheet" href="../header_footer/footer1.css">
+    <link rel="stylesheet" href="../assets/styles/components/footer.css">
     <link rel="stylesheet" href="../assets/styles/capteurpa.css" />
     <link rel="stylesheet" href="pagecapteurprof/capteurprof.css" />
 
