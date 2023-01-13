@@ -1,8 +1,26 @@
 table {
+    border-collapse: collapse;
     width: 100%;
-    display: flex;
-    overflow-x: auto;
-    justify-content: space-around;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #dddddd;
+}
+
+input[type="submit"] {
+    background-color: #40599a;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .conteneur {

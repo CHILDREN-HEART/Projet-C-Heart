@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FAQ</title>
+    <title>Forum</title>
     <link rel="shortcut icon" href="./assets/Logo.png" />
     <link rel="stylesheet" href="../assets/styles/components/header.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
@@ -31,12 +31,12 @@
   <tr>
   <td>11 janvier 2021</td>
     <td>Titre 1</td>
-    <td><input type="submit" name="submit" value="Lien1" href="sujet.php"></td>
+    <td><input type="submit" name="submit" value="Lien1" href="./sujet.php"></td>
   </tr>
   <tr>
   <td>12 janvier 2021</td>
     <td>Titre 2</td>
-    <td><input type="submit" name="submit" value="Lien2" href="sujet.php"></td>
+    <td><input type="submit" name="submit" value="Lien2" href="./sujet.php"></td>
   </tr>
 </table>
 

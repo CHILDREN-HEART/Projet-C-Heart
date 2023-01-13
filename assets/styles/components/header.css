@@ -12,7 +12,6 @@
     background: #40599a;
     height: 120px;
     align-items: center;
-
 }
 
 .flexboxHeader2 {
@@ -49,25 +48,22 @@ html {
 .flexboxHeader3 {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
-
 }
 
 .flexboxHeader3_2 {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     margin-left: auto;
-
-
 }
 
 .flexboxHeader4 {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     margin: 25px;
-
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #ffffff;
     text-decoration: none;
 }
@@ -82,5 +78,8 @@ a, a:visited {
     height: 60px;
 }
 
-
-
+@media only screen and (max-width: 600px) {
+    .flexboxHeader2 {
+        font-size: 12px;
+    }
+}
