@@ -11,7 +11,8 @@ td {
 }
 
 th {
-    background-color: #dddddd;
+    background-color: #40599a;
+    color: white;
 }
 
 input[type="submit"] {
@@ -46,4 +47,35 @@ h1 {
     color: #40599a;
     font-family: "roboto", sans-serif;
     padding: 2rem;
+}
+
+form {
+    font-size: 1.2em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* style the label for the "Username" field */
+label[for="user"] {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* style the label for the "Message" field */
+label[for="message"] {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* style the textarea for the "Message" */
+textarea#message {
+    width: 50%;
+    height: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }

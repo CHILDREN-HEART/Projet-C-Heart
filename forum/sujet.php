@@ -28,20 +28,11 @@ if (isset($_POST['submit'])) {
   mysqli_query($conn, $query);
 }
 ?>
-<h1>Forum</h1>
+<h1>Sujet</h1>
 
 <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
 
- <form action="" method="post">
-  <label for="user">Username:</label>
-  <input type="text" id="user" name="user">
-  <br>
-  <label for="message">Message:</label>
-  <textarea id="message" name="message"></textarea>
-  <br>
-  <input type="submit" name="submit" value="Validé">
-  
-</form>
+
 <div class=sujet>
 <table>
   <tr>
@@ -66,6 +57,12 @@ if (isset($_POST['submit'])) {
   </tr>
 </table>
 </div>
+<form action="" method="post">
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
+  <br>
+  <input type="submit" name="submit" value="Validé">
+</form>
 
       <footer>
   <?php include('../header_footer/footer1.php');?>
