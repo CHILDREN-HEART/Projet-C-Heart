@@ -6,6 +6,7 @@
 #img1 {
     height: 120px;
 }
+
 .flexboxHeader {
     display: flex;
     background: #40599a;
@@ -24,6 +25,23 @@
     color: white;
 }
 
+.flexboxHeader2_1 {
+    margin: auto;
+    transform: translateX(-60px);
+    /* revenir de img1 / 2 */
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    color: white;
+}
+
+.flexboxHeader2_2 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    color: white;
+}
+
 html {
     font-size: 63%;
 }
@@ -33,6 +51,15 @@ html {
     font-size: 30px;
 
 }
+
+.flexboxHeader3_2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    margin-left: auto;
+
+
+}
+
 .flexboxHeader4 {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -42,6 +69,7 @@ html {
 
 a, a:visited {
     color: #ffffff;
+    text-decoration: none;
 }
 
 #inscription:hover {
@@ -50,7 +78,7 @@ a, a:visited {
     border-radius: 0.2rem;
 }
 
-#logo_connexion{
+#logo_connexion {
     height: 60px;
 }
 

@@ -26,7 +26,6 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
     $statement->execute([
         'email' => $_POST['login']
     ]);
-
     $data = $statement->fetch();
 
     if (!$data) {
