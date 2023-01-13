@@ -29,7 +29,7 @@ ul li label {
     cursor: pointer;
 }
 
-.validé {
+input[type="submit"] {
     background-color: #40599a;
     color: white;
     padding: 8px 16px;
@@ -37,5 +37,4 @@ ul li label {
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    align-items: center;
 }
