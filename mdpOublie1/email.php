@@ -36,6 +36,11 @@ if (isset($_POST['email'])) {
         $query = $mysqlInstance->prepare("UPDATE utilisateur SET reset_password_token = :token WHERE mail = :email");
         $query->execute(['token' => $token, 'email' => $email]);
 
+//        ini_set('SMTP', 'smtp-relay.sendinblue.com');
+//        ini_set('smtp_port', 587);
+//        ini_set("username","minitableau2002@gmail.com");
+//        ini_set("password","6sV9OrBEcqL5zZwj");
+
         // Préparez l'email à envoyer
         $to = $email;
         $subject = "Réinitialisation de votre mot de passe";
@@ -44,6 +49,8 @@ if (isset($_POST['email'])) {
 
         // Envoyez l'email
         mail($to, $subject, $msg, $headers);
+
+        exit;
 
         // Redirigez l'utilisateur vers la page de connexion avec un message indiquant que l'email de réinitialisation de mot de passe a été envoyé
         header("Location: ../pages/connexion.php?reset=success");
