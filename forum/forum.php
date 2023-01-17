@@ -21,7 +21,15 @@
   
 <h1>Forum</h1>
 <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
-
+<form action="" method="post">
+  <label for="titre">Titre:</label>
+  <textarea id="titre" name="titre"></textarea>
+  <label for="message">Message:</label>
+  <textarea id="message1" name="message1"></textarea>
+  <br>
+  <input type="submit" name="submit" value="Ajouté">
+</form>
+<div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
   <table>
   <tr>
   <th>Auteur</th>
