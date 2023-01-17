@@ -4,7 +4,7 @@
 //$username = "HCjpLtsbkh_cheart";
 //$password = "dRQscVBnTH6HWDYK";
 $host = "localhost";
-$dbname = "c_heart";
+$dbname = "c_heart_3";
 $username = "root";
 $password = "";
 
