@@ -32,13 +32,7 @@
     <div class="grid">
         <div id="rectangle">
             <h2>Réinitialiser mon mot de passe </h2>
-            <div id="aide1">1 - Entrez l’adresse e-mail associée à votre compte ci-dessous.</div>
-            <div id="aide2">2 - Vous allez recevoir un email, cliquez sur le lien pour choisir un nouveau mot de
-                passe.
-            </div>
-            <div id="aide3">3 - Après la validation de votre nouveau mot de passe, vous êtes connecté(e) à votre compte
-                !
-            </div>
+            
             <div class="grid-container">
                 <input type="password" id="password" placeholder="Nouveau mot de passe"/>
                 <input type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
