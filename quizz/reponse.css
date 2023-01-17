@@ -19,6 +19,7 @@ body {
     --white: #c2fffa;
     --black: #000000;
     --grey: #888888;
+    --green: #059200;
 }
 
 #titre1 {
@@ -91,8 +92,8 @@ body {
     line-height: 1.5rem;
     border-top: 1px solid;
     color: white;
-    border-image: linear-gradient(to right, transparent, #40599a, transparent) 1;
-    background-color: var(--blue1);
+    border-image: linear-gradient(to right, transparent, #059200, transparent) 1;
+    background-color: var(--green);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
