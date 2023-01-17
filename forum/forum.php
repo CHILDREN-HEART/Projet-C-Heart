@@ -24,16 +24,19 @@
 
   <table>
   <tr>
+  <th>Auteur</th>
     <th>Date</th>
     <th>Titre</th>
     <th>Lien</th>
   </tr>
   <tr>
+    <td>John Doe</td>
   <td>11 janvier 2021</td>
     <td>Titre 1</td>
     <td><input type="submit" name="submit" value="Lien1" href="./sujet.php"></td>
   </tr>
   <tr>
+    <td>Jane Smith</td>
   <td>12 janvier 2021</td>
     <td>Titre 2</td>
     <td><input type="submit" name="submit" value="Lien2" href="./sujet.php"></td>
