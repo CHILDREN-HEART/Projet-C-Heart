@@ -49,10 +49,10 @@ const quizData = [
     },
 ];
 
-const quiz = document.getElementById('quiz');
-const questionEl = document.getElementById('question');
-const submitBtn = document.getElementById('submit');
-const answersUl = document.getElementById('answers');
+const quiz = document.getElementById("quiz");
+const questionEl = document.getElementById("question");
+const submitBtn = document.getElementById("submit");
+const answersUl = document.getElementById("answers");
 
 let currentQuiz = 0;
 let score = 0;
@@ -65,12 +65,14 @@ function loadQuiz() {
     const currentQuizData = quizData[currentQuiz];
     questionEl.innerText = currentQuizData.question;
 
-    const choices = {a: currentQuizData.a, b: currentQuizData.b, c: currentQuizData.c, d: currentQuizData.d};
-    Object.entries(choices).filter(([key, value]) => value !== undefined).forEach(([key, value]) => {
-        answersUl.innerHTML += `<li><input type="radio" name="answer" id="${key}" value="${key}"><label for="${key}">${value}</label></li>`;
-    });
+    const choices = { a: currentQuizData.a, b: currentQuizData.b, c: currentQuizData.c, d: currentQuizData.d };
+    Object.entries(choices)
+        .filter(([key, value]) => value !== undefined)
+        .forEach(([key, value]) => {
+            answersUl.innerHTML += `<li><input type="radio" name="answer" id="${key}" value="${key}"><label for="${key}">${value}</label></li>`;
+        });
 
-    submitBtn.addEventListener('click', (e) => {
+    submitBtn.addEventListener("click", (e) => {
         e.preventDefault();
         const answer = document.querySelector('input[name="answer"]:checked');
         if (!answer) return;
@@ -79,14 +81,14 @@ function loadQuiz() {
         if (answer.value === currentQuizData.correct) score++;
 
         currentQuiz++;
-        answersUl.innerHTML = '';
+        answersUl.innerHTML = "";
+        const buttonsContainer = document.getElementsByClassName("buttons-container")[0];
 
         if (currentQuiz < quizData.length) {
             loadQuiz();
         } else {
-            quiz.innerHTML = `<h2>Vous avez répondu correctement à ${score}/${quizData.length} questions.</h2>
-            <button onclick="location.reload()">Recommencer</button>`;
+            quiz.innerHTML = `<h2>Vous avez répondu correctement à ${score}/${quizData.length} questions.</h2>`;
+            buttonsContainer.innerHTML = `<a class="btn" href="https://google.com">Quizz</a><br/><button onclick="location.reload()" class="btn">Recommencer</button>`;
         }
-    })
-
+    });
 }
