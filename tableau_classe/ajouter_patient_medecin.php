@@ -25,7 +25,7 @@
     </ul>
 </div>
 <div class="btn_retour">
-    <a href=".\gestion_patient_medecin_avec_php.php"> &#10229 Retour</a>
+    <a href=".\gestion_eleve.php"> &#10229 Retour</a>
 </div>
 <div class="title_container">
     <h1>Listes des patients enregistrés</h1>
