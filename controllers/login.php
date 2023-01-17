@@ -41,7 +41,7 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
     }
 
     session_start();
-    $_SESSION['user'] = $data['id'];
+    $_SESSION['user'] = $data['ID'];
     $_SESSION['email'] = $data['mail'];
     $_SESSION['nom'] = $data['nom'];
     $_SESSION['prenom'] = $data['prenom'];
