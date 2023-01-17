@@ -22,26 +22,23 @@
 <div class="menu">
     <div class="menu-item" id="Question1">
         <div href="#Question1" class="menu-item-header">
-            Comment jumeler sa montre avec son compte ?
+            Comment ça marche ?
         </div>
         <div class="menu-item-body">
             <div class="menu-item-body-content">
-                Il est très simple de synchroniser la montre à votre compte, un code vous sera fourni lors de
-                l'acquisition de la montre. Il suffira d'aller votre compte et mettre ce code pour jumeler les deux
-                ensemble.
+              Le bracelet C-Heart est composé de deux capteurs qui mesurent la fréquence cardiaque et la température de votre enfant. Ces données sont envoyées à notre site via Bluetooth. Vous pouvez ainsi suivre en temps réel l’état de santé de votre enfant. 
 
             </div>
         </div>
     </div>
     <div class="menu-item" id="Question2">
         <div href="#Question2" class="menu-item-header">
-            Le délai de préparation et d’envoi des commandes ?
+            Est-ce que cela représente un risque pour mon enfant ?
 
         </div>
         <div class="menu-item-body">
             <div class="menu-item-body-content">
-                Dès la commande valider, la montre partira en fabrication. Compter une à deux semaines pour la réception
-                de votre commande.
+            Les fabricants d'appareils Bluetooth doivent respecter certaines valeurs maximales concernant le rayonnement électromagnétique émis. Le rayonnement Bluetooth de notre bracelet est si faible qu'il est totalement inoffensif.
             </div>
         </div>
     </div>
