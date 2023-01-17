@@ -14,23 +14,25 @@
         <?php require "../header_footer/header1.php"; ?>
     </header>
 
-<div class="quiz-container" id="quiz">
-    <div class="quiz-header">
-        <h2 id="question">Question text</h2>
-        <ul id="answers">
-        </ul>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul id="answers">
+            </ul>
+        </div>
     </div>
-</div>
-<input type="submit" id="submit" value="validé" class="validé">
+    <div class="buttons-container" style="display: flex; justify-content: center;">
+        <input type="submit" id="submit" value="Valider" class="validé">
+    </div>
 
-                            </div>
-                        </div>
-<script src="quizz.js"></script>
-<div>
-                                </div>
-<footer>
-    <?php require "../components/footer1.php"; ?>
-</footer>
+    </div>
+    </div>
+    <script src="quizz.js"></script>
+    <div>
+    </div>
+    <footer>
+        <?php require "../components/footer1.php"; ?>
+    </footer>
 </body>
 
 </html>
