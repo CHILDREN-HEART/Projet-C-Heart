@@ -88,40 +88,7 @@
                         En ouvrant les fenêtres
                         </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            Question 8
-                        </div>
-                        <div class="menu-item-body">
-                            <div class="menu-item-body-content">
-                                Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                Question 9
-                            </div>
-                            <div class="menu-item-body">
-                                <div class="menu-item-body-content">
-                                    Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-header">
-                                    Question 10
-                                </div>
-                                <div class="menu-item-body">
-                                    <div class="menu-item-body-content">
-                                        Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-item-header-inv">
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-item-header-inv">
-                                    </div>
+                    
                                 </div>
                                 <script>
                                     const menuItemHeaders = document.querySelectorAll(".menu-item-header");
