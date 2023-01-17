@@ -1,7 +1,6 @@
 let slideIndex = 1;
 window.onload = () => {
     showSlides(slideIndex);
-    setInterval(() => showSlides(slideIndex++), 8000);
 };
 
 function plusSlides(n) {

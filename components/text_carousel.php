@@ -7,15 +7,13 @@
     <div class="carousel__item">
         <p>C-Heart</p>
         <br>
-        <p>Pour le bien être de l'enfance</p>
+        <p>Pour une enfance sereine</p>
     </div>
     <div class="carousel__item">
-        <p>Notre rôle est d'informer le professeur et les parents sur la santé et le bien être des enfants dans
-            le cadre scolaire.</p>
+        <p>Notre rôle est d'informer le professeur et les parents sur la santé et le bien-être des enfants.</p>
     </div>
     <div class="carousel__item">
-        <p>Pour cela, on vous donne accès à la température et la fréquence cardiaque de l'enfant mais aussi à
-            des informations générales sur la salle comme la température ou le taux de Co2 dans celle-ci.</p>
+        <p>Pour cela, on vous donne accès à une technologie qui capte les conditions de vie dans leurs établissements scolaires</p>
     </div>
 
     <!-- Next/prev buttons -->
