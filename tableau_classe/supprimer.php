@@ -18,7 +18,7 @@ $id = $_GET["id"];
 $sql = 'DELETE from classe WHERE id = ?';
 $stmt = $bdd->prepare($sql);
 $stmt->execute([$id]);
-header('location: ./gestion_patient_medecin_avec_php.php');
+header('location: ./gestion_eleve.php');
 
 
 ?>

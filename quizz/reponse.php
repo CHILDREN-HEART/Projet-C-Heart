@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./assets/Logo.png"/>
     <link rel="stylesheet" href="../assets/styles/components/header.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="reponse.css"/>
 </head>
 
 <body>
@@ -22,109 +22,73 @@
 <div class="menu">
     <div class="menu-item" id="Question1">
         <div href="#Question1" class="menu-item-header">
-            Comment jumeler sa montre avec son compte ?
+            Réponse 1 : La fréquence cardiaque d'un enfant augmente avec l'âge.
         </div>
         <div class="menu-item-body">
             <div class="menu-item-body-content">
-                Il est très simple de synchroniser la montre à votre compte, un code vous sera fourni lors de
-                l'acquisition de la montre. Il suffira d'aller votre compte et mettre ce code pour jumeler les deux
-                ensemble.
+            Faux
 
             </div>
         </div>
     </div>
     <div class="menu-item" id="Question2">
         <div href="#Question2" class="menu-item-header">
-            Le délai de préparation et d’envoi des commandes ?
+        Réponse 2 : S'assoir permet-il d'augmenter la fiabilité du capteur de fréquence cardiaque?
 
         </div>
         <div class="menu-item-body">
             <div class="menu-item-body-content">
-                Dès la commande valider, la montre partira en fabrication. Compter une à deux semaines pour la réception
-                de votre commande.
+            Vrai
             </div>
         </div>
     </div>
     <div class="menu-item">
         <div class="menu-item-header">
-            Question 3
+        Réponse 3 : Les établissements accueillants des enfants de moins de 6 ans ont pour obligation de surveiller la qualité de l'air dans leurs salles.
         </div>
         <div class="menu-item-body">
             <div class="menu-item-body-content">
-                Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
+            Vrai
             </div>
         </div>
     </div>
     <div class="menu-item">
         <div class="menu-item-header">
-            Question 4
+            Réponse 4 : Les valeurs limites normatives de Co2 d'un espace clos se situe vers:
         </div>
         <div class="menu-item-body">
             <div class="menu-item-body-content">
-                Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
+            1000-1500ppm
             </div>
         </div>
         <div class="menu-item">
             <div class="menu-item-header">
-                Question 5
+               Réponse 5 : 
             </div>
             <div class="menu-item-body">
                 <div class="menu-item-body-content">
-                    Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
+                
                 </div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-header">
-                    Question 6
+                Réponse 6 : Quelle est la marge d'erreur moyenne d'une prise de température avec un bracelet ?
                 </div>
                 <div class="menu-item-body">
                     <div class="menu-item-body-content">
-                        Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
+                    6,7%
                     </div>
                 </div>
                 <div class="menu-item">
                     <div class="menu-item-header">
-                        Question 7
+                    Réponse 7 : Comment évacuer le CO2 dans une pièce ?
                     </div>
                     <div class="menu-item-body">
                         <div class="menu-item-body-content">
-                            Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
+                        En ouvrant les fenêtres
                         </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            Question 8
-                        </div>
-                        <div class="menu-item-body">
-                            <div class="menu-item-body-content">
-                                Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                Question 9
-                            </div>
-                            <div class="menu-item-body">
-                                <div class="menu-item-body-content">
-                                    Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-header">
-                                    Question 10
-                                </div>
-                                <div class="menu-item-body">
-                                    <div class="menu-item-body-content">
-                                        Lorem ipsum dolor sit amet. Nobis quae sit corrupti beatae a voluptatem alias.
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-item-header-inv">
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-item-header-inv">
-                                    </div>
+                    
                                 </div>
                                 <script>
                                     const menuItemHeaders = document.querySelectorAll(".menu-item-header");
