@@ -8,10 +8,10 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Forum</title>
-    <link rel="shortcut icon" href="./assets/Logo.png"/>
+    <link rel="shortcut icon" href="../assets/icons/logo.ico"/>
     <link rel="stylesheet" href="../assets/styles/components/header.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
-    <link rel="stylesheet" href="pagedeform.css"/>
+    <link rel="stylesheet" href="../forum/pagedeform.css"/>
 </head>
 <body>
 
