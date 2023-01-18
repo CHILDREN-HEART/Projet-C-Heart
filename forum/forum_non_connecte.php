@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Forum</title>
-    <link rel="shortcut icon" href="./assets/Logo.png" />
+    <link rel="shortcut icon" href="../assets/icons/logo.ico"/>
     <link rel="stylesheet" href="../assets/styles/components/header.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
-    <link rel="stylesheet" href="pagedeform.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="../forum/pagedeform.css"/>
+</head>
+<body>
 
-    <header>
-    <?php include('../header_footer/header1.php');?>
-  </header>
-  
+<header>
+    <?php include('../header_footer/header1.php'); ?>
+</header>
+
 <h1>Forum</h1>
 <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
 
-  <table>
-  <tr>
-  <th>Auteur</th>
-    <th>Date</th>
-    <th>Titre</th>
-    <th>Lien</th>
-  </tr>
-  <tr>
-    <td>John Doe</td>
-  <td>11 janvier 2021</td>
-    <td>Titre 1</td>
-    <td><input type="submit" name="submit" value="Lien1" href="./sujet.php"></td>
-  </tr>
-  <tr>
-    <td>Jane Smith</td>
-  <td>12 janvier 2021</td>
-    <td>Titre 2</td>
-    <td><input type="submit" name="submit" value="Lien2" href="./sujet.php"></td>
-  </tr>
+<table>
+    <thead>
+    <tr>
+        <th>Auteur</th>
+        <th>Date</th>
+        <th>Titre</th>
+        <th>Lien</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php
+    include('read_forum.php');
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
+        ?>
+        <tr>
+            <td><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
+            <td><?php echo htmlspecialchars($row['date']); ?></td>
+            <td><?php echo htmlspecialchars($row['titre']); ?></td>
+            <td><a href='./sujet_non_connecte.php?numero_article=<?php echo $row['numero_article']; ?>'><input type="submit"
+                                                                                                  name="submit"
+                                                                                                  value="Lien"></a>
+        </tr>
+    <?php endwhile; ?>
+    </tbody>
+
 </table>
 
-  <footer>
-  <?php include('../header_footer/footer1.php');?>
+<footer>
+    <?php include('../header_footer/footer1.php'); ?>
 </footer>
-  </body>
+</body>
 </html>

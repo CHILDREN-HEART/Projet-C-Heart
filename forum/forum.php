@@ -45,7 +45,7 @@
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
         ?>
         <tr>
-            <td height='50'><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
+            <td><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
             <td><?php echo htmlspecialchars($row['date']); ?></td>
             <td><?php echo htmlspecialchars($row['titre']); ?></td>
             <td><a href='./sujet.php?numero_article=<?php echo $row['numero_article']; ?>'><input type="submit"
