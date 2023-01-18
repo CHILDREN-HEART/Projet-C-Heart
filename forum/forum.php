@@ -27,7 +27,7 @@
     <label for="message">Message:</label>
     <textarea id="message" name="message"></textarea>
     <br>
-    <input type="submit" name="submit" value="Ajouté">
+    <input type="submit" name="submit" value="Ajouter">
 </form>
 <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
 <table>
