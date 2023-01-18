@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
     <title>Accueil</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/styles/base.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="assets/styles/base.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
 

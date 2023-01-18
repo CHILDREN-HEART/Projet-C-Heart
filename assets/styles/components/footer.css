@@ -5,7 +5,7 @@
 }
 
 .flexboxFooter1 {
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: fixed;
     display: flex;
     align-items: center;

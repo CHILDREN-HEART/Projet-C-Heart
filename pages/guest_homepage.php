@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../assets/styles/pages/guest_homepage.css" />
+<link rel="stylesheet" href="../assets/styles/pages/guest_homepage.css"/>
 <header>
     <nav>
         <div class="nav__logo">
@@ -18,7 +18,7 @@
 
 <main id="guest_homepage">
     <article id="carousel">
-        <?php require("components/text_carousel.php"); ?>
+        <?php include("components/text_carousel.php"); ?>
     </article>
 
     <article id="decoration">
@@ -28,4 +28,4 @@
     </article>
 </main>
 
-<?php require("components/footer.php"); ?>
+<?php include("components/footer.php"); ?>
