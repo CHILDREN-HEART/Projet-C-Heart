@@ -1,12 +1,13 @@
 <?php
-//$host = "herogu.garageisep.com";
-//$dbname = "tw7TQUoQ7u_cheart";
-//$username = "HCjpLtsbkh_cheart";
-//$password = "dRQscVBnTH6HWDYK";
-$host = "localhost";
-$dbname = "c_heart";
-$username = "root";
-$password = "";
+$host = "herogu.garageisep.com";
+$dbname = "tw7TQUoQ7u_cheart";
+$username = "HCjpLtsbkh_cheart";
+$password = "dRQscVBnTH6HWDYK";
+
+//$host = "localhost";
+//$dbname = "c_heart";
+//$username = "root";
+//$password = "";
 
 $numero_article = filter_input(INPUT_GET, 'numero_article', FILTER_SANITIZE_NUMBER_INT);
 
