@@ -1,12 +1,12 @@
 <?php
-//$host = "herogu.garageisep.com";
-//$dbname = "tw7TQUoQ7u_cheart";
-//$username = "HCjpLtsbkh_cheart";
-//$password = "dRQscVBnTH6HWDYK";
-$host = "localhost";
-$dbname = "c_heart";
-$username = "root";
-$password = "";
+$host = "herogu.garageisep.com";
+$dbname = "tw7TQUoQ7u_cheart";
+$username = "HCjpLtsbkh_cheart";
+$password = "dRQscVBnTH6HWDYK";
+//$host = "localhost";
+//$dbname = "c_heart";
+//$username = "root";
+//$password = "";
 
 $dsn = "mysql:host=$host;dbname=$dbname";
 // récupérer tous les utilisateurs
