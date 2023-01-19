@@ -39,8 +39,6 @@ h2 {
 }
 
 
-
-
 input[type='text'], input[type='password'] {
     -webkit-appearance: none;
     background-color: transparent;
@@ -168,4 +166,13 @@ a, a:visited {
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.vide {
+    height: 60px;
 }

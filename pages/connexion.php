@@ -62,7 +62,8 @@
         </div>
     </div>
 </main>
-
+<div class="vide">
+</div>
 <footer>
     <?php include('../header_footer/footer1.php'); ?>
 </footer>

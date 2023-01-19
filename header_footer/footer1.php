@@ -21,12 +21,13 @@
             <a href="../quizz"><input type="button" value="Quizz"/></a>
         </div>
 
-            <?php
-            $connected = isset($_SESSION['user']) ?? null;
-            if ($connected) {
-                echo '<div style="background: white; height: 40px; width: 2px;"></div><div class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
-            }
+        <?php
+        $connected = isset($_SESSION['user']) ?? null;
+        if ($connected) {
+            echo '<div style="background: white; height: 40px; width: 2px;"></div><div class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
+        }
 
-            ?>
+        ?>
 
     </div>
+</div>

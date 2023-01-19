@@ -30,5 +30,6 @@
         </div>
     </article>
 </main>
-
+<div class="vide">
+</div>
 <?php include("../components/footer.php"); ?>

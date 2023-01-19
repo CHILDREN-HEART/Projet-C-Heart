@@ -2,7 +2,7 @@ a {
     color: #606c76;
 }
 
-#surname, #firstname, #taille, #poids{
+#surname, #firstname, #taille, #poids {
     -webkit-appearance: none;
     background-color: transparent;
     border: 0.1rem solid #d1d1d1;
@@ -14,7 +14,7 @@ a {
     width: 49%;
 }
 
-#firstname, #poids{
+#firstname, #poids {
     margin-left: 1.5%;
 }
 
@@ -150,7 +150,7 @@ a {
     color: #606c76;
 }
 
-#surname, #firstname, #taille, #poids{
+#surname, #firstname, #taille, #poids {
     -webkit-appearance: none;
     background-color: transparent;
     border: 0.1rem solid #d1d1d1;
@@ -162,11 +162,18 @@ a {
     width: 49%;
 }
 
-#firstname, #poids{
+#firstname, #poids {
     margin-left: 1.5%;
 }
 
+body {
+    min-height: 100vh;
+    position: relative;
+}
 
+.vide {
+    height: 60px;
+}
 
 
 

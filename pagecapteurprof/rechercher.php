@@ -118,6 +118,8 @@ if ($test_prenom == TRUE and $test_nom == FALSE and $test_email == False) {
         </tbody>
     </table>
 </div>
+<div class="vide">
+</div>
 <footer>
     <?php include('../header_footer/footer1.php'); ?>
 </footer>

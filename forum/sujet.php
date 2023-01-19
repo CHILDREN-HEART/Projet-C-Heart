@@ -57,26 +57,6 @@
             </tr>
         <?php endwhile; ?>
         </tbody>
-<!--        <tr>-->
-<!--            <th>Utilisateur</th>-->
-<!--            <th>Message</th>-->
-<!--            <th>Date</th>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td>John Doe</td>-->
-<!--            <td>Salut tout le monde !</td>-->
-<!--            <td>11 janvier 2021</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td>Jane Smith</td>-->
-<!--            <td>Bienvenue John !</td>-->
-<!--            <td>11 janvier 2021</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td>Bob Johnson</td>-->
-<!--            <td>Merci Jane !</td>-->
-<!--            <td>12 janvier 2021</td>-->
-<!--        </tr>-->
     </table>
 </div>
 <form action="forum_cree_message.php?numero_article=<?php echo $numero_article; ?>" method="post">
@@ -85,7 +65,8 @@
     <br>
     <input type="submit" name="submit" value="Validé">
 </form>
-
+<div class="vide">
+</div>
 <footer>
     <?php include('../header_footer/footer1.php'); ?>
 </footer>

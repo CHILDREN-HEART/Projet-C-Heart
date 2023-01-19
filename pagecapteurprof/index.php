@@ -82,15 +82,18 @@
             </li>
         </ul>
     </div>
-
+    <div class="vide">
+    </div>
 </main>
 
-
-<!--<footer>-->
-<!--    --><?php //include('../header_footer/footer1.php'); ?>
-<!--</footer>-->
+<div class="vide">
+</div>
+<footer>
+    <?php include('../header_footer/footer1.php'); ?>
+</footer>
 
 </body>
+
 <script src="/capteurParent/index.js"></script>
 
 </html>

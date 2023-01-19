@@ -49,6 +49,8 @@
 <div class="btn_rechercher_container">
     <a href=".\rechercher_patient.php">Rechercher</a>
 </div>
+<div class="vide">
+</div>
 <footer>
     <?php include('../header_footer/footer1.php'); ?>
 </footer>

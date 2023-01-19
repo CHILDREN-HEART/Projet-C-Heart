@@ -4,13 +4,16 @@
     font-family: "roboto", sans-serif;
 }
 
+
+
+
 .flexboxFooter1 {
     justify-content: space-evenly;
     display: flex;
-    position: fixed;
+    position: absolute;
+    bottom: 0;
     align-items: center;
     left: 0;
-    bottom: 0;
     width: 100%;
     background: #40599a;
     height: 60px;
