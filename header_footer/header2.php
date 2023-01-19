@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="header2.css">
 <div class="flexboxHeader">
     <div>
-        <img id="img1" src="../assets/icons/logo.ico" alt="logo">
+        <a href="../pages/guest_homepage_header.php"><img id="img1" src="../assets/icons/logo.ico" alt="logo"></a>
     </div>
     <div class="flexboxHeader2_2">
         <span>Child Heart</span>

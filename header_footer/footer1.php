@@ -8,14 +8,26 @@
         </div>
         <div style="background: white; height: 40px; width: 2px;"></div>
         <div class="btn">
-            <a href="../forum/forum.php"><input type="button" value="Forum"/></a>
+            <?php
+            $connected = isset($_SESSION['user']) ?? null;
+            if ($connected) {
+                echo '<a href="../forum/forum.php"><input type="button" value="Forum"/></a>';
+            } else {
+                echo '<a href="../forum/forum_non_connecte.php"><input type="button" value="Forum"/></a>';
+            }
+            ?>
         </div>
         <div style="background: white; height: 40px; width: 2px;"></div>
         <div class="btn">
             <a href="../quizz"><input type="button" value="Quizz"/></a>
         </div>
-        <div style="background: white; height: 40px; width: 2px;"></div>
-        <div class="btn">
-            <a href="../contacter"><input type="button" value="Contacter un administrateur"/></a>
-        </div>
+
+            <?php
+            $connected = isset($_SESSION['user']) ?? null;
+            if ($connected) {
+                echo '<div style="background: white; height: 40px; width: 2px;"></div><div class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
+            }
+
+            ?>
+
     </div>

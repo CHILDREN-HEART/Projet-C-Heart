@@ -114,7 +114,7 @@
 </main>
 
 <footer>
-    <?php require('../components/footer1.php'); ?>
+    <?php include('../header_footer/footer1.php'); ?>
 </footer>
 
 </body>
@@ -180,7 +180,7 @@
 <!--</main>-->
 <!---->
 <!--<footer>-->
-<!--    --><?php //require('../components/footer1.php'); ?>
+<!--    --><?php //include('../header_footer/footer1.php');?>
 <!--</footer>-->
 <!---->
 <!--</body>-->

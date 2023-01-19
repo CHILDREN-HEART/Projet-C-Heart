@@ -18,6 +18,7 @@ $connected = isset($_SESSION['user']) ?? null;
 if (!$connected) {
     require("pages/guest_homepage.php");
 } else {
+//    require ("capteurParent/index.php"); pas encore op car pas responsive
     require("pages/connected_homepage.php");
 }
 
