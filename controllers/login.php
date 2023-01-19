@@ -46,15 +46,20 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
     $_SESSION['nom'] = $data['nom'];
     $_SESSION['prenom'] = $data['prenom'];
 
-
-    header('Location: ../capteurParent/index.php');
-    exit();
+    if ($data['statut'] == "prof") {
+        header("Location: ../pagecapteurprof/index.php");
+        exit;
+    } elseif ($data['statut'] == NULL || $data['statut'] == "") {
+        header("Location: ../capteurParent/index.php");
+        exit;
+    }
+}
 //    if (count($data) == 0) {
 //        header('Location: ../pages/connexion.php?error=wrong_credentials');
 //        exit();
 //    }
 //
 //    password_verify()
-}
+
 
 header('Location: ../pages/connexion.php?error=missing_data');
