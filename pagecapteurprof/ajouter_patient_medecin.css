@@ -1,6 +1,6 @@
 :root {
     --primary: #697068;
-    --blue: #c9e265;
+    --blue: #40599a;
     --green-back: #c9e26540;
   }
   
@@ -56,6 +56,8 @@
   .nav-list .list-item .button-connexion:hover {
     opacity: 0.8;
   }
+
+
   .btn_retour a{
     text-decoration: none;
     color: var(--primary);
@@ -79,18 +81,8 @@
   .btn_retour :hover{
     opacity: 0.8;
   }
-.title_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.title_container h1{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-  }
 
-.gestion_container{
+  .gestion_container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +99,7 @@
     }
     .gestion_container tr{
       text-align: center;
+      border: solid 2px;
       
     }
     .gestion_container td{
@@ -117,7 +110,7 @@
     .gestion_container #case_mail{
       width: 150px;
     }
-    .gestion_container a{
+    .gestion_container #action{
         text-decoration: none;
         color:black;
         font-weight: bold;
@@ -132,13 +125,47 @@
         border-radius: 8px;
     }
     .gestion_container .btn_container:hover{
-        background-color: green;
+        background-color: lightgreen;
     }
+    .title_container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title_container h1{
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 35px;
+      font-weight: bold;
+
+    }
+    .btn_rechercher_container{
+        margin-left: 315px;
+        margin-top: 15px;
+        width: 150px;
+        background-color: #40599a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        border-radius: 8px;
+    }
+    .btn_rechercher_container a{
+        font-family: "Inter",sans-serif;
+        font-size: 24px;
+        text-decoration: none;
+        color:white;
+        font-weight: bold;
+    }
+    .btn_rechercher_container a:hover{
+        opacity: 0.8;
+    }
+    
+    
     .footer-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 265px;
+        margin-top: 190px;
       }
       
       .footer-section hr {

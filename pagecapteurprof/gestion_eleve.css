@@ -1,6 +1,6 @@
 :root {
     --primary: #697068;
-    --blue: #c9e265;
+    --blue: #40599a;
     --green-back: #c9e26540;
 }
 
@@ -130,7 +130,7 @@
     color: var(--primary);
     font-size: 18px;
     font-family: "Inter", sans-serif;
-    background: #38d818;
+    background: var(--blue);
     color: white;
     font-weight: bold;
     width: 130px;
@@ -206,7 +206,7 @@
 .gestion_container #case_mail {
     width: 150px;
 }
-.gestion_container a {
+.gestion_container #action {
     text-decoration: none;
     color: black;
     font-weight: bold;
