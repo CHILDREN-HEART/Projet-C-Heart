@@ -6,7 +6,7 @@
 }
 
 main#guest_homepage {
-    height: 700px;
+    height: 63rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -37,4 +37,9 @@ a, a:visited {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.2rem;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
 }

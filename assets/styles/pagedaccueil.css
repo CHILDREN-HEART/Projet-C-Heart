@@ -54,6 +54,10 @@ p {
     font-size: 0.5em;
 }
 
+body {
+    min-height: 100vh;
+    position: relative;
+}
 
 
   

@@ -1,6 +1,6 @@
 :root {
     --primary: #697068;
-    --green: #c9e265;
+    --blue: #c9e265;
     --green-back: #c9e26540;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .nav-list .list-item .button-connexion {
-    background: var(--green);
+    background: var(--blue);
     color: white;
     font-weight: bold;
     width: 130px;
@@ -61,7 +61,7 @@
     color: var(--primary);
     font-size: 22px;
     font-family: "Inter", sans-serif;
-    background: var(--green);
+    background: var(--blue);
     color: white;
     font-weight: bold;
     width: 140px;

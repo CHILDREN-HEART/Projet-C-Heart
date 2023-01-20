@@ -69,11 +69,13 @@ label[for="message"] {
     display: block;
     margin-bottom: 5px;
 }
+
 label[for="titre"] {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
+
 textarea#message {
     width: 50%;
     height: 150px;
@@ -91,6 +93,7 @@ textarea#message1 {
     box-sizing: border-box;
     resize: none;
 }
+
 textarea#titre {
     width: 330px;
     height: 20px;
@@ -98,4 +101,13 @@ textarea#titre {
     margin-bottom: 10px;
     box-sizing: border-box;
     resize: none;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.vide {
+    height: 60px;
 }

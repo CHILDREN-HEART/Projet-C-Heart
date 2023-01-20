@@ -33,6 +33,14 @@ nav > div > * {
     height: 100%;
 }
 
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.vide{
+    height: 60px;
+}
 
 /***/
 /*#rectangle {*/

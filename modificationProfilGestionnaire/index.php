@@ -54,27 +54,29 @@
                             placeholder="Confirmer mot de passe"
                     />
                     <label id="CGU"
-                    ><div><label id="CGU"><a href="../CGU/CGU.php"> Consulter les Conditions Générales d'Utilisation
-                                (CGU) </a></label></div>
+                    >
+                        <div><label id="CGU"><a href="../CGU/CGU.php"> Consulter les Conditions Générales d'Utilisation
+                                    (CGU) </a></label></div>
 
-                    <div class="Valider_Retour">
-                        <input
-                                type="submit"
-                                value="Valider"
-                        />
-                        <input
-                                type="submit"
-                                value="Retour"
-                        />
-                    </div>
+                        <div class="Valider_Retour">
+                            <input
+                                    type="submit"
+                                    value="Valider"
+                            />
+                            <input
+                                    type="submit"
+                                    value="Retour"
+                            />
+                        </div>
                 </form>
             </div>
         </div>
     </div>
 </main>
-
+<div class="vide">
+</div>
 <footer>
-    <?php //require('../components/footer1.php'); ?>
+    <?php //include('../header_footer/footer1.php'); ?>
 </footer>
 </body>
 </html>

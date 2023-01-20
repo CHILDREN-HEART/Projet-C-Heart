@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
 }
+
 html,
 body {
     background: white;
     display: flex;
     flex-direction: column;
 }
+
 :root {
     --blue1: #40599a;
     --blue2: #00c4b3;
@@ -96,4 +98,13 @@ body {
     background-color: var(--green);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.vide {
+    height: 60px;
 }

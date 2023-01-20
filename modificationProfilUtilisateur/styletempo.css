@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 #rectangle {
     width: 60%;
     margin: auto;
@@ -92,14 +93,11 @@ input[type="submit"] {
     white-space: nowrap;
 }
 
-a{
+a {
     color: #606c76;
 }
 
-#surname,
-#firstname,
-#taille,
-#poids {
+#surname, #firstname, #taille, #poids {
     -webkit-appearance: none;
     background-color: transparent;
     border: 0.1rem solid #d1d1d1;
@@ -111,8 +109,7 @@ a{
     width: 49%;
 }
 
-#firstname,
-#poids {
+#firstname, #poids {
     margin-left: 1.5%;
 }
 
@@ -133,3 +130,16 @@ a{
     text-transform: uppercase;
     white-space: nowrap;
 }
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.vide {
+    height: 60px;
+}
+
+
+
+

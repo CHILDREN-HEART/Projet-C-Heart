@@ -8,10 +8,10 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Forum</title>
-    <link rel="shortcut icon" href="./assets/Logo.png"/>
+    <link rel="shortcut icon" href="../assets/icons/logo.ico"/>
     <link rel="stylesheet" href="../assets/styles/components/header.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
-    <link rel="stylesheet" href="pagedeform.css"/>
+    <link rel="stylesheet" href="../forum/pagedeform.css"/>
 </head>
 <body>
 
@@ -45,7 +45,7 @@
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
         ?>
         <tr>
-            <td height='50'><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
+            <td><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
             <td><?php echo htmlspecialchars($row['date']); ?></td>
             <td><?php echo htmlspecialchars($row['titre']); ?></td>
             <td><a href='./sujet.php?numero_article=<?php echo $row['numero_article']; ?>'><input type="submit"
@@ -56,7 +56,8 @@
     </tbody>
 
 </table>
-
+<div class="vide">
+</div>
 <footer>
     <?php include('../header_footer/footer1.php'); ?>
 </footer>

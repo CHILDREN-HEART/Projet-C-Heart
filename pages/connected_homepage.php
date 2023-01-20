@@ -10,9 +10,11 @@ $password = "dRQscVBnTH6HWDYK";
 //$password = "";
 
 
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+};
 
-echo "Bonjour ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'];
+echo "Bonjour ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'] . " !";
 
 $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 
@@ -23,10 +25,10 @@ $statement->execute([
 
 $data = $statement->fetch();
 
-echo "Tu es connecté en tant que " . $data['mail'];
+echo " Tu es connecté en tant que " . $data['mail'];
 
 
 ?>
 
-<form action="../controllers/logout.php" method="post">
+<form action="./controllers/logout.php" method="post">
     <input type="submit" value="Se déconnecter"/>
