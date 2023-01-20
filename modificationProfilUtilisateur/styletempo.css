@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-
-
-
 #rectangle {
     width: 60%;
     margin: auto;
@@ -14,12 +11,12 @@
 h2 {
     text-align: center;
     font-size: 3rem;
-    color: #40599A;
+    color: #40599a;
     padding: 2rem;
 }
 
-
-input[type='text'], input[type='password'] {
+input[type="text"],
+input[type="password"] {
     -webkit-appearance: none;
     background-color: transparent;
     border: 0.1rem solid #d1d1d1;
@@ -58,10 +55,10 @@ input {
 
 body {
     color: #606c76;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.6em;
     font-weight: 300;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     line-height: 1.6;
 }
 
@@ -76,7 +73,7 @@ html {
     box-sizing: inherit;
 }
 
-input[type='submit'] {
+input[type="submit"] {
     background-color: #40599a;
     border: 0.1rem solid #40599a;
     border-radius: 0.4rem;
@@ -86,7 +83,7 @@ input[type='submit'] {
     font-size: 1.1rem;
     font-weight: 700;
     height: 3.8rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     line-height: 3.8rem;
     padding: 0 3rem;
     text-align: center;
@@ -99,7 +96,10 @@ a{
     color: #606c76;
 }
 
-#surname, #firstname, #taille, #poids{
+#surname,
+#firstname,
+#taille,
+#poids {
     -webkit-appearance: none;
     background-color: transparent;
     border: 0.1rem solid #d1d1d1;
@@ -111,7 +111,8 @@ a{
     width: 49%;
 }
 
-#firstname, #poids{
+#firstname,
+#poids {
     margin-left: 1.5%;
 }
 
@@ -125,16 +126,10 @@ a{
     font-size: 1.1rem;
     font-weight: 700;
     height: 3.8rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     line-height: 3.8rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
 }
-
-
-
-
-
-

@@ -4,7 +4,7 @@ window.onload = () => {
 };
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(slideIndex += 1);
 }
 
 function currentSlide(n) {
