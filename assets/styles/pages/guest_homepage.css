@@ -12,7 +12,9 @@ main#guest_homepage {
     justify-content: space-evenly;
 }
 
-#carousel, #decoration, #decoration__container {
+#carousel,
+#decoration,
+#decoration__container {
     width: 600px;
 }
 
@@ -22,14 +24,15 @@ main#guest_homepage {
     margin: 25px;
 }
 
-#inscription{
+#inscription {
     display: flex;
     align-items: center;
     font-size: 30px;
     margin-right: 20px;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #ffffff;
 }
 
@@ -42,4 +45,12 @@ a, a:visited {
 body {
     min-height: 100vh;
     position: relative;
+}
+
+#decoration {
+    width: 100%;
+}
+
+#guest_homepage {
+    width: 100%;
 }
