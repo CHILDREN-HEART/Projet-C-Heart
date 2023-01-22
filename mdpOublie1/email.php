@@ -1,4 +1,9 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 $host = "herogu.garageisep.com";
 $dbname = "tw7TQUoQ7u_cheart";
 $username = "HCjpLtsbkh_cheart";
@@ -9,7 +14,7 @@ $password = "dRQscVBnTH6HWDYK";
 //$username = "root";
 //$password = "";
 
-$base_url = "http://localhost/c_heart/";
+//$base_url = "http://localhost/c_heart/";
 
 if (isset($_POST['email'])) {
     if ($_POST['email'] == "") {
@@ -29,6 +34,18 @@ if (isset($_POST['email'])) {
         // Récupérez l'adresse email de l'utilisateur
         $email = $_POST['email'];
 
+        $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE mail = :email");
+        $statement->execute([
+            'email' => $_POST['email']
+        ]);
+
+        $data = $statement->fetchAll();
+
+        if (count($data) == 0) {
+            header('Location: index.php?error=invalid_email');
+            exit();
+        }
+
         // Générez un jeton de réinitialisation de mot de passe unique
         $token = bin2hex(random_bytes(32));
 
@@ -36,29 +53,66 @@ if (isset($_POST['email'])) {
         $query = $mysqlInstance->prepare("UPDATE utilisateur SET reset_password_token = :token WHERE mail = :email");
         $query->execute(['token' => $token, 'email' => $email]);
 
-//        ini_set('SMTP', 'smtp-relay.sendinblue.com');
-//        ini_set('smtp_port', 587);
-//        ini_set("username","minitableau2002@gmail.com");
-//        ini_set("password","6sV9OrBEcqL5zZwj");
+        require '../PHPMailer-master/src/Exception.php';
+        require '../PHPMailer-master/src/PHPMailer.php';
+        require '../PHPMailer-master/src/SMTP.php';
 
-        // Préparez l'email à envoyer
-        $to = $email;
-        $subject = "Réinitialisation de votre mot de passe";
-        $msg = "Suivez ce lien pour réinitialiser votre mot de passe : " . $base_url . "reset_password.php?token=" . $token;
-        $headers = "From: no-reply@example.com";
+        $base_url = "https://cheart.herogu.garageisep.com/mdpOublie2/";
 
-        // Envoyez l'email
-        mail($to, $subject, $msg, $headers);
+        $email = new PHPMailer(true);
 
-        exit;
+        try {
+            $email->SMTPDebug = SMTP::DEBUG_SERVER;
+            $email->IsSMTP();
+            $email->Host = 'smtp-relay.sendinblue.com';               //Adresse IP ou DNS du serveur SMTP
+            $email->Port = 587;                          //Port TCP du serveur SMTP
+            $email->SMTPAuth = 1;                        //Utiliser l'identification
 
-        // Redirigez l'utilisateur vers la page de connexion avec un message indiquant que l'email de réinitialisation de mot de passe a été envoyé
-        header("Location: ../pages/connexion.php?reset=success");
-        exit;
+            if ($email->SMTPAuth) {
+                $email->SMTPSecure = 'tls';               //Protocole de sécurisation des échanges avec le SMTP
+                $email->Username = 'minitableau2002@gmail.com';   //Adresse email à utiliser
+                $email->Password = '6sV9OrBEcqL5zZwj';         //Mot de passe de l'adresse email à utiliser
+
+            }
+
+            $email->CharSet = 'UTF-8'; //Format d'encodage à utiliser pour les caractères
+            $email->addAddress($_POST['email']);
+            $email->From = 'minitableau2002@gmail.com';                //L'email àx afficher pour l'envoi
+            $email->FromName = 'Contact de C-Heart';             //L'alias à afficher pour l'envoi
+            $email->Subject = 'Réinitialisation de votre mot de passe';                      //Le sujet du mail
+            $email->WordWrap = 50;                               //Nombre de caracteres pour le retour a la ligne automatique
+            $email->Body = "Suivez ce lien pour réinitialiser votre mot de passe : " . $base_url . "index.php?token=" . $token;           //Texte brut
+            $email->IsHTML(false);                                  //Préciser qu'il faut utiliser le texte brut
+            $email->send();
+            header("Location: index.php?success=success");
+            exit();
+
+
+
+        } catch (Exception) {
+            echo "Message non envoyé. Erreur : {$email->ErrorInfo}";
+        }
     }
+
+
+//        // Préparez l'email à envoyer
+//        $to = $email;
+//        $subject = "Réinitialisation de votre mot de passe";
+//        $msg = "Suivez ce lien pour réinitialiser votre mot de passe : " . $base_url . "reset_password.php?token=" . $token;
+//        $headers = "From: no-reply@example.com";
+//
+//        // Envoyez l'email
+//        mail($to, $subject, $msg, $headers);
+//
+//        exit;
+
+    // Redirigez l'utilisateur vers la page de connexion avec un message indiquant que l'email de réinitialisation de mot de passe a été envoyé
+//    header("Location: ../pages/connexion.php?reset=success");
+//    exit;
+
 }
 
-header('Location: ./index.php?error=missing_data');
+//header('Location: ./index.php?error=missing_data');
 
 
 

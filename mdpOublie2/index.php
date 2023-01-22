@@ -31,15 +31,26 @@
 <main>
     <div class="grid">
         <div id="rectangle">
+            <?php
+            if (isset($_GET['error'])) {
+                if ($_GET['error'] == 'passwords_not_matching') {
+                    echo '<p class="error_message">Les mots de passe ne correspondent pas !</p>';
+                } elseif ($_GET['error'] == 'missing_data') {
+                    echo '<p class="error_message">Vous devez entrer votre mot de passe</p>';
+                }
+            }
+            ?>
             <h2>Réinitialiser mon mot de passe </h2>
-            
+
             <div class="grid-container">
-                <input type="password" id="password" placeholder="Nouveau mot de passe"/>
-                <input type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
-                <div class="Valider_Retour">
-                    <input type="submit" value="Réinitialiser votre mot de passe"/>
-                    <a href="../pages/connexion.php"><input id="retour" value="Retour"/></a>
-                </div>
+                <form action="reset_password.php" method="get">
+                    <input type="password" id="password" placeholder="Nouveau mot de passe"/>
+                    <input type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
+                    <div class="Valider_Retour">
+                        <input type="submit" value="Réinitialiser votre mot de passe"/>
+                        <a href="../mdpOublie1/index.php"><input id="retour" value="Retour"/></a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

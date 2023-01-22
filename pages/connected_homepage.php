@@ -1,6 +1,4 @@
 <?php
-echo phpinfo();
-exit();
 $host = "herogu.garageisep.com";
 $dbname = "tw7TQUoQ7u_cheart";
 $username = "HCjpLtsbkh_cheart";

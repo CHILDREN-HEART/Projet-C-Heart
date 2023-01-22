@@ -38,12 +38,14 @@
                     echo '<p class="error_message">Vous devez entrer votre adresse mail</p>';
                 } else if ($_GET['error'] == 'invalid_email') {
                     echo '<p class="error_message">Cet email n\'est pas valide</p>';
-                } else if ($_GET['error'] == 'test') {
-                    echo '<p class="error_message">test</p>';
                 }
             }
+            if (isset($_GET['success'])) {
+                if ($_GET['success'] == 'success') {
+                    echo '<p class="success_message">L\'email a été envoyé !</p>';
+                }
 
-
+            }
             ?>
             <h2>Réinitialiser mon mot de passe </h2>
             <div id="aide1">1 - Entrez l’adresse e-mail associée à votre compte ci-dessous.</div>
