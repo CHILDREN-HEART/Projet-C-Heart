@@ -50,7 +50,6 @@ h2 {
 .conteneur {
     display: flex;
     gap: 1rem;
-    
     align-items: stretch;
     margin: 2rem auto;
 }
@@ -67,9 +66,9 @@ h2 {
 }
 
 .moyenchiffre {
-  display: block;
-  text-align: center;
-  font-size: 40px;
+    display: block;
+    text-align: center;
+    font-size: 40px;
 }
 
 .divider {

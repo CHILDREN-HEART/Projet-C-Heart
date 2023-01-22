@@ -1,2 +1,21 @@
 #canvas {
 }
+
+@media screen and (max-device-width: 800px) {
+    .conteneurchild {
+        flex-direction: column;
+    }
+
+    .conteneur {
+        flex-direction: column !important;
+    }
+
+    .canvas {
+        width: 80%;
+    }
+
+    /* Barre pour séparer les chiffres sur téléphone mais jtrouve pas ça très beau */
+    /* .divider {
+        height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;
+    } */
+}
