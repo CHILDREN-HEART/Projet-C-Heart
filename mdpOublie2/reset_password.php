@@ -27,13 +27,25 @@ if (isset($_POST['password']) && isset($_POST['confirm_password']) && isset($_PO
     }
 
     $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
+    $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE reset_password_token = :token");
+    $statement->execute([
+        'token' => $token
+    ]);
+
+    $data = $statement->fetchAll();
+
+    if (count($data) == 0) {
+        header('Location: ../mdpOublie1/index.php?error=missing_data');
+        exit();
+    }
 
 
-    $statement = $mysqlInstance->prepare("UPDATE utilisateur SET (password,reset_password_token) VALUES (:password,NULL) WHERE reset_password_token = :token");
+    $statement = $mysqlInstance->prepare("UPDATE utilisateur SET password = :password,reset_password_token = NULL WHERE reset_password_token = :token");
     $statement->execute([
         'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
+        'token' => $token
     ]);
-    header('Location: ./pages/connexion.php');
+    header('Location: ../pages/connexion.php');
 
     exit();
 }

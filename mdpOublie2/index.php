@@ -44,9 +44,9 @@
 
             <div class="grid-container">
                 <form action="reset_password.php" method="post">
-                    <input type="password" id="password" placeholder="Nouveau mot de passe"/>
-                    <input type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
-                    <input type="hidden" value="<?php echo $_GET["token"]?>">
+                    <input name="password" type="password" id="password" placeholder="Nouveau mot de passe"/>
+                    <input name="confirm_password" type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
+                    <input name="token" type="hidden" value="<?php echo $_GET["token"]?>">
                     <div class="Valider_Retour">
                         <input type="submit" value="Réinitialiser votre mot de passe"/>
                         <a href="../mdpOublie1/index.php"><input id="retour" value="Retour"/></a>
