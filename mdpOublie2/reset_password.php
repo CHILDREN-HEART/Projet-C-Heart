@@ -9,12 +9,14 @@ $password = "dRQscVBnTH6HWDYK";
 //$username = "root";
 //$password = "";
 
-$token = $_GET['token'];
-echo $_GET['token'];
+//$token = $_GET['token'];
+//echo $_GET['token'];
 
-if (isset($_POST['password']) && isset($_POST['confirm_password']) && isset($token)) {
+if (isset($_POST['password']) && isset($_POST['confirm_password']) && isset($_POST["token"])) {
 
-    if ($_POST['password'] == "" || $_POST['confirm_password'] == "" || $token == "") {
+    $token = $_POST["token"];
+
+    if ($_POST['password'] == "" || $_POST['confirm_password'] == "" || $_POST["token"] == "") {
         header("Location: index.php?token=$token&error=missing_data");
         exit();
     }
