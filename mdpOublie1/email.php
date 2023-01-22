@@ -77,7 +77,7 @@ if (isset($_POST['email'])) {
 
             $email->CharSet = 'UTF-8'; //Format d'encodage à utiliser pour les caractères
             $email->addAddress($_POST['email']);
-            $email->From = 'minitableau2002@gmail.com';                //L'email àx afficher pour l'envoi
+            $email->From = 'no-reply@cheart.com';                //L'email àx afficher pour l'envoi
             $email->FromName = 'Contact de C-Heart';             //L'alias à afficher pour l'envoi
             $email->Subject = 'Réinitialisation de votre mot de passe';                      //Le sujet du mail
             $email->WordWrap = 50;                               //Nombre de caracteres pour le retour a la ligne automatique
