@@ -5,7 +5,7 @@
     --color-secondary: #00ff00;
     --color-tertiary: #0000ff;
 
-    --text-color-primary: #FFFFFF;
+    --text-color-primary: #ffffff;
 
     --background-color: #ff8d8d;
 }
@@ -38,8 +38,19 @@ body {
     position: relative;
 }
 
-.vide{
+.vide {
     height: 60px;
+}
+
+#guest_homepage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-device-width: 800px) {
+    #guest_homepage {
+        transform: scale(0.42);
+    }
 }
 
 /***/
@@ -94,5 +105,3 @@ body {
 /*    text-transform: uppercase;*/
 
 /*}*/
-
-
