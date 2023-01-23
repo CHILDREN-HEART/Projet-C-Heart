@@ -6,7 +6,7 @@
         <div class="btn-footer">
             <a href="../faq"><input type="button" value="FAQ" /></a>
         </div>
-        <div style="background: white; height: 40px; width: 2px;"></div>
+        <div id="barre"></div>
         <div class="btn-footer">
             <?php
 
@@ -18,7 +18,7 @@
             }
             ?>
         </div>
-        <div style="background: white; height: 40px; width: 2px;"></div>
+        <div id="barre"></div>
         <div class="btn-footer">
             <a href="./quizz/quizz.php"><input type="button" value="Quizz" /></a>
         </div>

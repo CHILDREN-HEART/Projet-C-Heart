@@ -5,7 +5,7 @@
         <div class="btn">
             <a href="../faq"><input type="button" value="FAQ"/></a>
         </div>
-        <div style="background: white; height: 40px; width: 2px;"></div>
+        <div id="barre"></div>
         <div class="btn">
             <?php
             $connected = isset($_SESSION['user']) ?? null;
@@ -16,7 +16,7 @@
             }
             ?>
         </div>
-        <div style="background: white; height: 40px; width: 2px;"></div>
+        <div id="barre"></div>
         <div class="btn">
             <a href="../quizz"><input type="button" value="Quizz"/></a>
         </div>
@@ -24,7 +24,7 @@
         <?php
         $connected = isset($_SESSION['user']) ?? null;
         if ($connected) {
-            echo '<div style="background: white; height: 40px; width: 2px;"></div><div class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
+            echo '<div id="barre"></div><div class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
         }
 
         ?>

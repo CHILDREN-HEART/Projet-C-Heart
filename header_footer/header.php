@@ -5,7 +5,7 @@
         <a href="../pages/guest_homepage_header.php"><img id="img1" src="../assets/images/Logo.png" alt="logo"></a>
     </div>
     <div class="flexboxHeader2">
-        <span>Child heart</span>
+        <span id="CHeart">Child heart</span>
     </div>
     <div class="flexboxHeader3">
         <a id="inscription" href="../inscription/index.php">Inscription</a>

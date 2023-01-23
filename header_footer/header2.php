@@ -4,7 +4,7 @@
         <a href="../pages/guest_homepage_header.php"><img id="img1" src="../assets/icons/logo.ico" alt="logo"></a>
     </div>
     <div class="flexboxHeader2_2">
-        <span>Child Heart</span>
+        <span id="CHeart">Child Heart</span>
     </div>
 
     <div class="flexboxHeader3_2">

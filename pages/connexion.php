@@ -15,7 +15,7 @@
         </div>
 
         <div class="nav__title">
-            <h1>Child-Heart</h1>
+            <h1 id="CHeart">Child-Heart</h1>
         </div>
 
         <div class="nav__inscription">

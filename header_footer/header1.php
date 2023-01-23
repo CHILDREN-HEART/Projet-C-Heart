@@ -5,6 +5,6 @@
         <a href="../pages/guest_homepage_header.php"><img id="img1" src="../assets/icons/logo.ico" alt="logo"></a>
     </div>
     <div class="flexboxHeader2_1">
-        <span>Child heart</span>
+        <span id="CHeart"> Child heart</span>
     </div>
 </div>

@@ -6,12 +6,12 @@
         </div>
 
         <div class="nav__title">
-            <h1>Child-Heart</h1>
+            <h1 id="CHeart">Child-Heart</h1>
         </div>
 
         <div class="nav__inscription">
             <a id="inscription" href="./pages/inscription.php">Inscription</a>
-            <a href="./pages/connexion.php"> <img src="../assets/icons/profil.ico" alt="Icône de profil"></a>
+            <a id="ImgCo" href="./pages/connexion.php"> <img src="../assets/icons/profil.ico" alt="Icône de profil"></a>
         </div>
     </nav>
 </header>

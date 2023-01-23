@@ -91,3 +91,20 @@ a:visited {
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    #CHeart {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    nav {
+        height: 80px;
+    }
+    .nav__inscription{
+        margin: 0;
+
+    }
+
+}
