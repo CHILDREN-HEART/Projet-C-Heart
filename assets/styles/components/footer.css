@@ -6,16 +6,37 @@
 
 
 .flexboxFooter1 {
-    justify-content: space-evenly;
     display: flex;
+    flex-wrap: wrap; /* Ajout de cette propriété pour permettre aux éléments de passer à la ligne */
+    justify-content: space-evenly;
+    align-items: center;
     position: absolute;
     bottom: 0;
-    align-items: center;
     left: 0;
     width: 100%;
     background: #40599a;
     height: 60px;
 }
+
+#responsiveContact {
+    order: 2;
+}
+
+@media (max-width: 605px) {
+    #responsiveContact {
+        order: 3;
+        width: 100%;
+        background: #40599a;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .barreResp{
+        display: none;
+    }
+
+}
+
 
 /*
 .btn {

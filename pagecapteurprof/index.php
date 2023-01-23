@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="../assets/icons/logo.ico">
     <link rel="stylesheet" href="../assets/styles/base.css">
     <link rel="stylesheet" href="../assets/styles/components/header.css">
-    <link rel="stylesheet" href="capteurParent/index.css">
     <link rel="stylesheet" href="../header_footer/footer1.css">
     <link rel="stylesheet" href="../assets/styles/capteurpa.css"/>
     <link rel="stylesheet" href="gestion_eleve.css">

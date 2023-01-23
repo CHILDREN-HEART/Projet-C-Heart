@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 <div class="flexboxFooter">
     <div class="flexboxFooter1">
+
         <div class="btn">
             <a href="../faq"><input type="button" value="FAQ"/></a>
         </div>
@@ -21,10 +22,11 @@
             <a href="../quizz"><input type="button" value="Quizz"/></a>
         </div>
 
+
         <?php
         $connected = isset($_SESSION['user']) ?? null;
         if ($connected) {
-            echo '<div id="barre"></div><div class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
+            echo '<div id="barre" class="barreResp"></div><div id="responsiveContact" class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
         }
 
         ?>
