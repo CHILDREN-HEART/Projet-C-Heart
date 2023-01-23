@@ -80,3 +80,9 @@ body {
     min-height: 100vh;
     position: relative;
 }
+
+#prenomTableau,
+#prenomTableau:visited {
+    color: #000000;
+    text-decoration: none;
+}

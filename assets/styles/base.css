@@ -68,7 +68,9 @@ body {
         margin: 0;
 
     }
-
+    #ImgCo{
+        height: 60px;
+    }
 }
 
 /***/

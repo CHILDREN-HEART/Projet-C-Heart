@@ -62,8 +62,8 @@ html {
     margin: 25px;
 }
 
-a,
-a:visited {
+#inscription,
+#inscription:visited {
     color: #ffffff;
     text-decoration: none;
 }
@@ -73,6 +73,18 @@ a:visited {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.2rem;
 }
+
+/*a,*/
+/*a:visited {*/
+/*    color: #ffffff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*#inscription:hover {*/
+/*    color: #ffffff;*/
+/*    background-color: rgba(255, 255, 255, 0.2);*/
+/*    border-radius: 0.2rem;*/
+/*}*/
 
 #logo_connexion {
     height: 60px;

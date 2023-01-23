@@ -62,8 +62,9 @@
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
                 ?>
                 <tr>
-                    <td height='50'><?php echo htmlspecialchars($row['ID']); ?></td>
-                    <td><?php echo htmlspecialchars($row['prenom']); ?></td>
+                    <td><?php echo htmlspecialchars($row['ID']); ?></td>
+                    <td><a id="prenomTableau" href="../capteurParent/index.php"><?php echo htmlspecialchars($row['prenom']); ?></a></td>
+<!-- Lorsque la table capteur sera faite alors faire la request SQL qui permet de voir les informations de l'élève en question-->
                     <td><?php echo htmlspecialchars($row['nom']); ?></td>
                     <td id="case_mail"><?php echo htmlspecialchars($row['mail']); ?></td>
                     <td>

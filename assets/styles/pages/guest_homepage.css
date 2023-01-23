@@ -57,10 +57,11 @@ body {
     nav {
         height: 80px;
     }
-    .nav__inscription{
-        margin: 0;
 
+    .nav__inscription {
+        margin: 0;
     }
+
 
 }
 
