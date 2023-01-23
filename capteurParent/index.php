@@ -32,7 +32,7 @@
                 <span class="moyenchiffre">bpm/min</span>
             </div>
 
-            <div class="divider"></div>
+            <div class="dividerTemp"></div>
             <div class="conteneurchild">
                 <span class="titre3">Température</span>
                 <span class="groschiffre">10</span>
