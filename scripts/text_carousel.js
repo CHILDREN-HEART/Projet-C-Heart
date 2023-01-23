@@ -4,7 +4,7 @@ window.onload = () => {
 };
 
 function plusSlides(n) {
-    showSlides(slideIndex += 1);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
@@ -15,9 +15,9 @@ function showSlides(n) {
     let i;
 
     const slides = document.getElementsByClassName("carousel__item");
-    console.log(`showSlides called ${n} ${slides.length}`);
     const dots = document.getElementsByClassName("carousel__dot__item");
-    if (n >= slides.length) {
+
+    if (n > slides.length) {
         slideIndex = 1;
     }
     if (n < 1) {

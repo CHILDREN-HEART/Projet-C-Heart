@@ -6,23 +6,20 @@
 </head>
     <body style="width: 800px; margin: auto;">
     <h2>Informations légales</h2>
-    
+
     <p style="text-align:center">MENTIONS LEGALES :</p>
-    
-    <p style="text-align:justify">Conformément aux dispositions  des articles 6-III et 19 de la Loi numero 2004-575 du 21 juin 2004 pour la Confiance de l'économie numérique, dite L.C.E.N., nous informons les utilisateurs du site : <a href="https://hvjhvj" target="_blank">hvjhvj</a> Les infos ci-dessous :</p>
+
+    <p style="text-align:justify">Conformément aux dispositions des articles 6-III et 19 de la Loi numero 2004-575 du 21 juin 2004 pour la Confiance de l'économie numérique, dite L.C.E.N., nous informons les utilisateurs du site : <a href="https://hvjhvj" target="_blank">hvjhvj</a> Les infos ci-dessous :</p>
     <br />
     <p style="text-align:justify"><strong>1. Données légales :</strong></p>
 
-    
-
-        
     <p style="text-align:justify">Le site web <a href="https://hvjhvj" style="color: rgb(7, 130, 193); font-family: sans-serif, Arial, Verdana, " target="_blank">hvjhvj</a> est la propriété exclusive de <strong>SARL</strong> <strong>C-heart</strong>, .</p>
-    
+
     <p style="text-align:justify"><strong>SARL</strong> <strong>C-heart</strong> - N° Tel : <strong>0134868475</strong></p>
-    
-    <p style="text-align:justify"><strong>12 rue vaugirard</strong> <strong>92130 Issy les moulineaux</strong><br />
+
+    <p style="text-align:justify"><strong>12 rue Vaugirard</strong> <strong>92130 Issy les moulineaux</strong><br />
     Immatriculée au RCS (Registre du Commerce et des Sociétés) sous le numéro <strong>77678998968989</strong></p>
-    
+
     <p style="text-align:justify">N*TVA Intracommunautaire : <strong>FR 785797958866</strong><br />
     Adresse email : <strong><a href="mailto:c-heart@gmail.com?subject=Contact a partir des mentions légales via le site hvjhvj">c-heart@gmail.com</a></strong><br />
     <br />
@@ -54,7 +51,7 @@
     
     <p style="text-align:justify">Tout internaute qui se connecte et utilise le site internet : <a href="https://cheart.herogu.garageisep.com/" target="_blank">hvjhvj</a> est considéré comme usageé du site web.<br />
     Le site suivant <strong>hvjhvj</strong> réuni différents services, en l'état, mis à la disposition des usageé. Il est précisé que ceux-ci doivent rester courtois et faire preuve de bonne foi tant envers les autres utilisateurs qu'envers le Webmaster du site hvjhvj. Le site hvjhvj est mis à jour de façon régulière par Craie Damien.<br />
-    Benaut Alix s'efforce d'indiqué sur le site suivant https://cheart.herogu.garageisep.com/ des informations les plus précises possibles (sous réserve de modifications apportées depuis leur mise en ligne), mais ne peuvent certifier l'exactitude, la complétude et les informations transmises sur son site internet, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. En répercussion, l'utilisateur reconnaît se servir des informations données (à titre indicatif, non exhaustives et susceptibles d'évoluer) sous sa responsabilité exclusive.</p>
+    Benaut Alix s'efforce d'indiquer sur le site suivant https://cheart.herogu.garageisep.com/ des informations les plus précises possibles (sous réserve de modifications apportées depuis leur mise en ligne), mais ne peuvent certifier l'exactitude, la complétude et les informations transmises sur son site internet, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. En répercussion, l'utilisateur reconnaît se servir des informations données (à titre indicatif, non exhaustives et susceptibles d'évoluer) sous sa responsabilité exclusive.</p>
     
     <p style="text-align:justify"></p>
     <br />

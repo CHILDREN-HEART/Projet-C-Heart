@@ -1,16 +1,6 @@
 <?php
-$host = "herogu.garageisep.com";
-$dbname = "tw7TQUoQ7u_cheart";
-$username = "HCjpLtsbkh_cheart";
-$password = "dRQscVBnTH6HWDYK";
 
-//$host = "localhost";
-//$dbname = "c_heart";
-//$username = "root";
-//$password = "";
-
-//$token = $_GET['token'];
-//echo $_GET['token'];
+require_once('../utils/database.php');
 
 if (isset($_POST['password']) && isset($_POST['confirm_password']) && isset($_POST["token"])) {
 
@@ -26,7 +16,6 @@ if (isset($_POST['password']) && isset($_POST['confirm_password']) && isset($_PO
         exit();
     }
 
-    $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
     $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE reset_password_token = :token");
     $statement->execute([
         'token' => $token

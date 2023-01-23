@@ -1,12 +1,5 @@
 <?php
-$host = "herogu.garageisep.com";
-$dbname = "tw7TQUoQ7u_cheart";
-$username = "HCjpLtsbkh_cheart";
-$password = "dRQscVBnTH6HWDYK";
-//$host = "localhost";
-//$dbname = "c_heart";
-//$username = "root";
-//$password = "";
+
 
 if (isset($_POST['login']) || isset($_POST['password'])) {
 
@@ -20,7 +13,7 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
         exit();
     }
 
-    $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
+    require_once('../utils/database.php');
 
     $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE mail = :email");
     $statement->execute([

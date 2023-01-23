@@ -1,14 +1,4 @@
 <?php
-$host = "herogu.garageisep.com";
-$dbname = "tw7TQUoQ7u_cheart";
-$username = "HCjpLtsbkh_cheart";
-$password = "dRQscVBnTH6HWDYK";
-
-//$host = "localhost";
-//$dbname = "c_heart";
-//$username = "root";
-//$password = "";
-
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -16,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 echo "Bonjour ! Tu es connecté à l'utilisateur ayant l'id " . $_SESSION['user'] . " !";
 
-$mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
+require_once('./utils/database.php');
 
 $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE id = :user_id");
 $statement->execute([

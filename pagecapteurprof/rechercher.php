@@ -1,22 +1,10 @@
 <?php
-$host = "herogu.garageisep.com";
-$dbname = "tw7TQUoQ7u_cheart";
-$username = "HCjpLtsbkh_cheart";
-$password = "dRQscVBnTH6HWDYK";
-//$host = "localhost";
-//$dbname = "c_heart";
-//$username = "root";
-//$password = "";
+
+require_once('../utils/database.php');
 
 $test_nom = FALSE;
 $test_prenom = FALSE;
 $test_email = FALSE;
-try {
-    $bdd = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-} catch (Exception $e) {
-//en cas d'erreur on affiche un message et on arrete tout
-    die('Erreur : ' . $e->getMessage());
-}
 
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
@@ -37,31 +25,31 @@ if (empty($email) == FALSE) {
 
 if ($test_prenom == TRUE and $test_nom == FALSE and $test_email == False) {
     $sql = 'SELECT * FROM utilisateur WHERE ID NOT IN (SELECT ID FROM classe) and prenom like ?';
-    $stmt = $bdd->prepare($sql);
+    $stmt = $mysqlInstance->prepare($sql);
     $stmt->execute([$prenom]);
 } else if ($test_prenom == FALSE and $test_nom == TRUE and $test_email == False) {
     $sql = 'SELECT * FROM utilisateur WHERE ID NOT IN (SELECT ID FROM classe) and nom like ?';
-    $stmt = $bdd->prepare($sql);
+    $stmt = $mysqlInstance->prepare($sql);
     $stmt->execute([$nom]);
 } else if ($test_prenom == FALSE and $test_nom == FALSE and $test_email == TRUE) {
     $sql = 'SELECT * FROM utilisateur WHERE ID NOT IN (SELECT ID FROM classe) and mail like ?';
-    $stmt = $bdd->prepare($sql);
+    $stmt = $mysqlInstance->prepare($sql);
     $stmt->execute([$email]);
 } else if ($test_prenom == TRUE and $test_nom == TRUE and $test_email == False) {
     $sql = 'SELECT * FROM utilisateur WHERE ID NOT IN (SELECT ID FROM classe) and (prenom like ? and nom like ?)';
-    $stmt = $bdd->prepare($sql);
+    $stmt = $mysqlInstance->prepare($sql);
     $stmt->execute([$prenom, $nom]);
 } else if ($test_prenom == TRUE and $test_nom == FALSE and $test_email == TRUE) {
     $sql = 'SELECT * FROM utilisateur WHERE ID NOT IN (SELECT ID FROM classe) and (prenom like ? and mail like ?)';
-    $stmt = $bdd->prepare($sql);
+    $stmt = $mysqlInstance->prepare($sql);
     $stmt->execute([$prenom, $email]);
 } else if ($test_prenom == FALSE and $test_nom == TRUE and $test_email == TRUE) {
     $sql = 'SELECT * FROM utilisateur WHERE ID NOT IN (SELECT ID FROM classe) and (nom like ? and mail like ?)';
-    $stmt = $bdd->prepare($sql);
+    $stmt = $mysqlInstance->prepare($sql);
     $stmt->execute([$nom, $email]);
 } else if ($test_prenom == TRUE and $test_nom == TRUE and $test_email == TRUE) {
     $sql = 'SELECT * FROM utilisateur WHERE ID NOT IN (SELECT ID FROM classe) and (prenom like ? and nom like ? and mail like ?)';
-    $stmt = $bdd->prepare($sql);
+    $stmt = $mysqlInstance->prepare($sql);
     $stmt->execute([$prenom, $nom, $email]);
 } else {
     echo 'veuillez remplir des champs';

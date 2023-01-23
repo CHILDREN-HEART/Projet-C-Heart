@@ -1,14 +1,6 @@
 <?php
 
-$host = "herogu.garageisep.com";
-$dbname = "tw7TQUoQ7u_cheart";
-$username = "HCjpLtsbkh_cheart";
-$password = "dRQscVBnTH6HWDYK";
-
-//$host = "localhost";
-//$dbname = "c_heart";
-//$username = "root";
-//$password = "";
+require_once('../utils/database.php');
 
 if (!isset($_POST['accept_terms']) && $_POST['accept_terms'] != 'yes') {
     // La checkbox n'a pas été cochée
@@ -27,8 +19,6 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm
         header('Location: ../pages/inscription.php?error=passwords_not_matching');
         exit();
     }
-
-    $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 
     $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE mail = :email");
     $statement->execute([

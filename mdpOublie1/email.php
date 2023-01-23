@@ -4,25 +4,13 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-$host = "herogu.garageisep.com";
-$dbname = "tw7TQUoQ7u_cheart";
-$username = "HCjpLtsbkh_cheart";
-$password = "dRQscVBnTH6HWDYK";
-
-//$host = "localhost";
-//$dbname = "c_heart";
-//$username = "root";
-//$password = "";
-
-//$base_url = "http://localhost/c_heart/";
+require_once('../utils/database.php');
 
 if (isset($_POST['email'])) {
     if ($_POST['email'] == "") {
         header('Location: ./index.php?error=missing_data');
         exit();
     }
-
-    $mysqlInstance = new PDO("mysql:dbname=$dbname;host=$host", $username, $password);
 
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         header('Location: index.php?error=invalid_email');
