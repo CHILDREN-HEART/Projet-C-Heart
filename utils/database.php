@@ -16,4 +16,4 @@ try {
     exit();
 }
 
-var_export($mysqlInstance);
+//var_export($mysqlInstance);
