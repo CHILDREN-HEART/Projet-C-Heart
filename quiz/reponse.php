@@ -63,11 +63,11 @@
             </div>
             <div class="menu-item">
                 <div class="menu-item-header">
-                    Réponse 5 :
+                    Réponse 5 :  Quelle est la température normale de la température corporelle prise via un capteur?
                 </div>
                 <div class="menu-item-body">
                     <div class="menu-item-body-content">
-
+                    37°C
                     </div>
                 </div>
                 <div class="menu-item">

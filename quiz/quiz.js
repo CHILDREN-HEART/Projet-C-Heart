@@ -26,12 +26,12 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "",
-        a: "37,1°C",
-        b: "37,5°C",
+        question: "Quelle est la température normale de la température corporelle prise via un capteur?",
+        a: "34°C",
+        b: "37°C°C",
         c: "38°C",
-        d: "38,5°C",
-        correct: "c",
+        d: "40°C",
+        correct: "b",
     },
     {
         question: "Quelle est la marge d'erreur moyenne d'une prise de température avec un bracelet ?",
