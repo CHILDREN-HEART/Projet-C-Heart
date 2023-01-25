@@ -17,7 +17,7 @@ if (isset($donnees["message"]) && isset($donnees["student_id"]) && isset($donnee
         'student_id' => $studentID,
         'prof_id' => $profID,
         'message' => $message,
-        'sent_by_student' => boolval($sent_by_student)
+        'sent_by_student' => $sent_by_student
     ]);
 
     if ($success) {
