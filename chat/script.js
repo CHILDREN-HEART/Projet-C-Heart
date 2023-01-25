@@ -1,5 +1,4 @@
 window.onload = () => {
-
     let texte = document.getElementById("message");
     texte.addEventListener("keyup", verifEntree);
 

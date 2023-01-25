@@ -2,7 +2,7 @@
 
 require_once("../utils/database.php");
 
-session_start();
+if (empty(session_id())) session_start();
 
 $statement = $mysqlInstance->prepare("SELECT ID, nom, prenom, mail FROM utilisateur WHERE statut = 'prof' LIMIT 1");
 $statement->execute();
@@ -21,6 +21,7 @@ echo "<div id='chatbox'>
     <input type='hidden' id='prof_id' value='" . $profID . "'>
     <input type='hidden' id='sent_by_student' value='1'>
     <button id='send'>Envoyer</button>
+</div>
 </div>";
 
 echo "<script src='./script.js'>";

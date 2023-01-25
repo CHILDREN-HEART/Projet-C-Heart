@@ -10,30 +10,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
+    if ( $_POST['password'] == "" || $_POST['confirm_password'] == "") {
+        header('Location: index.php?error=need_passwords');
+        exit();
+    }
+
     // connecte à la base de données
     $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE mail = :email");
     $statement->execute([
         'email' => $_POST['email']
     ]);
 
-    $data = $statement->fetchAll();
+    $data = $statement->fetch();
 
-    if (count($data) > 0) {
+    if ($data[0]['ID'] != $_SESSION['user']) {
         header('Location: index.php?error=email_already_used');
         exit();
     }
 
-    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$/")))) {
         header('Location: index.php?error=invalid_email');
         exit();
     }
 
-    if (!filter_var($_POST['nom'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
+    if (!isset($_POST['nom'])) {
         header('Location: index.php?error=invalid_name');
         exit();
     }
 
-    if (!filter_var($_POST['prenom'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
+    if (!isset($_POST['prenom'])) {
         header('Location: index.php?error=invalid_firstname');
         exit();
     }
@@ -43,43 +48,64 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
-    if (!filter_var($_POST['nom_enfant'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
+    if (!isset($_POST['nom_enfant'])) {
         header('Location: ../pages/inscription.php?error=invalid_name');
         exit();
     }
 
 
-    if (!filter_var($_POST['prenom_enfant'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z]+$/")))) {
+    if (!isset($_POST['prenom_enfant'])) {
         header('Location: ../pages/inscription.php?error=invalid_firstname');
         exit();
     }
 
-    if (!filter_var($_POST['taille'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/")))) {
+    if (!isset($_POST['taille'])) {// || (!filter_var($_POST['taille'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/"))))) {
         header('Location: ../pages/inscription.php?error=invalid_size');
         exit();
     }
 
-    if (!filter_var($_POST['poids'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/")))) {
+    if (!isset($_POST['poids'])) {// || ($_POST['poids'] != "" && !filter_var($_POST['poids'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/"))))) {
         header('Location: ../pages/inscription.php?error=invalid_weight');
         exit();
     }
 
     // récupère les données du formulaire
-    $nom = isset($_POST['nom']) ? $mysqlInstance->quote(trim($_POST['nom'])) : "";
-    $prenom = isset($_POST['prenom']) ? $mysqlInstance->quote(trim($_POST['prenom'])) : "";
-    $nom_enfant = isset($_POST['nom_enfant']) ? $mysqlInstance->quote(trim($_POST['nom_enfant'])) : "";
-    $prenom_enfant = isset($_POST['prenom_enfant']) ? $mysqlInstance->quote(trim($_POST['prenom_enfant'])) : "";
-    $taille = isset($_POST['taille']) ? $mysqlInstance->quote(trim($_POST['taille'])) : "";
-    $poids = isset($_POST['poids']) ? $mysqlInstance->quote(trim($_POST['poids'])) : "";
+    $nom = $mysqlInstance->quote(trim($_POST['nom']));
+    $prenom = $mysqlInstance->quote(trim($_POST['prenom']));
+    $nom_enfant = $mysqlInstance->quote(trim($_POST['nom_enfant']));
+    $prenom_enfant = $mysqlInstance->quote(trim($_POST['prenom_enfant']));
+    $taille = $mysqlInstance->quote(trim($_POST['taille']));
+    $poids = $mysqlInstance->quote(trim($_POST['poids']));
     $telephone = isset($_POST['telephone']) ? $mysqlInstance->quote(trim($_POST['telephone'])) : "";
     $email = isset($_POST['email']) ? $mysqlInstance->quote(trim($_POST['email'])) : "";
     $password = isset($_POST['password']) ? $mysqlInstance->quote(trim($_POST['password'])) : "";
     $confirm_password = isset($_POST['confirm_password']) ? $mysqlInstance->quote(trim($_POST['confirm_password'])) : "";
 
+    $data = ([
+        'nom' => $nom,
+        'prenom' => $prenom,
+        'nom_enfant' => $nom_enfant,
+        'prenom_enfant' => $prenom_enfant,
+        'taille' => $taille,
+        'poids' => $poids,
+        'telephone' => $telephone,
+        'email' => $email,
+        'password' => password_hash($password, PASSWORD_DEFAULT),
+        'id_utilisateur' => $_SESSION['user']
+    ]);
 
-    // met à jour le profil de l'utilisateur
+    $statement = $mysqlInstance->prepare("UPDATE utilisateurs SET nom=:nom, prenom=:prenom, nom_enfant=:nom_enfant, prenom_enfant=:prenom_enfant, taille=:taille, poids=:poids, telephone=:telephone, mail=:email, password = :password WHERE ID=:id_utilisateur");
+    $statement->execute([
+        'nom' => $nom,
+        'prenom' => $prenom,
+        'nom_enfant' => $nom_enfant,
+        'prenom_enfant' => $prenom_enfant,
+        'taille' => $taille,
+        'poids' => $poids,
+        'telephone' => $telephone,
+        'email' => $email,
+        'password' => password_hash($password, PASSWORD_DEFAULT),
+        'id_utilisateur' => $_SESSION['user']
+    ]);
 
-    $requete = "UPDATE utilisateurs SET nom=$nom, prenom=$prenom, nom_enfant=$nom_enfant, prenom_enfant=$prenom_enfant, taille=$taille, poids=$poids, telephone=$telephone, mail=$email, password = password_hash($password, PASSWORD_DEFAULT)";
-    $requete .= " WHERE id_utilisateur=1";
-    $mysqlInstance->query($requete);
 }

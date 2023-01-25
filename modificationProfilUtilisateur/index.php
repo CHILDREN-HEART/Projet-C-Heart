@@ -36,66 +36,84 @@
                 <form action="modifProfil.php" method="post">
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
-                    if (!empty($_SESSION['nom'])) {
-                        echo '<input type="text" id="surname" placeholder="' . $_SESSION['nom'] . '"/>';
+
+                    require_once("../utils/database.php");
+                    session_start();
+
+                    $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE ID = :id_utilisateur");
+                    $statement->execute([
+                        'id_utilisateur' => $_SESSION['user']
+                    ]);
+
+                    $data = $statement->fetch();
+
+                    if (!empty($data['nom'])) {
+                        echo '<input type="text" name="nom" value="' . $data['nom'] . '"/>';
                     } else {
-                        echo '<input type="text" id="surname" placeholder="Nom Parent"/>';
+                        echo '<input type="text" name="nom" placeholder="Nom Parent"/>';
+                    }
+                    ?>
+
+                    <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
+                    <?php
+                    if (!empty($data['prenom'])) {
+                        echo '<input type="text" name="prenom" value="' . $data['prenom'] . '"/>';
+                    } else {
+                        echo '<input type="text" name="prenom" placeholder="Prénom Parent"/>';
+                    }
+                    ?>
+
+                    <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
+                    <?php
+                    if (!empty($data['nom_enfant'])) {
+                        echo '<input type="text" name="nom_enfant" value="' . $data['nom_enfant'] . '"/>';
+                    } else {
+                        echo '<input type="text" name="nom_enfant" placeholder="Nom Enfant"/>';
                     }
                     ?>
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
+
                     <?php
-                    if (!empty($_SESSION['prenom'])) {
-                        echo '<input type="text" id="firstname" placeholder="' . $_SESSION['prenom'] . '"/>';
+                    if (!empty($data['prenom_enfant'])) {
+                        echo '<input type="text" name="prenom_enfant" value="' . $data['prenom_enfant'] . '"/>';
                     } else {
-                        echo '<input type="text" id="firstname" placeholder="Prénom Parent"/>';
+                        echo '<input type="text" name="prenom_enfant" placeholder="Prénom Enfant"/>';
                     }
                     ?>
+
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
-                    if (!empty($_SESSION['nom_enfant'])) {
-                        echo '<input type="text" id="surname" placeholder="' . $_SESSION['nom_enfant'] . '"/>';
+                    if (!empty($data['taille'])) {
+                        echo '<input type="text" name="taille" value="' . $data['taille'] . '"/>';
                     } else {
-                        echo '<input type="text" id="surname" placeholder="Nom Enfant"/>';
+                        echo '<input type="text" name="taille" placeholder="Taille Enfant"/>';
                     }
                     ?>
+
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
-                    if (!empty($_SESSION['prenom_enfant'])) {
-                        echo '<input type="text" id="firstname" placeholder="' . $_SESSION['prenom_enfant'] . '"/>';
+                    if (!empty($data['poids'])) {
+                        echo '<input type="text" name="poids" value="' . $data['poids'] . '"/>';
                     } else {
-                        echo '<input type="text" id="firstname" placeholder="Prénom Enfant"/>';
+                        echo '<input type="text" name="poids" placeholder="Poids Enfant"/>';
                     }
                     ?>
+
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
-                    if (!empty($_SESSION['taille'])) {
-                        echo '<input type="text" id="taille" placeholder="' . $_SESSION['taille'] . '"/>';
+                    if (!empty($data['telephone'])) {
+                        echo '<input type="text" name="telephone" value="' . $data['telephone'] . '"/>';
                     } else {
-                        echo '<input type="text" id="taille" placeholder="Taille Enfant"/>';
+                        echo '<input type="text" name="telephone" placeholder="Numéro de téléphone"/>';
                     }
                     ?>
+
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
-                    if (!empty($_SESSION['poids'])) {
-                        echo '<input type="text" id="poids" placeholder="' . $_SESSION['poids'] . '"/>';
+                    if (!empty($data['mail'])) {
+                        echo '<input type="text" name="email" value="' . $data['mail'] . '"/>';
                     } else {
-                        echo '<input type="text" id="poids" placeholder="Poids Enfant"/>';
-                    }
-                    ?>
-                    <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
-                    <?php
-                    if (!empty($_SESSION['telephone'])) {
-                        echo '<input type="text" id="phone" placeholder="' . $_SESSION['telephone'] . '"/>';
-                    } else {
-                        echo '<input type="text" id="phone" placeholder="Numéro de téléphone"/>';
-                    }
-                    ?>
-                    <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
-                    <?php
-                    if (!empty($_SESSION['mail'])) {
-                        echo '<input type="text" id="email" placeholder="' . $_SESSION['mail'] . '"/>';
-                    } else {
-                        echo '<input type="text" id="email" placeholder="Adresse mail"/>';
+                        echo '<input type="text" name="email" placeholder="Adresse mail"/>';
                     }
                     ?>
 
