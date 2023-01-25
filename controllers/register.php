@@ -52,13 +52,15 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm
         exit();
     }
 
-    $statement = $mysqlInstance->prepare("INSERT INTO utilisateur (mail, password, nom, prenom, telephone) VALUES (:email, :password, :surname, :firstname, :phone)");
+    $date = (new DateTime('now', new DateTimeZone('Europe/Paris')))->format('Y-m-d H:i:s');
+    $statement = $mysqlInstance->prepare("INSERT INTO utilisateur (mail, password, nom, prenom, telephone, date_inscription) VALUES (:email, :password, :surname, :firstname, :phone, :date_inscription)");
     $statement->execute([
         'email' => $_POST['email'],
         'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
         'surname' => $_POST['surname'],
         'firstname' => $_POST['firstname'],
-        'phone' => $_POST['phone']
+        'phone' => $_POST['phone'],
+        'date_inscription' => $date
     ]);
 
     header('Location: ../pages/connexion.php');
