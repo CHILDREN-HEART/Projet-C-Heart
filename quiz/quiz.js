@@ -88,7 +88,7 @@ function loadQuiz() {
             loadQuiz();
         } else {
             quiz.innerHTML = `<h2>Vous avez répondu correctement à ${score}/${quizData.length} questions.</h2>`;
-            buttonsContainer.innerHTML = '<a class="btn" href="/quizz/reponse.php">Réponses</a><br/><a class="btn" href="/quizz/index.php">Recommencer</a>';
+            buttonsContainer.innerHTML = '<a class="btn" href="/quiz/reponse.php">Réponses</a><br/><a class="btn" href="/quiz/index.php">Recommencer</a>';
         }
     });
 }
