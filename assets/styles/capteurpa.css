@@ -48,10 +48,15 @@ h2 {
 }
 
 .conteneur {
-    display: flex;
     gap: 1rem;
     align-items: stretch;
     margin: 2rem auto;
+}
+
+@media (min-width: 1060px) {
+    .conteneur {
+        display:flex;
+    }
 }
 
 .conteneurchild {

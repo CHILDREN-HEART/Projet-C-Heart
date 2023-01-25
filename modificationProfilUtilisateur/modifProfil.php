@@ -10,6 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
+    if ( $_POST['password'] == "" || $_POST['confirm_password'] == "") {
+        header('Location: index.php?error=need_passwords');
+        exit();
+    }
+
     // connecte à la base de données
     $statement = $mysqlInstance->prepare("SELECT * FROM utilisateur WHERE mail = :email");
     $statement->execute([

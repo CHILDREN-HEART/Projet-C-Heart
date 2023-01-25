@@ -117,13 +117,13 @@
                     }
                     ?>
 
-                    <input type="password" id="password" placeholder="Modifier mot de passe" />
-                    <input type="password" id="confirm_password" placeholder="Confirmer mot de passe" />
+                    <input type="password" id="password" placeholder="Modifier mot de passe"/>
+                    <input type="password" id="confirm_password" placeholder="Confirmer mot de passe"/>
                     <div><label id="CGU"><a href="../CGU/CGU.php"> Consulter les Conditions Générales d'Utilisation
                                 (CGU) </a></label></div>
 
-                    <input type="submit" value="Valider" />
-                    <a href="../capteurParent/index.php"><input id="retour" value="Retour" /></a>
+                    <input type="submit" value="Valider"/>
+                    <a href="../capteurParent/index.php"><input id="retour" value="Retour"/></a>
 
                 </form>
             </div>
