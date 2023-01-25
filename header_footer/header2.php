@@ -12,6 +12,17 @@
             echo(($_SESSION['prenom'] ?? "Prénom") . " " . ($_SESSION['nom'] ?? "Nom")) ?></a>
     </div>
     <div class="flexboxHeader4">
+        <?php
+        if ($_SESSION['statut']== 'prof') {
+            echo '<a href="../modificationProfilGestionnaire/index.php" class="logo_connexion"><img id="logo_connexion"
+                                                                                         src="../assets/icons/profil.ico"
+                                                                                         alt="logo_modif_profil" /></a>';
+        } else {
+            echo '<a href="../modificationProfilUtilisateur/index.php" class="logo_connexion"><img id="logo_connexion"
+                                                                                         src="../assets/icons/profil.ico"
+                                                                                         alt="logo_modif_profil" /></a>';
+        }
+        ?>
         <a href="../modificationProfilUtilisateur/index.php" class="logo_connexion"><img id="logo_connexion"
                                                                                          src="../assets/icons/profil.ico"
                                                                                          alt="logo_modif_profil" /></a>
