@@ -2,13 +2,14 @@
 
 require_once("../utils/database.php");
 
-$studentID = 28;
-$profID = 27;
-$statement = $mysqlInstance->query("SELECT ID, nom, prenom, mail FROM classe");
+session_start();
+$profID = $_SESSION["user"];
+
+$statement = $mysqlInstance->query("SELECT ID, nom, prenom, mail FROM utilisateur WHERE statut != 'prof'");
 $students = $statement->fetchAll();
 
 echo "<div class='chatbox'>
-<span>Discussion avec l'élève</span>
+<span>Discussion avec l'utilisateur</span>
 <select name='student' id='select_student_chat'>";
 
 foreach ($students as $student) {
@@ -27,7 +28,7 @@ echo "<div>
 <input type='text' id='message' placeholder='Message'>
 <input type='hidden' id='student_id' value='" . $studentID . "'>
 <input type='hidden' id='prof_id' value='" . $profID . "'>
-<input type='hidden' id='sent_by_student' value='1'>
+<input type='hidden' id='sent_by_student' value='0'>
 <button id='send'>Envoyer</button>
 
 </div>";

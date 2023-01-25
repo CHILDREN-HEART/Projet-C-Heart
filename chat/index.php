@@ -1,8 +1,17 @@
 <?php
 
+require_once("../utils/database.php");
 
-if (true || $_SESSION['user_type'] == 'prof') {
+session_start();
+
+echo "<link href='./style.css' rel='stylesheet' type='text/css'>";
+
+if (isset($_SESSION['statut']) && $_SESSION['statut'] == "prof") {
     echo require("./chatboxProf.php");
 } else {
     echo require("./chatboxStudent.php");
 }
+
+
+var_dump("test");
+exit();

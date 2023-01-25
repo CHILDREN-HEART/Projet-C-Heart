@@ -63,8 +63,8 @@ function showMessagesInbox() {
         let html = "";
         messages.forEach(message => {
             html += `
-                <div class="message ${message.sent_by_student ? "prof" : "student"}">
-                    <p>${message.message}</p>
+                <div class="message ${!message.sent_by_student ? "prof" : "student"}">
+                    <p>${!message.sent_by_student ? "[PROF] : " : ""}${message.message}</p>
                 </div>
             `;
         });

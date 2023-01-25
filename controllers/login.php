@@ -38,6 +38,7 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
     $_SESSION['email'] = $data['mail'];
     $_SESSION['nom'] = $data['nom'];
     $_SESSION['prenom'] = $data['prenom'];
+    $_SESSION['statut'] = $data['statut'];
 
     if ($data['statut'] == "prof") {
         header("Location: ../pagecapteurprof/index.php");

@@ -2,8 +2,17 @@
 
 require_once("../utils/database.php");
 
-$studentID = 28; #TODO:  ID de l'élève à récupérer
-$profID = 27; #TODO:  ID du prof à récupérer
+session_start();
+
+$statement = $mysqlInstance->prepare("SELECT ID, nom, prenom, mail FROM utilisateur WHERE statut = 'prof' LIMIT 1");
+$statement->execute();
+$prof = $statement->fetch();
+
+$studentID = $_SESSION["user"];
+$profID = $prof["ID"];
+
+var_dump($studentID, $profID, "");
+exit;
 
 echo "<div class='chatbox'>
 <span>Discussion avec le prof</span>
