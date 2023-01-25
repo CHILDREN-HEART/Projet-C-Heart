@@ -63,7 +63,7 @@
     <label for="message">Message:</label>
     <textarea id="message" name="message"></textarea>
     <br>
-    <input type="submit" name="submit" value="Validé">
+    <input type="submit" name="submit" value="Valider">
 </form>
 <div class="vide">
 </div>
