@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz</title>
-    <link rel="stylesheet" href="quizz.css" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
 
     </div>
     </div>
-    <script src="quizz.js"></script>
+    <script src="quiz.js"></script>
     <div>
     </div>
     <div class="vide">
