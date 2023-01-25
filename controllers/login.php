@@ -40,6 +40,11 @@ if (isset($_POST['login']) || isset($_POST['password'])) {
     $_SESSION['prenom'] = $data['prenom'];
     $_SESSION['statut'] = $data['statut'];
 
+    if ($data['ban']== 1){
+        header("Location: ../pages/connexion.php?error=ban");
+        exit;
+    };
+
     if ($data['statut'] == "prof") {
         header("Location: ../pagecapteurprof/index.php");
         exit;
