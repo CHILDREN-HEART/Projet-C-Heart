@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 <div class="flexboxHeader">
     <div>
-        <a href="../index.php"><img id="img1" src="../assets/images/Logo.png" alt="logo"></a>
+        <a href="../pages/guest_homepage_header.php"><img id="img1" src="../assets/images/Logo.png" alt="logo"></a>
     </div>
     <div class="flexboxHeader2">
         <span id="CHeart">Child heart</span>
