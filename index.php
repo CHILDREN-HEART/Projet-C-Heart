@@ -16,7 +16,7 @@ $connected = isset($_SESSION['user']) ?? null;
 if (!$connected) {
     require("pages/guest_homepage.php");
 } else {
-//    require ("capteurParent/index.php"); pas encore op car pas responsive
+//    require ("capteurParent/index.php"); //pas encore op car pas MVC (footer & header = pb)
     require("pages/connected_homepage.php");
 }
 ?>

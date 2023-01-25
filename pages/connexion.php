@@ -36,6 +36,8 @@
                     echo '<p>Identifiants incorrects</p>';
                 } else if ($_GET['error'] == 'invalid_email') {
                     echo '<p>Cet email n\'est pas valide</p>';
+                }else if ($_GET['error'] == 'ban') {
+                    echo '<p>Vous avez été banni</p>';
                 }
             }
 
