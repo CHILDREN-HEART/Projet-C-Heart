@@ -12,7 +12,7 @@
 <header>
     <nav>
         <div class="nav__logo">
-            <img src="../assets/icons/logo.ico" alt="Logo de C-Heart">
+            <img href="../index.php" src="../assets/icons/logo.ico" alt="Logo de C-Heart">
         </div>
 
         <div class="nav__title">
