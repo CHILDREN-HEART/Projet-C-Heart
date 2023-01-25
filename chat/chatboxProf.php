@@ -8,7 +8,7 @@ $profID = $_SESSION["user"];
 $statement = $mysqlInstance->query("SELECT ID, nom, prenom, mail FROM utilisateur WHERE statut != 'prof'");
 $students = $statement->fetchAll();
 
-echo "<div class='chatbox'>
+echo "<div id='chatbox'>
 <span>Discussion avec l'utilisateur</span>
 <select name='student' id='select_student_chat'>";
 
@@ -18,19 +18,15 @@ foreach ($students as $student) {
 
 echo "</select>";
 
-echo "<div class='chat-logs'>";
-
 echo "<div id='messages_container'>
 </div>";
 
 
 echo "<div>
-<input type='text' id='message' placeholder='Message'>
-<input type='hidden' id='student_id' value='" . $studentID . "'>
-<input type='hidden' id='prof_id' value='" . $profID . "'>
-<input type='hidden' id='sent_by_student' value='0'>
-<button id='send'>Envoyer</button>
-
+    <input type='text' id='message' placeholder='Message'>
+    <input type='hidden' id='prof_id' value='" . $profID . "'>
+    <input type='hidden' id='sent_by_student' value='0'>
+    <button id='send'>Envoyer</button>
 </div>";
 
 echo "<script src='./script.js'>";

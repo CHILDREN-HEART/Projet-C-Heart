@@ -7,6 +7,7 @@ window.onload = () => {
     let send = document.getElementById("send");
     send.addEventListener("click", ajoutMessage);
 
+    showMessagesInbox();
     setInterval(() => showMessagesInbox(), 1000);
 };
 
@@ -45,7 +46,6 @@ function ajoutMessage() {
 
 function showMessagesInbox() {
 
-    console.log("showMessagesInbox");
     let prof_id = document.getElementById("prof_id").value;
     let student_id = document.querySelector("select > option:checked")?.value ?? document.getElementById("student_id").value;
 
@@ -59,8 +59,8 @@ function showMessagesInbox() {
         return response.json();
     }).then(data => {
         messages = data;
-        console.log({ data });
         let html = "";
+
         messages.forEach(message => {
             html += `
                 <div class="message ${!message.sent_by_student ? "prof" : "student"}">
