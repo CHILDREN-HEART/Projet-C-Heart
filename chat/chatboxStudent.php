@@ -2,7 +2,7 @@
 
 require_once("../utils/database.php");
 
-session_start();
+if (empty(session_id())) session_start();
 
 $statement = $mysqlInstance->prepare("SELECT ID, nom, prenom, mail FROM utilisateur WHERE statut = 'prof' LIMIT 1");
 $statement->execute();

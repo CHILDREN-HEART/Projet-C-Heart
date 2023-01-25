@@ -2,7 +2,8 @@
 
 require_once("../utils/database.php");
 
-session_start();
+if (empty(session_id())) session_start();
+
 $profID = $_SESSION["user"];
 
 $statement = $mysqlInstance->query("SELECT ID, nom, prenom, mail FROM utilisateur WHERE statut != 'prof'");
