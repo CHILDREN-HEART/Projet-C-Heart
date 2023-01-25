@@ -26,7 +26,7 @@
         <?php
         $connected = isset($_SESSION['user']) ?? null;
         if ($connected) {
-            echo '<div id="barre" class="barreResp"></div><div id="responsiveContact" class="btn"><a href="../contacter"><input type="button" value="Contacter un administrateur"/></a></div>';
+            echo '<div id="barre" class="barreResp"></div><div id="responsiveContact" class="btn"><a href="../chat/index.php"><input type="button" value="Contacter un administrateur"/></a></div>';
         }
 
         ?>
