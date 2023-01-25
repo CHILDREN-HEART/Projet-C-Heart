@@ -1,5 +1,7 @@
 <?php
 
+require_once('../utils/database.php');
+
 $numero_article = filter_input(INPUT_GET, 'numero_article', FILTER_SANITIZE_NUMBER_INT);
 
 $dsn = "mysql:host=$host;dbname=$dbname";
