@@ -19,7 +19,7 @@
         </div>
         <div id="barre"></div>
         <div class="btn">
-            <a href="../quizz"><input type="button" value="Quizz"/></a>
+            <a href="../quiz"><input type="button" value="Quiz"/></a>
         </div>
 
 
