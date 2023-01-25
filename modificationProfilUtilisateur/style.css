@@ -62,14 +62,6 @@ h2 {
     padding: 2rem;
 }
 
-footer {
-    height: 84px;
-    width: 100%;
-    background: #40599A;
-    position: absolute;
-    bottom: 0px;
-}
-
 input[type='text'], input[type='password'] {
     -webkit-appearance: none;
     background-color: transparent;

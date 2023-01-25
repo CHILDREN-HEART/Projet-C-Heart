@@ -66,36 +66,36 @@
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
                     if (!empty($data['nom_enfant'])) {
-                        echo '<input type="text" name="nom_enfant" value="' . $data['nom_enfant'] . '"/>';
+                        echo '<input id="surname" type="text" name="nom_enfant" value="' . $data['nom_enfant'] . '"/>';
                     } else {
-                        echo '<input type="text" name="nom_enfant" placeholder="Nom Enfant"/>';
+                        echo '<input id="surname" type="text" name="nom_enfant" placeholder="Nom Enfant"/>';
                     }
                     ?>
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
 
                     <?php
                     if (!empty($data['prenom_enfant'])) {
-                        echo '<input type="text" name="prenom_enfant" value="' . $data['prenom_enfant'] . '"/>';
+                        echo '<input id="firstname" type="text" name="prenom_enfant" value="' . $data['prenom_enfant'] . '"/>';
                     } else {
-                        echo '<input type="text" name="prenom_enfant" placeholder="Prénom Enfant"/>';
+                        echo '<input id="firstname" type="text" name="prenom_enfant" placeholder="Prénom Enfant"/>';
                     }
                     ?>
 
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
                     if (!empty($data['taille'])) {
-                        echo '<input type="text" name="taille" value="' . $data['taille'] . '"/>';
+                        echo '<input id="taille" type="text" name="taille" value="' . $data['taille'] . '"/>';
                     } else {
-                        echo '<input type="text" name="taille" placeholder="Taille Enfant"/>';
+                        echo '<input id="taille" type="text" name="taille" placeholder="Taille Enfant"/>';
                     }
                     ?>
 
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
                     if (!empty($data['poids'])) {
-                        echo '<input type="text" name="poids" value="' . $data['poids'] . '"/>';
+                        echo '<input id="poids" type="text" name="poids" value="' . $data['poids'] . '"/>';
                     } else {
-                        echo '<input type="text" name="poids" placeholder="Poids Enfant"/>';
+                        echo '<input id="poids" type="text" name="poids" placeholder="Poids Enfant"/>';
                     }
                     ?>
 

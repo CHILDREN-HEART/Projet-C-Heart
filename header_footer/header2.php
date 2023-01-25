@@ -13,7 +13,7 @@
     </div>
     <div class="flexboxHeader4">
         <?php
-        if ($_SESSION['statut']== 'prof') {
+        if ($_SESSION['statut'] == 'prof') {
             echo '<a href="../modificationProfilGestionnaire/index.php" class="logo_connexion"><img id="logo_connexion"
                                                                                          src="../assets/icons/profil.ico"
                                                                                          alt="logo_modif_profil" /></a>';
@@ -23,9 +23,6 @@
                                                                                          alt="logo_modif_profil" /></a>';
         }
         ?>
-        <a href="../modificationProfilUtilisateur/index.php" class="logo_connexion"><img id="logo_connexion"
-                                                                                         src="../assets/icons/profil.ico"
-                                                                                         alt="logo_modif_profil" /></a>
     </div>
 
 </div>

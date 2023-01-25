@@ -6,12 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Modifier Profil</title>
-    <link rel="shortcut icon" href="../assets/images/Logo.png"/>
-    <link rel="stylesheet" href="../assets/styles/components/header.css">
-    <link rel="stylesheet" href="../assets/styles/components/footer.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/icons/logo.ico">
     <link rel="stylesheet" href="../assets/styles/base.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="../modificationProfilUtilisateur/styletempo.css">
 </head>
 <body>
 <header>
@@ -33,7 +30,7 @@
             ?>
             <h2>Modifier votre profil</h2>
             <div class="grid-container">
-                <form action="../modificationProfilUtilisateur/modifProfil.php" method="post">
+                <form action="modifProfil.php" method="post">
                     <!-- Remplir le placeholder avec la valeur de la base de données si elle existe -->
                     <?php
 

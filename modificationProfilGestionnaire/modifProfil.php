@@ -50,34 +50,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
-    if (!isset($_POST['nom_enfant'])) {
-        header('Location: ../pages/inscription.php?error=invalid_name');
-        exit();
-    }
-
-
-    if (!isset($_POST['prenom_enfant'])) {
-        header('Location: ../pages/inscription.php?error=invalid_firstname');
-        exit();
-    }
-
-    if (!isset($_POST['taille'])) {// || (!filter_var($_POST['taille'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/"))))) {
-        header('Location: ../pages/inscription.php?error=invalid_size');
-        exit();
-    }
-
-    if (!isset($_POST['poids'])) {// || ($_POST['poids'] != "" && !filter_var($_POST['poids'], FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[0-9]+$/"))))) {
-        header('Location: ../pages/inscription.php?error=invalid_weight');
-        exit();
-    }
 
     // récupère les données du formulaire
     $nom = $mysqlInstance->quote(trim($_POST['nom']));
     $prenom = $mysqlInstance->quote(trim($_POST['prenom']));
-    $nom_enfant = $mysqlInstance->quote(trim($_POST['nom_enfant']));
-    $prenom_enfant = $mysqlInstance->quote(trim($_POST['prenom_enfant']));
-    $taille = $mysqlInstance->quote(trim($_POST['taille']));
-    $poids = $mysqlInstance->quote(trim($_POST['poids']));
     $telephone = isset($_POST['telephone']) ? $mysqlInstance->quote(trim($_POST['telephone'])) : "";
     $email = isset($_POST['email']) ? $mysqlInstance->quote(trim($_POST['email'])) : "";
     $password = isset($_POST['password']) ? $mysqlInstance->quote(trim($_POST['password'])) : "";
@@ -86,10 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = ([
         'nom' => $nom,
         'prenom' => $prenom,
-        'nom_enfant' => $nom_enfant,
-        'prenom_enfant' => $prenom_enfant,
-        'taille' => $taille,
-        'poids' => $poids,
         'telephone' => $telephone,
         'email' => $email,
         'password' => password_hash($password, PASSWORD_DEFAULT),
@@ -100,10 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $statement->execute([
         'nom' => $nom,
         'prenom' => $prenom,
-        'nom_enfant' => $nom_enfant,
-        'prenom_enfant' => $prenom_enfant,
-        'taille' => $taille,
-        'poids' => $poids,
         'telephone' => $telephone,
         'email' => $email,
         'password' => password_hash($password, PASSWORD_DEFAULT),
@@ -111,3 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ]);
 
 }
+
+header('Location: ../pagecapteurprof/index.php');
+exit();
