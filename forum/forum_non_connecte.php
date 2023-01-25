@@ -42,7 +42,7 @@
             <td><?php echo htmlspecialchars($row['titre']); ?></td>
             <td><a href='./sujet_non_connecte.php?numero_article=<?php echo $row['numero_article']; ?>'><input type="submit"
                                                                                                   name="submit"
-                                                                                                  value="Lien"></a>
+                                                                                                  value="Lire"></a>
         </tr>
     <?php endwhile; ?>
     </tbody>
