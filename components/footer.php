@@ -20,6 +20,6 @@
         </div>
         <div id="barre"></div>
         <div class="btn-footer">
-            <a href="./quizz/quizz.php"><input type="button" value="Quizz" /></a>
+            <a href="./quiz/quiz.php"><input type="button" value="Quiz" /></a>
         </div>
     </div>
