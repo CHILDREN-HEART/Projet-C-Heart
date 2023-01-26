@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="rechercher_patient.css">
+    <link rel="stylesheet" href="rechercher_eleve.css">
     <title></title>
 
 </head>

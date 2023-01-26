@@ -98,7 +98,7 @@ if ($test_prenom == TRUE and $test_nom == FALSE and $test_email == False) {
                 <td><?php echo htmlspecialchars($row['nom']); ?></td>
                 <td id="case_mail"><?php echo htmlspecialchars($row['mail']); ?></td>
                 <td>
-                    <div class="btn_container"><a id='action' href="ajouterpatient.php?id=<?php echo $row['ID']; ?>">ajouter</a>
+                    <div class="btn_container"><a id='action' href="ajoutereleve.php?id=<?php echo $row['ID']; ?>">ajouter</a>
                     </div>
                 </td>
             </tr>

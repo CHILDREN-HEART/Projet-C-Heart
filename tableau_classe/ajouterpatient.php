@@ -7,5 +7,5 @@ $sql = 'INSERT into classe SELECT id,nom,prenom,mail FROM utilisateur where id =
 $stmt = $mysqlInstance->prepare($sql);
 $stmt->execute([$id]);
 if ($stmt) {
-    header('location: ./ajouter_patient_medecin.php');
+    header('location: ./ajouter_eleve_classe.php');
 }

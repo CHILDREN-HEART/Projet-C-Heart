@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="ajouter_patient_medecin.css">
+    <link rel="stylesheet" href="ajouter_eleve_classe.css">
     <title></title>
 </head>
 <body>
@@ -29,7 +29,7 @@
         </thead>
         <tbody>
         <?php
-        include('readpatient.php');
+        include('readeleve.php');
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
             ?>
             <tr>
@@ -38,7 +38,7 @@
                 <td><?php echo htmlspecialchars($row['nom']); ?></td>
                 <td id="case_mail"><?php echo htmlspecialchars($row['mail']); ?></td>
                 <td>
-                    <div class="btn_container"><a id="action" href="ajouterpatient.php?id=<?php echo $row['ID']; ?>">ajouter</a>
+                    <div class="btn_container"><a id="action" href="ajoutereleve.php?id=<?php echo $row['ID']; ?>">ajouter</a>
                     </div>
                 </td>
             </tr>
