@@ -71,7 +71,7 @@ if ($test_prenom == TRUE and $test_nom == FALSE and $test_email == False) {
     <?php include('../header_footer/header2.php'); ?>
 </header>
 <div class="btn_retour">
-    <a href=".\rechercher_patient.php">&#10229 Retour</a>
+    <a href=".\rechercher_eleve.php">&#10229 Retour</a>
 </div>
 <div class="title_container">
     <h1>Résultat de votre recherche<h1>
