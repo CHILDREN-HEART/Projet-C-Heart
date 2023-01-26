@@ -78,7 +78,7 @@
     <div class="btn_gestion_container">
         <ul class="list_btn" id="list_btn">
             <li class="list_btn_att">
-                <a href=".\ajouter_patient_medecin.php">Ajouter</a>
+                <a href=".\ajouter_eleve_classe.php">Ajouter</a>
             </li>
         </ul>
     </div>

@@ -12,7 +12,7 @@
     <?php include('../header_footer/header2.php'); ?>
 </header>
 <div class="btn_retour">
-    <a href=".\ajouter_patient_medecin.php"> &#10229 Retour</a>
+    <a href=".\ajouter_eleve_classe.php"> &#10229 Retour</a>
 </div>
 <div class="title_container">
     <h1>Rechercher un élève<h1>

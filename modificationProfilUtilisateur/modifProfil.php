@@ -72,42 +72,75 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // récupère les données du formulaire
-    $nom = $mysqlInstance->quote(trim($_POST['nom']));
-    $prenom = $mysqlInstance->quote(trim($_POST['prenom']));
-    $nom_enfant = $mysqlInstance->quote(trim($_POST['nom_enfant']));
-    $prenom_enfant = $mysqlInstance->quote(trim($_POST['prenom_enfant']));
-    $taille = $mysqlInstance->quote(trim($_POST['taille']));
-    $poids = $mysqlInstance->quote(trim($_POST['poids']));
-    $telephone = isset($_POST['telephone']) ? $mysqlInstance->quote(trim($_POST['telephone'])) : "";
-    $email = isset($_POST['email']) ? $mysqlInstance->quote(trim($_POST['email'])) : "";
-    $password = isset($_POST['password']) ? $mysqlInstance->quote(trim($_POST['password'])) : "";
-    $confirm_password = isset($_POST['confirm_password']) ? $mysqlInstance->quote(trim($_POST['confirm_password'])) : "";
+    $nom = trim($_POST['nom']);
+    $prenom = trim($_POST['prenom']);
+    $nom_enfant = trim($_POST['nom_enfant']);
+    $prenom_enfant = trim($_POST['prenom_enfant']);
+    $taille = trim($_POST['taille']);
+    $poids = trim($_POST['poids']);
+    $telephone = trim($_POST['telephone']);
+    $email = trim($_POST['email']);
+    $password = trim($_POST['password']);
+    $confirm_password = trim($_POST['confirm_password']);
 
-    $data = ([
-        'nom' => $nom,
-        'prenom' => $prenom,
-        'nom_enfant' => $nom_enfant,
-        'prenom_enfant' => $prenom_enfant,
-        'taille' => $taille,
-        'poids' => $poids,
-        'telephone' => $telephone,
-        'email' => $email,
-        'password' => password_hash($password, PASSWORD_DEFAULT),
-        'id_utilisateur' => $_SESSION['user']
-    ]);
+    $sqlRequest = "UPDATE utilisateur SET ";
 
-    $statement = $mysqlInstance->prepare("UPDATE utilisateurs SET nom=:nom, prenom=:prenom, nom_enfant=:nom_enfant, prenom_enfant=:prenom_enfant, taille=:taille, poids=:poids, telephone=:telephone, mail=:email, password = :password WHERE ID=:id_utilisateur");
-    $statement->execute([
-        'nom' => $nom,
-        'prenom' => $prenom,
-        'nom_enfant' => $nom_enfant,
-        'prenom_enfant' => $prenom_enfant,
-        'taille' => $taille,
-        'poids' => $poids,
-        'telephone' => $telephone,
-        'email' => $email,
-        'password' => password_hash($password, PASSWORD_DEFAULT),
-        'id_utilisateur' => $_SESSION['user']
-    ]);
+    $datas = [];
+    $modifications = [];
+
+    if ($nom != "") {
+        $modifications[] = "nom = :nom";
+        $datas['nom'] = $nom;
+    }
+
+    if ($prenom != "") {
+        $modifications[] = "prenom = :prenom";
+        $datas['prenom'] = $prenom;
+    }
+
+    if ($nom_enfant != "") {
+        $modifications[] = "nom_enfant = :nom_enfant";
+        $datas['nom_enfant'] = $nom_enfant;
+    }
+
+    if ($prenom_enfant != "") {
+        $modifications[] = "prenom_enfant = :prenom_enfant";
+        $datas['prenom_enfant'] = $prenom_enfant;
+    }
+
+    if ($taille != "") {
+        $modifications[] = "taille = :taille";
+        $datas['taille'] = $taille;
+    }
+
+    if ($poids != "") {
+        $modifications[] = "poids = :poids";
+        $datas['poids'] = $poids;
+    }
+
+    if ($telephone != "") {
+        $modifications[] = "telephone = :telephone";
+        $datas['telephone'] = $telephone;
+    }
+
+    if ($email != "") {
+        $modifications[] = "mail = :email";
+        $datas['email'] = $email;
+    }
+
+    if ($password != "") {
+        $modifications[] = "password = :password";
+        $datas['password'] = password_hash($password, PASSWORD_DEFAULT);
+    }
+
+    $sqlRequest .= implode(", ", $modifications);
+
+    $sqlRequest .= " WHERE ID = :id_utilisateur";
+
+
+    $statement = $mysqlInstance->prepare($sqlRequest);
+    $statement->execute($datas);
+
+    header('Location: ../pages/inscription.php?success=update_success');
 
 }

@@ -47,7 +47,7 @@
     </table>
 </div>
 <div class="btn_rechercher_container">
-    <a href=".\rechercher_patient.php">Rechercher</a>
+    <a href=".\rechercher_eleve.php">Rechercher</a>
 </div>
 <div class="vide">
 </div>
