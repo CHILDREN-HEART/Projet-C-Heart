@@ -5,7 +5,9 @@
 }
 
 .btn_gestion_container {
-    margin-left: 53px;
+    display: flex;
+    padding-top:4px;
+    justify-content: center;
 }
 
 .btn_gestion_container .list_btn {
@@ -13,7 +15,6 @@
     display: flex;
     align-items: center;
     padding-inline-start: 0px;
-    margin-left: 260px;
 }
 
 .btn_gestion_container .list_btn .list_btn_att a {
