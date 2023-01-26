@@ -97,8 +97,7 @@
 }
 
 .btn_rechercher_container {
-    margin-left: 315px;
-    margin-top: 15px;
+    margin: auto;
     width: 150px;
     background-color: #40599a;
     display: flex;
