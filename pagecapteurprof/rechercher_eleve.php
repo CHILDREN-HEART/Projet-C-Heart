@@ -29,7 +29,7 @@
         </form>
     </div>
     <div class=text_alert>
-        <p>Veuillez remplir au minmimum un champ
+        <p>Veuillez remplir au minimum un champ
         <p>
     </div>
 </div>
